@@ -1,0 +1,9 @@
+- Consensus: 2/9 multisig
+- Objective: Protect the vaults
+- Signers: poolpi, doggie, doug, luciano, sam, klim, facu, banteg
+- TODO
+- # **Overview**
+- It currently has 1 power:
+- - ********Emergency Powers********: Immediately intervene in case of attack or bug to shutdown or rollback strategies or vaults
+- # **Role**
+- Objective: __*____Protect the vaults____*__

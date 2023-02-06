@@ -1,0 +1,1 @@
+- [[YIP-67: Contribute $400,000 to Nomic Foundation]] posted for discussion on [[governance forum]] - [link](https://gov.yearn.finance/t/yip-67-contribute-to-the-nomic-foundation/12326)

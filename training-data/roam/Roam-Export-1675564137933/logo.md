@@ -1,0 +1,2 @@
+- https://www.figma.com/file/9Tja8gitt5ofanOjMIopfy/yearn-logo
+    - outdated

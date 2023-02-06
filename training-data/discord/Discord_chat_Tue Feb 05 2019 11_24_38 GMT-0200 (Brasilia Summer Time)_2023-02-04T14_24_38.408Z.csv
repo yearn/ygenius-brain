@@ -1,0 +1,1249 @@
+Date,Username,User tag,Content,Mentions,link
+"2022-10-26,15:59:17","ONI","#6888","the deposit limit seems to be an old alert I would guess, if you go to the y.w page it should a deposit limit of 
+1,000,000 yvCurve-3Crypto","ThanksSkeleton#9425",""
+"2022-10-26,16:17:09","ThanksSkeleton","#9425","<@137743751656243201> ok, thanks. Is yearn.watch a good website to use to check on yearn vaults? or too outdated.
+
+Is there a known reason why the past couple harvests for this vault are 0? https://discord.com/channels/734804446353031319/879906686805106698/1027717662828150785
+
+If is there a way you suggest I investigate the 0 harvest myself that would also be fine","ONI#6888",""
+"2022-10-26,22:20:33","ONI","#6888","it's up to date just the alerts dont have timestamps it seems","ThanksSkeleton#9425",""
+"2022-10-26,22:27:26","ONI","#6888","Not all harvests sell rewards into the base token sometimes its just to update a strategies paramaters. 
+Seems like this vault harvests roughly once a month","ThanksSkeleton#9425","https://cdn.discordapp.com/attachments/734811808401063966/1035001749267812412/unknown.png"
+"2022-10-26,22:29:45","ONI","#6888","https://yearn.vision/d/4YCbcel7k/vault-overview?orgId=1&var-networks=ETH&var-exp=false&var-vaults=yvCurve-3Crypto+0.4.3&from=now-90d&to=now","",""
+"2022-10-27,01:55:39","Anthony Chefn","#8200","This issue is happening on and off using metamask and as the guy before me said its happening on both Chrome and Firefox","ONI#6888",""
+"2022-10-27,01:55:55","Anthony Chefn","#8200","sometimes I just wait an hour or two and then it works","",""
+"2022-10-27,04:57:38","ThanksSkeleton","#9425","thanks for your help, makes sense now.","ONI#6888",""
+"2022-10-28,08:02:40","Bahjiggyboo","#9991","What happens if you submit a transaction for a large withdraw from a V2 vault which does not have enough tokens sitting idle in the vault contract? (because there being used by the strategies). Will it just withdraw what's available and I'll then have to wait for the vault to withdraw more from the strategies (and then withdraw the rest) or will my initial transaction actually withdraw what's available AND from the strategy also?","",""
+"2022-10-28,08:08:08","arberx","#3367","The strategy as well","Bahjiggyboo#9991",""
+"2022-10-28,08:08:17","arberx","#3367","It will rebalance","",""
+"2022-10-28,08:08:21","arberx","#3367","Gas will be higher","",""
+"2022-10-28,10:38:43","Bahjiggyboo","#9991","Ok, so I'll pay extra gas to pull from strategy if necessary. Pretty well thought out system😇","",""
+"2022-10-29,18:09:51","louischarles","#2568","Hi I have yCRV-f.  How can I swap this out to ETH?  Thanks.","",""
+"2022-10-31,04:20:57","Halfaro","#7673","Does y.finance act like a third party wallet for the ledger wallet.","",""
+"2022-10-31,04:21:07","j.","#6352","no","",""
+"2022-11-01,02:31:41","NP","#6715","Hello, is there a way to contact a dev for some support? i have a couple of inquiries regarding the Yearn boosted system.","",""
+"2022-11-01,05:30:28","Crolev","#3404","Just ask the questions here","NP#6715",""
+"2022-11-01,05:51:46","NP","#6715","specifically if the function `_change_gauge_weight` was called on mainnet and not testing, it causes some issues which are to be expected since there's a devnote there that says only for testing. But the question is, is there a way to fix the gauges if the function was called? Calling it seems to have caused `_get_weight` to revert everytime a user tries to deposit/withdraw from the gauge.","Crolev#3404",""
+"2022-11-01,06:03:24","Crolev","#3404","Could you please add an etherscan link to the exact smart contract you are asking about?","NP#6715",""
+"2022-11-01,06:15:57","NP","#6715","1 sec,
+
+I think its this one 
+https://bscscan.com/address/0xaCC31d29022C8Eb2683597bF4c07De228Ed9EA07","Crolev#3404",""
+"2022-11-01,06:17:19","Crolev","#3404","Yearn is not on BSC, this is some other project.","NP#6715",""
+"2022-11-01,06:17:37","Crolev","#3404","This seems to be some Curve fork","",""
+"2022-11-01,06:30:38","NP","#6715","Yea its our fork thats what we need some guidance for sir","Crolev#3404",""
+"2022-11-01,06:31:02","NP","#6715","Balancer fork with the ve- voting system","",""
+"2022-11-01,06:58:07","Crolev","#3404","Have you tried asking Balancer or Curve first? 😅","NP#6715",""
+"2022-11-01,06:59:07","j.","#6352","this is wild","",""
+"2022-11-01,07:30:34","NP","#6715","Yes sir have reached out to them too, have not gotten a response yet. Do you have an idea on how to salvage the gauge?","Crolev#3404",""
+"2022-11-01,07:40:35","Crolev","#3404","Unfortunately not.","NP#6715",""
+"2022-11-01,08:28:50","NP","#6715","Would you be so kind as to connect me to anyone who you think might?","Crolev#3404",""
+"2022-11-01,08:29:55","Crolev","#3404","That would be the devs of the project you forked - try Balancer and Curve discord servers.","NP#6715",""
+"2022-11-01,10:50:57","wavey","#9439","Try calling checkpoint on the gauge","NP#6715",""
+"2022-11-01,10:51:26","wavey","#9439","Not near computer now but can help later.","",""
+"2022-11-01,10:54:13","wavey","#9439","Can’t you try setting it back to what it was before?","",""
+"2022-11-01,11:27:54","ONI","#6888","<@329628010472931329>","NP#6715",""
+"2022-11-01,11:49:37","NP","#6715","The checkpoint on the gauge fails once it reaches `_get_weight`","wavey#9439",""
+"2022-11-01,11:50:48","NP","#6715","1 sec lemme ask","wavey#9439",""
+"2022-11-01,12:35:03","wavey","#9439","send link for the gauge controller","NP#6715",""
+"2022-11-01,12:53:20","Twisted","#8812","22 hrs ago i deposit some lp-yCRV token into vault. It seems that the number of earnings at the front end is wrong. <@573280701378723882>","Crolev#3404",""
+"2022-11-01,12:54:30","Twisted","#8812","lp-yCRV vault apr is 30%. But now it seems to be only half.","",""
+"2022-11-01,12:55:22","Twisted","#8812","It's a bug or i misunderstood?","",""
+"2022-11-01,13:02:51","j.","#6352","man i could use some *.tb tag* for this one","",""
+"2022-11-01,13:20:28","Crolev","#3404","https://yearn.vision/?orgId=1&refresh=5m&viewPanel=24&from=now-30d&to=now (select st-yCRV on the list on the right)","Twisted#8812","https://cdn.discordapp.com/attachments/734811808401063966/1037038427914387507/unknown.png"
+"2022-11-01,13:23:36","Crolev","#3404","As you can see the share price went from 1.0 to 1.019995 over the last 30 days. If we annualize it as APY like that: 1.019995^(365/30)-1 then we get 27.23% APY which is roughly what you see in the UI. The actual calculation probably uses different compound term which could account for the difference.","",""
+"2022-11-01,13:24:32","Crolev","#3404","Firstly you need to understand the difference between APR and APY","",""
+"2022-11-01,13:24:52","Crolev","#3404","The first one is yearly yield assuming no compounding and the other one assumes that you will compound your gains","",""
+"2022-11-01,13:25:46","Crolev","#3404","So the APR percentage will always be lower than APY percentage, but both numbers are accurate and describe the same process","",""
+"2022-11-01,13:38:14","Twisted","#8812","Your tools are incredible.I love yearn.","Crolev#3404",""
+"2022-11-01,14:44:07","NP","#6715","this is the GaugeController sir: https://bscscan.com/address/0x585ECE7932226CCf5A259c367781F07EBBB1950F#code
+
+and this is one of the affected gauges:
+https://bscscan.com/address/0xaCC31d29022C8Eb2683597bF4c07De228Ed9EA07
+
+ive also sent you a friend request in case our timezones dont match up","wavey#9439",""
+"2022-11-03,04:44:35","dafacto","#1282","Hi there, MIM claims at this site https://ybribe.yearn.farm/ are failing for everybody, with a ""Transaction Error"", even before MetaMask opens. The Chrome Dev Tools show an UNPREDICTABLE_GAS_LIMIT error. Is this the place to report/get help with this?","",""
+"2022-11-03,06:52:08","dafacto","#1282","I guess I showed up outside operating hours 🙂","",""
+"2022-11-03,07:57:54","Crolev","#3404","I let the web team know and I will ping you once this is fixed.
+If this is an urgent matter for you then please post here (or DM me) etherscan tx with the last claim you've made and I will explain how to use etherscan to claim it.","dafacto#1282",""
+"2022-11-03,08:07:08","dafacto","#1282","I used to claim at crv.finance, so this is the very first time I'm claiming at this Yearn site. Abracadabra moved their MIM bribes to this platform, but several users are reporting the same as me.","Crolev#3404",""
+"2022-11-03,08:18:36","Crolev","#3404","FYI it should be fixed now","dafacto#1282",""
+"2022-11-03,08:18:40","Crolev","#3404","Could you try again?","",""
+"2022-11-03,08:20:17","dafacto","#1282","Trying now...","Crolev#3404",""
+"2022-11-03,08:21:59","dafacto","#1282","It's fixed now. Thanks so much!","Crolev#3404",""
+"2022-11-04,02:41:50","italianfoot","#3914","can I convert from one vault coin to another without first withdrawing it to my wallet? I am trying to convert ""Curve ibAUD"" into ""Staked yCRV""","",""
+"2022-11-04,07:58:43","Cuter","#4882","Can't see deposit tab. I'm connected with metamask. Both on Chrome and Firefox","","https://cdn.discordapp.com/attachments/734811808401063966/1038044620506026036/Screenshot_2022-11-04_at_11.57.47.png"
+"2022-11-04,07:59:46","Crolev","#3404","What is the URL of the website you are using?
+It should be https://yearn.finance/#/vault/0xa258C4606Ca8206D8aA700cE2143D7db854D168c","Cuter#4882",""
+"2022-11-04,08:00:02","Cuter","#4882","https://yearn.finance/#/vault/0xa258C4606Ca8206D8aA700cE2143D7db854D168c","",""
+"2022-11-04,08:00:44","Crolev","#3404","hmm","",""
+"2022-11-04,08:00:47","Cuter","#4882","It's the same, but I don't know how it works now","",""
+"2022-11-04,08:01:04","Cuter","#4882","It's exactly the same though","",""
+"2022-11-04,08:02:06","Cuter","#4882","Are there any deposit/withdrawal fees? I think there aren't, but just to be sure","Crolev#3404",""
+"2022-11-04,08:05:49","Crolev","#3404","No there aren't, but if you are using zapping to trade one coin for another then there is a zap fee on the way","Cuter#4882",""
+"2022-11-04,08:06:06","Crolev","#3404","so ETH/WETH into yvWETH vault is free on both withdrawal and deposit","",""
+"2022-11-04,08:06:08","Cuter","#4882","No, just eth to yvEth","Crolev#3404",""
+"2022-11-04,08:06:18","Cuter","#4882","Thanks","",""
+"2022-11-04,08:06:20","Crolev","#3404","but i.e. LINK to yvWETH incurs a trading fee on the way in and out","",""
+"2022-11-04,08:07:25","Cuter","#4882","Do you know how often are yvEth rewards harvested? would it make sense for me to deposit if I know will need to withdraw on monday?","",""
+"2022-11-04,08:07:44","Cuter","#4882","(not small amount)","",""
+"2022-11-04,08:15:52","Cuter","#4882","<@573280701378723882>","Crolev#3404",""
+"2022-11-04,08:17:14","Crolev","#3404","You can check most recent harvests on:
+https://yearn.watch/vault/0xa258C4606Ca8206D8aA700cE2143D7db854D168c
+Go to the strategies tab, click on details of individual strategies and in the reports tab you will see most recent harvests and how often they are done.","Cuter#4882",""
+"2022-11-04,09:10:41","Cuter","#4882","How can apy be 6.6 if each singular strategy has a lot lower apy?","Crolev#3404",""
+"2022-11-04,09:16:07","Crolev","#3404","The APY you see on yearn.finance is based on the actual performance over the last 30 days which you can check here:
+https://yearn.vision/?orgId=1&refresh=5m&viewPanel=24&from=now-30d&to=now
+(select yvWETH 0.4.2 ETH on the list on the right)
+
+As you can see over that time frame share price (which represents the ratio of vault tokens to the underlying tokens and its growth is how you get your yield) grew from 1.015990 to 1.021514. This means that the annualized APY is: (1.021514/1.015990)^(365/30)=1.068 so close to what you see in the UI.","Cuter#4882",""
+"2022-11-04,09:16:59","Crolev","#3404","What you see in the individual strategies is couple last harvests so it's kind of comparing apples and oranges.","",""
+"2022-11-04,09:18:58","Crolev","#3404","Unfortunately neither option will give you a definite answer as to what the future yield will look like because it's impossible to predict, but if you deposited 30 days ago and held ETH in the vault until now then the actual real yield you got is indicative of ~6.6-6.8% APY.","",""
+"2022-11-04,09:19:48","Cuter","#4882","Thanks! All clear","",""
+"2022-11-04,09:20:22","Cuter","#4882","Really helpful","",""
+"2022-11-04,09:20:43","Cuter","#4882","10/10 mod would recommend","",""
+"2022-11-04,09:25:19","Cuter","#4882","It says there is a 0.3% fee if I deposit eth instead of weth...","Crolev#3404",""
+"2022-11-04,09:28:27","Crolev","#3404","hmm, it shouldn't charge the fee on just wrapping...
+in that case I will let the web team know and in the meanwhile please use https://app.uniswap.org/#/swap to wrap ETH to WETH (swap of ETH to WETH wraps rathen than trades) and then deposit WETH.","Cuter#4882",""
+"2022-11-04,09:29:21","Cuter","#4882","Yep, I know... just wanted to let you know","Crolev#3404",""
+"2022-11-04,11:49:58","italianfoot","#3914","can I convert from one vault coin to another without first withdrawing it to my wallet? I am trying to convert ""Curve ibAUD"" into ""Staked yCRV""","",""
+"2022-11-04,12:35:20","ONI","#6888","we have https://bowswap.finance but I think atm it only supports like-kind vaults. You could check there","",""
+"2022-11-04,12:35:42","ONI","#6888","but generally you might need to just manually withdrawal convert on cowswap or matcha and deposit into the vault","",""
+"2022-11-07,00:31:51","take3315","#0019","<@573280701378723882> hi, question regarding ybribe, what is current period & pending period? if i vote to the gauge by Wednesday which apy should i get, current or pending?","Crolev#3404",""
+"2022-11-07,01:40:32","italianfoot","#3914","I am trying to convert ""Curve ibAUD"" into eth. What service do you recommend?","ONI#6888",""
+"2022-11-07,07:20:50","Crolev","#3404","Are you holding the curve pool tokens or yearn vault tokens? If the latter then withdraw curve pool tokens from yearn.finance first and then go to curve.fi, withdraw either sAUD or ibAUD and trade it for something else. Unfortunately it seems that the pool is heavily unbalanced agaisnt ibAUD so keep in mind that you might pay high slippage for the trade.","italianfoot#3914",""
+"2022-11-07,07:28:18","Crolev","#3404","The current period is right now for the CRV rewards being distributed to the curve pools, which means it was already voted on.
+The pending period is for the future curve pool rewards, so you are voting for it now. Keep in mind that those APY levels might change as more people cast their votes.","take3315#0019",""
+"2022-11-07,07:29:23","take3315","#0019","Got it, tkvm for clarification Crolev!","",""
+"2022-11-07,12:26:34","Possessedferret","#5843","How often does the Curve MIM 3Pool harvest on Arbitrum? Haven't seen any updates for a while and my balance seems stagnant recently.","",""
+"2022-11-07,12:29:06","ONI","#6888","https://yearn.vision/d/apkUMx6nz/vault-overview?orgId=1&var-networks=ARRB&var-exp=false&var-vaults=yvCurve-MIM%200.4.3&var-address=0x1dBa7641dc69188D6086a73B972aC4bda29Ec35d&var-version=v2
+It should harvest at least every 2 days. Looks like it will harvest soon","Possessedferret#5843","https://cdn.discordapp.com/attachments/734811808401063966/1039199826929262682/image.png"
+"2022-11-07,16:23:15","the_carrera","#8931","Anyone having issues withdrawing from the lusd vault?","",""
+"2022-11-07,16:38:04","old_frog_","#6669","Can you describe your issue? Are tx failing?","the_carrera#8931",""
+"2022-11-07,16:48:24","the_carrera","#8931","Sure, it’s the lusd vault https://yearn.finance/#/vault/0x378cb52b00F9D0921cb46dFc099CFf73b42419dC when I tie my wallet it shows my holdings but a balance and when I try to withdrawal nothing happens","",""
+"2022-11-07,16:50:05","the_carrera","#8931","It shows a value for holdings but not a balance","",""
+"2022-11-07,16:51:28","Crolev","#3404","could you post a screenshot of what you see after you click on withdraw button on yearn.finance page?","the_carrera#8931",""
+"2022-11-07,16:53:29","the_carrera","#8931","The screen just blurs, nothing to interact with.","Crolev#3404",""
+"2022-11-07,16:56:35","Crolev","#3404","Are you trying to withdraw LUSD or to zap into another token?","the_carrera#8931",""
+"2022-11-07,16:57:43","the_carrera","#8931","I was trying to withdraw lusd, I currently have the yvlusd token in my wallet","",""
+"2022-11-07,17:02:39","Crolev","#3404","Just to be sure - when you run transaction simulation it shows you the same value in the balance field and in the withdraw field, right?","the_carrera#8931",""
+"2022-11-07,17:02:49","Crolev","#3404","Simulation runs after you enter the amount you want to withdraw","",""
+"2022-11-07,17:04:01","the_carrera","#8931","I can’t make a simulation transaction,when I hit withdrawal the screen goes blurry. No next step to see a prospective transaction.","",""
+"2022-11-07,17:04:48","Crolev","#3404","I mean before you click the button","",""
+"2022-11-07,17:06:26","the_carrera","#8931","I navigate to my portfolio tab and it shows the vault , from there I go to vaults and select deposits.","",""
+"2022-11-07,17:07:09","the_carrera","#8931","Under deposits it has a value but a 0 for balance. I tried hitting withdrawal under “deposits”","",""
+"2022-11-07,17:07:43","the_carrera","#8931","It just blurs.","",""
+"2022-11-07,17:11:08","Crolev","#3404","When I try to make a deposit I see that UI for some reason values LUSD at $0 which could be causing problems with smart contract routing. I reported this to the web team so that hopefully it gets fixed soon.
+
+If this withdrawal is an urgent matter to you and you can't wait until web ui gets fixed then you can click on the etherscan icon (which is next to the vault name on the vault page) to go to the contract address in etherscan. Then click on the Contract tab and click on Write Contract button. Then scroll down to 26. withdraw method and click on it to make a withdrawal by interacting directly with the smart contract.","",""
+"2022-11-07,17:12:14","the_carrera","#8931","Thank you for your help. I can wait. Could you let me know when it’s fixed?","",""
+"2022-11-07,17:12:21","Crolev","#3404","Sure, I will ping you.","",""
+"2022-11-08,04:39:25","Finn","#6387","Hi, am looking to get connected with BD or partnerships is this the right channel? 😅","",""
+"2022-11-08,04:49:13","Crolev","#3404","Tell us about your protocol/company and your idea for partnership cooperation in <#766323679410913320>","Finn#6387",""
+"2022-11-08,06:45:20","EduCrypto","#9102","The website doesn’t load. Can someone please help? 
+
+https://yearn.finance/#/vault/0x5c0A86A32c129538D62C106Eb8115a8b02358d57","",""
+"2022-11-08,06:49:36","EduCrypto","#9102","Pc","",""
+"2022-11-08,06:50:42","EduCrypto","#9102","Done but doesn’t work","",""
+"2022-11-08,06:51:24","EduCrypto","#9102","Also someone from crv tried and same thing happened. They requested to check with Yearn.","",""
+"2022-11-08,06:52:51","Crolev","#3404","That was a scammer btw","EduCrypto#9102",""
+"2022-11-08,06:52:56","Crolev","#3404","If you got a DM then do not reply","",""
+"2022-11-08,06:53:20","Crolev","#3404","The only way to talk with mod/admin in DM is if you start DM first","",""
+"2022-11-08,06:53:24","Crolev","#3404","Admin will never DM you first","",""
+"2022-11-08,06:55:12","Crolev","#3404","Anyways regarding the page not loading - I just clicked on the link and it loaded fine.","",""
+"2022-11-08,06:55:43","Crolev","#3404","What do you see when you click on it? Have you tried other browsers and connecting via mobile Internet?","",""
+"2022-11-08,06:57:04","EduCrypto","#9102","I tired on chrome","Crolev#3404",""
+"2022-11-08,06:57:14","EduCrypto","#9102","On pc","",""
+"2022-11-08,06:58:11","Crolev","#3404","Loads fine for me on Chrome...","","https://cdn.discordapp.com/attachments/734811808401063966/1039478938977710180/image.png"
+"2022-11-08,06:59:12","Crolev","#3404","Could you please post a screenshot of what you see? Is it just a blank page?","",""
+"2022-11-08,07:01:29","EduCrypto","#9102","Page opens but there is nothing on deposit or withdraw. I am away but will take screenshot and share it later. Thanks","",""
+"2022-11-08,07:09:40","sam.roh","#8160","Hi, maybe i'm the only one who can't see the metrics on the [Vaults] section lol","",""
+"2022-11-08,07:11:33","cryptodegen","#4205","","","https://cdn.discordapp.com/attachments/734811808401063966/1039482299949010944/image.png"
+"2022-11-08,07:11:44","cryptodegen","#4205","can't deposit","",""
+"2022-11-08,07:12:07","Crolev","#3404","Would you mind DMing me your eth address and the screenshot of what you see on the web page? I will report this to the web dev team.","sam.roh#8160",""
+"2022-11-08,07:13:27","Crolev","#3404","Thank you for the screenshot, I will forward this to the web dev team. 
+Could you please try to also go to the vault list on https://yearn.finance/vaults and click on the Deposit button there?
+It should open a modal for you.","cryptodegen#4205",""
+"2022-11-08,07:13:32","Crolev","#3404","","","https://cdn.discordapp.com/attachments/734811808401063966/1039482800128131093/image.png"
+"2022-11-08,07:13:41","Crolev","#3404","","","https://cdn.discordapp.com/attachments/734811808401063966/1039482838828974150/image.png"
+"2022-11-08,08:15:58","LATI || BLACK ~WATER","#8750","Hello","",""
+"2022-11-08,08:16:08","LATI || BLACK ~WATER","#8750","Please I need the team email for support","",""
+"2022-11-08,08:16:15","LATI || BLACK ~WATER","#8750","Proposal","",""
+"2022-11-08,08:22:20","Crolev","#3404","Do you need support or do you want to make a proposal?
+If you need technical support then just ask in this channel. If you want to make a business partnership proposal then tell us more about your protocol/company and your idea for partnership in <#766323679410913320>","LATI || BLACK ~WATER#8750",""
+"2022-11-08,10:20:50","mfer1668","#9934","i cant see it either","sam.roh#8160",""
+"2022-11-08,10:25:23","DonaldDuck","#0882","The same here","EduCrypto#9102",""
+"2022-11-08,10:26:48","DonaldDuck","#0882","Days before I could see my st-ycrv and total gain, today i don't see anything","",""
+"2022-11-08,10:26:50","Crolev","#3404","It's being worked on by devs right now. The subgraph is down. Sorry for the downtime.","",""
+"2022-11-08,10:27:33","DonaldDuck","#0882","Thank you","Crolev#3404",""
+"2022-11-08,10:38:23","DonaldDuck","#0882","The same to me, at first I took a hit 🙂","EduCrypto#9102",""
+"2022-11-08,13:42:21","DonaldDuck","#0882","Will you post the solution when online? Thank you","Crolev#3404",""
+"2022-11-08,14:03:00","Crolev","#3404","Yep, I will ping you when it gets resolved..","",""
+"2022-11-08,14:22:53","DonaldDuck","#0882","If i can help you (screenshot or anything else) please ask","",""
+"2022-11-08,22:15:39","cryptodegen","#4205","It work out now","Crolev#3404",""
+"2022-11-09,02:53:02","DonaldDuck","#0882","Not sure but seems not working","","https://cdn.discordapp.com/attachments/734811808401063966/1039779630288224296/Screenshot_20221109_065045.jpg"
+"2022-11-09,02:58:51","DonaldDuck","#0882","I mean I'm sure days ago I could see my st-yCRV in portfolio page, including total net income","",""
+"2022-11-09,03:41:11","Barry Pooter","#5492","Yeah that should be working but it isn’t just wait for crolev to come back to you he asked if the devs","",""
+"2022-11-09,04:07:43","DonaldDuck","#0882","Sorry, I've seen now that cryptodegen problem was different from mine...","",""
+"2022-11-09,04:12:42","Joji","#0603","I have the same problem in my acc.","DonaldDuck#0882",""
+"2022-11-09,04:22:37","sam.roh","#8160","the same as mine 🙂","DonaldDuck#0882",""
+"2022-11-09,04:24:00","DonaldDuck","#0882","They are working on it 🙂","",""
+"2022-11-09,07:43:25","iyield","#8108","Hey sorry if this is like the tenth time someone has asked this but does anyone else notice that optimism yearn finance contains no vaults now? Is this a maintenance thing and temporary or have all@optimism yearn vaults been removed?","",""
+"2022-11-09,07:45:06","Crolev","#3404","Hello, sorry for the problem. It's caused by subgraph still being down and it's being worked on by devs already.","iyield#8108",""
+"2022-11-09,07:46:13","Crolev","#3404","If you need to withdraw from your vault right now and you can't wait for UI to get fixed then you can do it by interacting directly with the smart contract on etherscan. The short tutorial how to do it is here: https://discord.com/channels/734804446353031319/734811808401063966/1039270802807332944","",""
+"2022-11-09,08:13:02","iyield","#8108","No worries im@good just wanted to make sure it wasn’t something bad. You guys are best in the business so I figured it was prob some sort of temporary update or@sometning. Thanks for@letting me@know@. Ironically just took out my mim@from@mim@vault on yearn fantom@. I’ve read one million tweets and articles saying Mim is now@battle tested and proven safe and I’ve read another million tweets and articles saying it’s going to keep depegging and die@. So you know I’m just going around and making sure I can get out of my vaults if I need to. Best of luck to all my fellow@crypto defend. If SBF can’t beat a bear market what chance do us mere mortals have?!!😜😂","",""
+"2022-11-09,09:13:31","PhatJay","#4958","I@blame@apple 🙂","",""
+"2022-11-09,09:21:38","devScrooge","#1472","Hey guys, does anyone know if Yearn is using the Subgraph that they have published on their docs to show the vaults info in their front or do they use a different one? I am asking because the subgraph is 7M blocks behind the current one. https://thegraph.com/hosted-service/subgraph/yearn/yearn-vaults-v2-fantom","",""
+"2022-11-09,10:24:33","Shatayen","#2158","What's up with the Optimism vaults? I don't see my deposits anymore.","",""
+"2022-11-09,10:51:59","Crolev","#3404","Please check this response to a similar question: https://discord.com/channels/734804446353031319/734811808401063966/1039853132043255889","Shatayen#2158",""
+"2022-11-09,11:56:01","NinjaT","#7670","Questions about yBribe, does it work now? I always get "" Transaction Failed "" messages when I try to claim rewards, how can I fix it? If I don't claim the reward in time within the current bribe, will it roll over to the next time? Thanks!","",""
+"2022-11-09,13:00:14","ONI","#6888","is this via metamask on the web browser?","",""
+"2022-11-09,13:12:46","NinjaT","#7670","yBribe: https://ybribe.com/","ONI#6888",""
+"2022-11-09,13:28:07","ONI","#6888","can you dm me the address you are using for this? So we can test. Also admins will never dm you first","NinjaT#7670",""
+"2022-11-09,13:46:42","NinjaT","#7670","I just fixed it by restarting computer, it's fine now, thanks!","ONI#6888",""
+"2022-11-09,14:01:08","ONI","#6888","odd ok thanks if you see it again go to console and see what error it shows","",""
+"2022-11-09,18:02:59","WiniC","#9225","hi there, I have the same issue except I deposited Curve stETH a few months back but the earned show ""-"" , could you enlighten me please? thanks","Glassmeadow#7658",""
+"2022-11-09,19:31:30","the_carrera","#8931","Hi, it still isn’t fixed? Is that being worked on?","Crolev#3404",""
+"2022-11-09,21:59:59","WiniC","#9225","Hi, any news pls?","",""
+"2022-11-09,22:01:09","ONI","#6888","This is probably due to the subgraph error it is being resynced and should be up soon","",""
+"2022-11-09,22:11:30","WiniC","#9225","Please let me know when it is back to normal 🙏","",""
+"2022-11-09,22:12:01","Crolev","#3404","It's still being worked on, unfortunately it takes a lot of time.","",""
+"2022-11-09,22:27:51","forever iron","#9291","my dashboard is not showing my holdings and on zapper the balance isnt adding upto what it should be?","",""
+"2022-11-09,22:35:44","Crolev","#3404","Unfortunately there is a problem with subgraph right now which affects the UI. Not sure what could be the problem on the zapper side so try also viewing your address in debank.","forever iron#9291",""
+"2022-11-09,22:36:53","Crolev","#3404","If debank also fails then you can go to etherscan, copy the number of vault tokens you hold, click on the vault token, go to contract tab, then read contract and multiply the number of vault tokens you hold by pricePerShare variable - the result will be the number of underlying tokens you can withdraw from your vault tokens","",""
+"2022-11-09,22:37:53","forever iron","#9291","well the vault shows the correct price, its just not on the dashboard , but if its jsut a ui problem that should be resolved by yearn right?","",""
+"2022-11-09,22:39:05","Crolev","#3404","Yep, you can see this problem already being reported in this channel in the messages above. Unfortunately it's something that is very time consuming to fix.","forever iron#9291",""
+"2022-11-09,22:39:34","forever iron","#9291","no worries, just wanted to check, i should have read above first","",""
+"2022-11-09,22:39:40","Crolev","#3404","No problem at all.","",""
+"2022-11-09,22:46:28","likejonas","#1472","BACK UP <:ib:936063990608568421>","",""
+"2022-11-10,02:59:11","EduCrypto","#9102","What’s the ETA for fixing the issue? Thanks","Crolev#3404",""
+"2022-11-10,04:17:17","j.","#6352","https://tenor.com/view/we-dont-do-that-here-black-panther-tchalla-bruce-gif-16558003","",""
+"2022-11-10,10:31:58","Crolev","#3404","What do you mean?","",""
+"2022-11-11,02:15:13","Synthes1s","#8203","Probably a noob question, but I withdrew funds from the Curve Rocket Pool and now have rETH wst-ETH in my wallet. Where do I swap these back into something like ETH?","",""
+"2022-11-11,02:27:54","Synthes1s","#8203","Okay no worries, figured it out. Swapped the LP tokens on Curve.","",""
+"2022-11-11,19:17:34","Crolev","#3404","<@150130572075859968> <@907302360781586463> <@812902094952071189> <@853017059113304134>
+FYI the subgraph is finally fixed. Please check if UI works OK for you now.","forever iron#9291、the_carrera#8931、Shatayen#2158、WiniC#9225",""
+"2022-11-11,19:17:44","Crolev","#3404","<@799907758321041408> <@920140352072077323> <@916702453494345738> <@638896992621166622>","iyield#8108、DonaldDuck#0882、sam.roh#8160、mfer1668#9934",""
+"2022-11-11,19:23:12","ONI","#6888","The eth subgraph is working now, sadly ftm is still getting fixed","Crolev#3404",""
+"2022-11-11,19:27:38","DonaldDuck","#0882","Yep! Confirm it's working 👍","",""
+"2022-11-11,23:14:51","Halfaro","#7673","Are my earnings values fixed on st or lp crv and how can I separate earnings vs price fluctuations- market conditions on my account balance? Thanks","",""
+"2022-11-12,01:17:04","sam.roh","#8160","Yay! It does work now! Thanks 🙂","Crolev#3404",""
+"2022-11-12,03:38:05","MaxG","#6499","Gm sers,
+
+Anyone in the team knows if this contract is from Yearn? I couldn't find anything with ""Tradehandler"" in the Github.
+
+https://etherscan.io/address/0xcadba199f3ac26f67f660c89d43eb1820b7f7a3b#code","","https://cdn.discordapp.com/attachments/734811808401063966/1040878133366243348/image.png"
+"2022-11-12,04:14:47","j.","#6352","deployer receives tokens from yearn so yes","",""
+"2022-11-12,04:40:07","MaxG","#6499","Thank you very much!","j.#6352",""
+"2022-11-13,18:28:06","Power Serge | Coinshift","#6645","Whenever I attempt to connect my MetaMask wallet in the MetaMask browser, it takes me to the Apple Store to download MetaMask.  Anyway I can resolve this?","",""
+"2022-11-13,19:07:57","Crolev","#3404","I let the web team know. Unfortunately until it gets fixed I can only recommend to use the desktop instead.","Power Serge | Coinshift#6645",""
+"2022-11-13,19:12:18","Crolev","#3404","Alright got a response already:
+> You can use a mobile browser and connect metamask through wallet connect
+> We dont support the native metamask app since it injects code asynchronously to the web app, and for security reasons we dont allow it
+So please try using a normal web browser, go to yearn.finance, click on connect in top right corner, select wallet connect and then click on metamask.","Power Serge | Coinshift#6645",""
+"2022-11-13,19:18:38","Power Serge | Coinshift","#6645","Thanks for your help.","Crolev#3404",""
+"2022-11-13,19:24:27","arberx","#3367","Ty crolev","",""
+"2022-11-13,19:24:29","arberx","#3367","<:waifu:796581757990338570>","",""
+"2022-11-13,21:40:33","j.","#6352","you're welcome","",""
+"2022-11-14,06:41:15","leon131930","#3044","Hey everyone, I'd like to understand how debt allocation works. Can someone from the strat team share what your simulation approach is? (Which factors considered & which model do you use?)","",""
+"2022-11-14,19:01:58","EduCrypto","#9102","I have tried again and it’s the same issue. I can’t withdraw. Please assist!  Thanks","Crolev#3404",""
+"2022-11-14,19:03:51","Crolev","#3404","Could you please post a screenshot of what you see on yearn page?","EduCrypto#9102",""
+"2022-11-14,19:08:01","Crolev","#3404","Are you asking in technical terms how does it work or 'business-wise' how do strategists decide on given % allocations to strategies?
+If the first one then there is a queue of strategies, when you withdraw and vault runs out of unallocated funds then funds get pulled in order specified there. On the deposit your fund initially just sit as unallocated funds and then later Keep3r job deposits them into a strategy based on strategy allocation in the vault.
+If the latter then it's based on due dilligence done on protocols - the percentage allocated should match the risk/reward ratio and obviously maximize the yield as much as possible.","leon131930#3044",""
+"2022-11-15,05:57:44","leon131930","#3044","Thanks <@573280701378723882>! Couple of follow-up questions:
+1) Can I find the withdrawal queue of strategies for a given vault somewhere?
+2) What statistical model do you use for simulating APY /yield? (would be great to get some more details here)
+3) Who is doing the simulations, the strategist or somebody from governance?
+4) Regarding risk categorization, is everything on https://yearn.watch/risk or am I missing something?
+Thanks again for your support.","Crolev#3404",""
+"2022-11-15,06:07:35","Crolev","#3404","> 1) Can I find the withdrawal queue of strategies for a given vault somewhere?
+Go to the vault contract on chain (i.e. https://etherscan.io/address/0xa258C4606Ca8206D8aA700cE2143D7db854D168c#readContract), go to the contract tab and then read contract and click on 23. withdrawalQueue. Then start by entering 0 and following with next integers until you run out of contracts.
+This is the actual order configured in the vault on-chain.
+The order you see in the strategies tab in year.watch should be the same. (i.e. https://yearn.watch/vault/0xa258C4606Ca8206D8aA700cE2143D7db854D168c)
+
+> 2) What statistical model do you use for simulating APY /yield? (would be great to get some more details here)
+> 3) Who is doing the simulations, the strategist or somebody from governance?
+The APY is based on actual past returns over the last 30 days. Yield is distributed to the vault as growth of pricePerShare every harvest so it's calculated as the pps at the end of the period divided by pps at the beginning and then annualized.
+Obviously past performance is not indicative of future returns, but if someone held funds in the vault between 30 days ago and today then this is the actual yield they got.
+
+> 4) Regarding risk categorization, is everything on https://yearn.watch/risk or am I missing something?
+See also:
+https://docs.yearn.finance/resources/risks/protocol-risks
+https://docs.yearn.finance/resources/risks/risk-score
+https://docs.yearn.finance/resources/risks/vault-risks
+https://docs.yearn.finance/resources/risks/strategy-risks","leon131930#3044",""
+"2022-11-15,17:42:19","forever iron","#9291","yesterday the d3 pool was 6m$ apr now its saying 600ish percent? could that even possibly be correct","",""
+"2022-11-16,17:31:17","ThanksSkeleton","#9425","what was wrong with the d3pool?","",""
+"2022-11-16,17:35:03","arberx","#3367","Guaged stopped","ThanksSkeleton#9425",""
+"2022-11-16,17:35:09","arberx","#3367","We stopped deposits","",""
+"2022-11-16,17:35:14","arberx","#3367","Should show soon","",""
+"2022-11-16,17:35:21","ThanksSkeleton","#9425","why was the ui reporting insane apr for it?","",""
+"2022-11-16,17:35:42","ThanksSkeleton","#9425","did it calculate as if it still had a gauge or soemething like that","",""
+"2022-11-16,17:39:29","ThanksSkeleton","#9425","a lot of people put in ~$100 to the vault to take advantage of the 9 million % apr  😂","",""
+"2022-11-17,03:40:12","TheFray","#6610","Hello, why can’t I connect on metamask?","",""
+"2022-11-17,03:40:45","TheFray","#6610","I get this message even when already on the metamask browser","",""
+"2022-11-17,03:40:53","TheFray","#6610","","","https://cdn.discordapp.com/attachments/734811808401063966/1042690778792726568/IMG_2732.png"
+"2022-11-17,06:04:59","Crolev","#3404","You can use a mobile browser and connect metamask through wallet connect
+We dont support the native metamask app since it injects code asynchronously to the web app, and for security reasons we dont allow it
+So please try using a normal web browser, go to yearn.finance, click on connect in top right corner, select wallet connect and then click on metamask.","TheFray#6610",""
+"2022-11-17,06:28:25","TheFray","#6610","Thanks!","Crolev#3404",""
+"2022-11-17,06:29:53","GoneGirl07","#1082","Hi Guys. I am retard so bare with me.
+If i deposit into Curve stETH Pool yVault (Curve stETH) do i earn the CRV and CVX daily? And If i withdraw my stETH do I get the original balance back or the higher balance that has been rebasing?","",""
+"2022-11-17,06:32:40","j.","#6352","Yes but you do not get to hold those tokens. The vault reinvests those for you. If you withdraw stETH, you get whatever was earned +/- slippage and pool balance etc","",""
+"2022-11-17,06:34:24","GoneGirl07","#1082","Thank you. Is there any way to see what the +/- spliggape is currently on Curve stETH","j.#6352",""
+"2022-11-17,06:34:44","j.","#6352","yes. see the stETH pool on Curve","",""
+"2022-11-17,06:37:47","GoneGirl07","#1082","Yes I do","j.#6352",""
+"2022-11-17,06:39:37","GoneGirl07","#1082","There is about a 1.8e difference between steth and the curve pool eth when i put my balance in","j.#6352",""
+"2022-11-17,06:40:09","j.","#6352","there's your answer","",""
+"2022-11-17,06:41:11","GoneGirl07","#1082","oh damn thats a lot. Ive got the contract address for the pool - Is there anywhere you use to check its historical movement?","",""
+"2022-11-17,06:42:33","j.","#6352","there's probably a Dune dashboard for everything Curve or some other community made dashboard. i dont know of any currently","",""
+"2022-11-17,06:42:41","GoneGirl07","#1082","hmm okay","",""
+"2022-11-17,17:28:28","newf","#5462","Hi <@137743751656243201> <@139509521222467586>, I'm Noah from Uniswap Labs. We're working with our top projects to make it easier for users to identify and access their tokens on our interface. Would love to chat about some ideas we have!","ONI#6888、kx9x#3778",""
+"2022-11-17,18:47:39","ONI","#6888","hey feel free to dm me","",""
+"2022-11-19,04:04:40","Anthony Chefn","#8200","false alarm, I deleted my last message","",""
+"2022-11-19,22:10:09","forever iron","#9291","who is  dm that can help me with vault deposits on a concern of mine, ty","",""
+"2022-11-19,22:10:18","forever iron","#9291","gm not dm","",""
+"2022-11-19,22:15:28","Crolev","#3404","You can DM me, but preferably you should post your question here if it doesn't involve private details.","forever iron#9291",""
+"2022-11-21,15:12:07","KaiRo","#8567","When trying to withdraw yCRV from vault into WETH or anything else  I get this masage. What i am doing wrong?","","https://cdn.discordapp.com/attachments/734811808401063966/1044314283820982372/Bildschirmfoto_2022-11-21_um_19.08.12.png"
+"2022-11-21,15:19:41","Crolev","#3404","It means that unfortunately portals.fi didn't find and efficient zap path and you have to first withdraw ycrv from the vault and then trade it to eth yourself (use curve.fi).","KaiRo#8567",""
+"2022-11-21,15:26:45","KaiRo","#8567","Sometimes things can  by so easy, that i never find it out by my self. Thank you!!!","Crolev#3404",""
+"2022-11-22,04:52:21","HAN","#0068","Hello, <@573280701378723882>  
+I would like to offer a partnership
+Could you please kindly connect me to someone who are responsible for it? Thank you in advance","Crolev#3404",""
+"2022-11-22,04:56:25","Crolev","#3404","Please post in <#766323679410913320>","HAN#0068",""
+"2022-11-22,04:56:41","HAN","#0068","ah okay, ty","Crolev#3404",""
+"2022-11-22,13:18:44","tdcarl75","#3872","Hello! I am trying to deposit USDC into Vaults / Curve USDPax. I get the following error: HTTP to https://api.portals.fi/v1/portal/ethereum?takerAddress ... request failed (status 400 )   What can be wrong?","",""
+"2022-11-22,13:23:53","Crolev","#3404","This means that unfortunately portals cannot find an efficient zap path for you and you need to obtain curve pool tokens yourself, which you can do here:
+https://curve.fi/#/ethereum/pools/factory-v2-59/deposit
+Then you can take those pool tokens and deposit them into yearn vault.","tdcarl75#3872",""
+"2022-11-22,13:27:16","tdcarl75","#3872","OK thanks","Crolev#3404",""
+"2022-11-22,15:33:56","Garry","#9858","- “BlackList” preventing double dips for veCRV bribe selling, so partitioning from voters already in other dedicated bribe markets,
+
+Can you tell me what this means?","",""
+"2022-11-23,14:55:26","ONI","#6888","where did you see this?","Garry#9858",""
+"2022-11-23,15:06:29","ONI","#6888","<@780696758665478175> check here maybe https://app.pickle.finance/v1/farms","goodboy_gooddean#3290",""
+"2022-11-23,15:07:36","ONI","#6888","This should be the sushi pool https://www.sushi.com/earn/eth:0x9461173740d27311b176476fa27e94c681b1ea6b","",""
+"2022-11-23,15:10:19","goodboy_gooddean","#3290","Hello, Looking for assistance in finding the pool on Sushi which corresponds to my pSLP tokens which I just withdrew from Pickle. (it was a yvBoost/WETH position) I now have my pSLP tokens, but want to exchange them","",""
+"2022-11-23,15:10:42","ONI","#6888","you need to go to pickle and withdrawal to get slp tokens","",""
+"2022-11-23,15:11:00","ONI","#6888","they have a jar and farm withdraw from both","",""
+"2022-11-23,15:14:55","goodboy_gooddean","#3290","this UI is brutal","",""
+"2022-11-23,15:15:00","goodboy_gooddean","#3290","","","https://cdn.discordapp.com/attachments/734811808401063966/1045039785019985940/Screen_Shot_2022-11-23_at_10.14.32_AM.png"
+"2022-11-23,15:15:13","goodboy_gooddean","#3290","I withdrew from the staked area.","",""
+"2022-11-23,15:15:28","goodboy_gooddean","#3290","Idk where to go now","",""
+"2022-11-23,15:15:58","ONI","#6888","try here can you withdrawal from the sushi pool?","",""
+"2022-11-23,15:23:59","goodboy_gooddean","#3290","Na, i cant. I cant find a place that recognizes these pSLP tokens","",""
+"2022-11-23,15:24:16","ONI","#6888","yah its on pickle you need to go to the farm page and withdrawal","",""
+"2022-11-23,15:24:40","ONI","#6888","pSLP stands for Pickle Sushi LP token so you still have pickles SLP token you need to withdrawal again","",""
+"2022-11-23,15:24:47","ONI","#6888","I think you withdrew from the jar","",""
+"2022-11-23,15:24:54","ONI","#6888","now you need to withdrawal from the farm","",""
+"2022-11-23,15:26:14","ONI","#6888","zapper.fi might let you zap out","",""
+"2022-11-23,15:26:30","ONI","#6888","or you could ask for help in pickle finance's discord https://discord.com/invite/uG6WhYkM8n","",""
+"2022-11-23,15:28:12","goodboy_gooddean","#3290","Ya, I asked for pickles help and havent heard back. I appreciate your help.","ONI#6888",""
+"2022-11-23,15:29:51","goodboy_gooddean","#3290","Idk how to withdraw from the farm. Theres no indication on pickle (that I can find) of a seperate withdrawal from farm","",""
+"2022-11-23,15:29:53","ONI","#6888","let me try to login to their site with my wallet","",""
+"2022-11-23,15:30:47","goodboy_gooddean","#3290","Much appreciated.","",""
+"2022-11-23,15:31:51","ONI","#6888","https://app.pickle.finance/farms","",""
+"2022-11-23,15:32:43","ONI","#6888","maybe you need to approve pSushi yvboost/eth deposited to withdrawal it","goodboy_gooddean#3290",""
+"2022-11-23,15:32:45","ONI","#6888","","","https://cdn.discordapp.com/attachments/734811808401063966/1045044252217983057/image.png"
+"2022-11-23,15:32:49","ONI","#6888","it should be here","",""
+"2022-11-23,15:33:39","goodboy_gooddean","#3290","I thought that was to deposit. trying rn","",""
+"2022-11-23,15:34:06","ONI","#6888","it is but it should show withdrawal somewhere... so maybe after you approve it it will show","",""
+"2022-11-23,15:34:12","goodboy_gooddean","#3290","Ah ya, you were right.","",""
+"2022-11-23,15:34:26","ONI","#6888","now withdrawal and go to sushi","",""
+"2022-11-23,15:34:48","goodboy_gooddean","#3290","Ok cool.  Defi's got a long way to go.","",""
+"2022-11-23,15:35:01","ONI","#6888","yah sorry for the hassle","",""
+"2022-11-23,15:36:52","goodboy_gooddean","#3290","All good. Thanks again for the help.","",""
+"2022-11-24,01:56:05","Garry","#9858","Do rewards burn out on yBribe if you don't claim them in a week?","",""
+"2022-11-24,06:03:16","Crolev","#3404","Yes, they become part of the new bribe and you lose them if they are not claimed.","Garry#9858",""
+"2022-11-25,12:40:17","dwdvmastr","#5695","I tried to unstake my ETH this morning but the ""withdrawal"" button would not activate to allow the withdrawal. Is the site having issues?","",""
+"2022-11-25,12:47:55","Crolev","#3404","Could you please post a screenshot of what you see on the vault page when you try to make a withdrawal?","dwdvmastr#5695",""
+"2022-11-25,12:52:09","dwdvmastr","#5695","Thanks for the quick reply. Not sure what was happening but I finally got it to work.","Crolev#3404",""
+"2022-11-26,09:36:28","JamieJ","#8610","hi, i had crvStEth in the yearn vault, ive withdrawn it, but how do i now convert the crvStEth back to eithe StEth or Eth??","",""
+"2022-11-26,13:25:49","TorJado","#3802","On curve finance","",""
+"2022-11-26,18:28:25","VergiliusMar0","#7631","Is there a reason DAI and USDC vaults aren't updating balances?","",""
+"2022-11-26,19:28:35","Crolev","#3404","What do you mean by that? The holdings change only after harvest is made, they don't ""tick"" up every second/minute if that was your expectation.","VergiliusMar0#7631",""
+"2022-11-26,19:29:54","VergiliusMar0","#7631","I mean that my deposited amount doesn't increase anymore, which it did every few mins until yesterday.","",""
+"2022-11-26,19:32:12","Crolev","#3404","It could be that you were looking at the UI shortly after a harvest was made. Profit from harvest is distributed linearly over 6 hours so it is the only case when you'd see linear yield. Other than that you need to wait until a harvest is made on the underlying strategy in the vault.","",""
+"2022-11-26,19:38:14","VergiliusMar0","#7631","I see, thanks!","",""
+"2022-11-27,08:05:32","ugurcanbal","#2358","Hi, I had invested to yearn v2 usdt and now I can see the balance but I cant withdraw as it is written usdt-old. How can I recover it? Thanks","",""
+"2022-11-27,08:28:56","Crolev","#3404","Try also on:
+https://v2.yearn.finance/
+And
+https://v1.yearn.finance/","ugurcanbal#2358",""
+"2022-11-27,14:47:14","ugurcanbal","#2358","I made the investment through Argent and not through the site via metamask, trezor, ledger etc","Crolev#3404",""
+"2022-11-29,06:16:10","petushki","#6863","Hi team, we're happy to report a significant update for you!
+
+KuCoin Wallet Chrome Extension is now available and so far we have been supported by 50+ DeFi protocols, DEX, NFT aggregators, GameFi, and NFT projects. 
+
+We would like to provide an easy and secure login option for your users to connect to your Dapp. We really appreciate your great support for KuCoin Wallet.
+
+-As a non-custodial wallet, KuCoin Wallet allows users to swap tokens at the best rates with zero platform fees. 
+-KuCoin wallet provides an all-in-one access key to all Web3 venues with the possibility of seamless assets and NFTs transfers.
+-KuCoin Wallet has a fast-growing and active community powered by the 20 million user base under the KuCoin ecosystem.
+We are glad to make joint integration announcement & co-marketing activities if you can support our wallet on your front end.
+
+Please check out the API doc: https://kucoin-wallet.gitbook.io/guide/reference/extension-wallet/api-reference
+
+KuCoin Wallet also offers customized support for our partners with the most suitable and powerful marketing resources.
+
+Please don't hesitate to contact us via Telegram: 
+@joy4242
+
+
+ or book a call at http://calendly.com/joyzhao891.
+
+Look forward to hearing from you!","",""
+"2022-12-01,03:03:49","Impish","#3190","anyone using st-ycrv?","",""
+"2022-12-01,03:04:49","Impish","#3190","for some reason my holdings are showing 0, on the website even though last 2 days it was showing the right balance. i looked through the history and don't see any withdrawals on my wallet. is https://y.finance/holdings having any issues on their site?","",""
+"2022-12-01,13:21:23","ONI","#6888","there was an error with the rpc node we were using try again now?","Impish#3190",""
+"2022-12-01,17:04:19","w0zhd","#4788","Hallo, doing research on projects in the zkSync ecosystem. 
+Gathered a base of projects and am gathering information on how problems have arisen with the zkSynk protocol? The information will be structured and shared with the developers.
+
+How is the integration of new project users going? Do you have a bounty program, an ambassador program, or any other activities? What are their conditions? 
+The base will be promoted with the help of Influencers.
+
+Thank you","",""
+"2022-12-01,19:32:43","mdsumon","#5014","Hello","ONI#6888",""
+"2022-12-01,19:33:18","mdsumon","#5014","I can't withdraw my fund show error tenderly response","ONI#6888",""
+"2022-12-01,19:33:33","mdsumon","#5014","Please help","ONI#6888",""
+"2022-12-01,19:43:20","ONI","#6888","On the website? which vault?","",""
+"2022-12-01,19:44:01","ONI","#6888","If you see your vault tokens on etherscan everything is fine. I would relax","",""
+"2022-12-01,19:49:41","ONI","#6888","You can increase slippage if your zapping in and out in the settings tab","",""
+"2022-12-01,23:13:45","legendfan","#5056","Hi team, when I'd withdraw my lusd from vault, it shows 'Partial revert simulating call' ?","",""
+"2022-12-01,23:14:27","legendfan","#5056","So could I get back all?","",""
+"2022-12-02,02:46:33","mdsumon","#5014","Can not withdraw from crv3crypto vault","",""
+"2022-12-02,02:49:55","mdsumon","#5014","Same problem i increase slippage to 2 but same problem show only error on tenderly response","ONI#6888",""
+"2022-12-02,13:21:13","mdsumon","#5014","Are u here","ONI#6888",""
+"2022-12-02,13:29:40","ONI","#6888","hello","",""
+"2022-12-02,13:31:24","ONI","#6888","<@880530964411990078> stop spamming general ask here. Please keep your stuff to one line if possible","mdsumon#5014",""
+"2022-12-02,13:31:49","ONI","#6888","Give me a summary of the problem: which vault, what is your browser or on mobile, what wallet","",""
+"2022-12-02,13:32:11","ONI","#6888","Can not withdraw from crv3crypto vault","",""
+"2022-12-02,23:56:18","CryptoTrader","#2037","Hi there, I can't connect to both of the yearn finance website using WalletConnect. Trying to connect from Ledger Live.","",""
+"2022-12-03,00:00:06","CryptoTrader","#2037","How do I connect to the backend server?  I was using the connect wallet button on the top right if the websites.","",""
+"2022-12-03,00:04:33","arberx","#3367","Hi, that person that responded was a scammer","CryptoTrader#2037",""
+"2022-12-03,00:04:40","arberx","#3367","Do not use their link","",""
+"2022-12-03,00:04:53","CryptoTrader","#2037","Yeah, the link was flagged as a threat by my antivirus","",""
+"2022-12-03,00:04:59","arberx","#3367","Go to yearn.finance","",""
+"2022-12-03,00:05:08","arberx","#3367","There is a ledger connect option","",""
+"2022-12-03,00:06:04","CryptoTrader","#2037","So I should choose ledger and not wallet connect?","arberx#3367",""
+"2022-12-03,00:07:39","arberx","#3367","Try ledger yes","",""
+"2022-12-03,00:07:50","arberx","#3367","Make sure it’s yearn.finance","",""
+"2022-12-03,00:08:00","arberx","#3367","<#752308600164057199> has all valid urls","",""
+"2022-12-03,00:11:53","CryptoTrader","#2037","Ok, I will try later and get back to you. Seems like I would need to connect my hardware ledger to connect.","",""
+"2022-12-03,00:16:09","arberx","#3367","Yep which is safer","CryptoTrader#2037",""
+"2022-12-03,01:40:41","CryptoTrader","#2037","I connected using Ledger Hardware wallet for once, then wallet connect somehow works properly after that without connecting the hardware wallet.","arberx#3367",""
+"2022-12-03,01:40:51","CryptoTrader","#2037","Thanks for your help!","",""
+"2022-12-03,01:43:12","CryptoTrader","#2037","Is st-ycrv APY sustainable? If it's so high compared to convex finance, wouldn't it be logical for ppl to invest in st-ycrv over cvxcrv? <:peepothink:754852083902971967>","",""
+"2022-12-03,02:32:37","qwe7361","#4747","Can I check where did the link/slink vault go?","",""
+"2022-12-03,02:33:04","qwe7361","#4747","I can't unstake my yvlinkcrv","",""
+"2022-12-03,03:10:49","qwe7361","#4747","never mind, found it.","",""
+"2022-12-03,07:38:40","ciclope69","#8720","Hi, 5 days ago i deposited wftm on vault but for now i have 0 reward, this vault its for epoc or something?","",""
+"2022-12-03,22:00:33","crypto_mdzej","#2286","Hi, I have deposit usdc to Curve Tricrypto Pool Vault (Curve Tricrypto) through arbitrum and don't know how to withdraw it back to usdc. Could you please advise?","",""
+"2022-12-03,22:05:40","crypto_mdzej","#2286","","","https://cdn.discordapp.com/attachments/734811808401063966/1048767009183236157/image.png"
+"2022-12-03,23:02:35","j.","#6352","withdraw to crvtricrypto then withdraw USDC here: https://curve.fi/#/arbitrum/pools/tricrypto/withdraw","crypto_mdzej#2286",""
+"2022-12-03,23:02:56","j.","#6352","also accessible through the link shown on the left in the screenshot","",""
+"2022-12-04,18:31:18","jackl50","#2039","Can anyone help recover funds from now defunct project tesr?","",""
+"2022-12-04,18:39:47","Crolev","#3404","Go to your address on polygon scan, then on the token list click on the vault you'd like to withdraw from, on the smart contract page go to the Contract tab, and then below that to the Write Contract. Finally select the method called ""withdraw"" and withdraw your tokens.","jackl50#2039",""
+"2022-12-04,22:31:17","Fat Bob","#4718","I deposited into the USDT vault a couple of months ago. I now still see the holdings amount but the dashboard doesn’t show me the withdraw option. When going into the USDT vault, it shows me 0 to withdraw. Where can I see my holdings and in which vault to withdraw a portion?","",""
+"2022-12-05,09:50:59","Crolev","#3404","Are you sure you connected with your wallet before attempting to withdraw?
+Could you please post a screenshot of what you see on the vault page (https://yearn.finance/#/vault/0x3B27F92C0e212C671EA351827EDF93DB27cc0c65) when you try to make a withdrawal?","Fat Bob#4718",""
+"2022-12-06,01:42:35","Easwar | Fluidity","#8839","Looking for someone in yearn finance that I can talk to about a partnership","",""
+"2022-12-06,06:14:36","Crolev","#3404","Please write about it in <#766323679410913320>","Easwar | Fluidity#8839",""
+"2022-12-06,14:48:52","0xNi","#8324","hi what is ""Partial revert simulating call""?","",""
+"2022-12-06,16:31:09","Crolev","#3404","Sounds like transaction simulation failed. If you are trying to zap then I recommend you to deposit/withdraw the vault native token and then just handle it further (i.e. withdraw from Curve pool or trade it into something else).","0xNi#8324",""
+"2022-12-07,08:10:31","PeterW","#2742","Has there been a security breach on Iron Bank? I seem to have been hacked for some WETH 1 day 21h ago.","",""
+"2022-12-07,08:21:27","PeterW","#2742","Meaning; drained on all my WETH. Quite a lot.","",""
+"2022-12-07,08:22:03","PeterW","#2742","My private key have most likely not been compromised.","",""
+"2022-12-07,08:47:27","arberx","#3367","Was your eth in iron bank?","PeterW#2742",""
+"2022-12-07,12:17:41","PeterW","#2742","Yes","arberx#3367",""
+"2022-12-07,12:18:08","arberx","#3367","have u asked in the Iron Bank discord?","PeterW#2742",""
+"2022-12-07,12:18:14","arberx","#3367","Cant find anything online","",""
+"2022-12-07,12:18:47","PeterW","#2742","How do I find their discord? Was no link on ib.xyz","",""
+"2022-12-07,12:19:30","Crolev","#3404","https://discord.gg/5wxj3Wmr","PeterW#2742",""
+"2022-12-07,12:19:42","PeterW","#2742","Thanks!","",""
+"2022-12-08,06:13:06","chad","#4566","hi, how do you convert yCRV back to CRV, cant find a market place, thanks","",""
+"2022-12-08,06:31:34","j.","#6352","https://curve.fi/#/ethereum/pools/factory-v2-192/swap","chad#4566",""
+"2022-12-08,06:33:25","chad","#4566","oh great thanks","",""
+"2022-12-11,16:10:11","CVJoint","#6493","Hello, I'm trying to swap my yvBOOST to st-yCRV on the y.finance site, but it doesn't recognize my tokens. Is there another way I can make a swap/withdrawal?
+My token contract address: `0x9d409a0A012CFbA9B15F6D4B36Ac57A46966Ab9a`","",""
+"2022-12-11,17:19:28","Rick Defi","#0742","Hi there!
+is it possible to open a ticket here?
+to discuss security audit proposition?","",""
+"2022-12-11,17:46:52","Crolev","#3404","Hello, for that please write in <#766323679410913320>","Rick Defi#0742",""
+"2022-12-11,17:47:56","Crolev","#3404","Hello,
+Are you sure you connected with your wallet on y.finance?
+If you have any yveCRV or yvBOOST left then it should show up on the left widget:","CVJoint#6493","https://cdn.discordapp.com/attachments/734811808401063966/1051601252900950106/image.png"
+"2022-12-11,19:15:54","CVJoint","#6493","Yep, I've connected my wallet, but it doesn't bseem to register my yvBOOST","Crolev#3404","https://cdn.discordapp.com/attachments/734811808401063966/1051623389716041828/Screenshot_2022-12-11_at_4.59.43_PM.png"
+"2022-12-11,19:32:20","Crolev","#3404","Sorry for asking so pedantically, but when you check the top right corner you see your abbreviated eth address, right? (like on my screenshot)","CVJoint#6493","https://cdn.discordapp.com/attachments/734811808401063966/1051627525660491806/image.png"
+"2022-12-11,19:58:00","Crolev","#3404","If the answer is yes then I recommend using portals.fi directly in the meantime: https://app.portals.fi/#/swap?chain=mainnet
+And I will report the issue to the web team.","",""
+"2022-12-11,20:31:05","sentbeing","#5672","Hello, I'm trying to withdraw yCRV but keep getting an error message","",""
+"2022-12-11,20:37:13","Crolev","#3404","Could you please post a screenshot of that error message?","sentbeing#5672",""
+"2022-12-11,21:05:04","sentbeing","#5672","Do you see it?","Crolev#3404","https://cdn.discordapp.com/attachments/734811808401063966/1051650862407237752/Screen_Shot_2022-12-11_at_6.32.19_PM.png"
+"2022-12-11,21:08:46","Crolev","#3404","I currently don't have any position in yCRV so I can't test it myself.
+I will report this issue to the devs. If this is urgent for you then I recommend trying out following things to make a withdrawal via other options:
+1) Try setting the withdrawal token to the native one for the vault, so yCRV for st-yCRV and curve pool tokens for lp-yCRV
+2) Try using yearn.finance too (or y.finance if that error message is from yearn.finance already)
+3) Try using portals.fi directly: https://app.portals.fi/#/swap?chain=mainnet","sentbeing#5672",""
+"2022-12-11,21:47:12","Crolev","#3404","Got a request from dev asking for more info.
+Could you please also show from which vault where you trying to withdraw and into which asset? Please also post the web browser console log with the error.","sentbeing#5672",""
+"2022-12-11,23:27:42","sentbeing","#5672","Vaults / 
+Staked yCRV","",""
+"2022-12-11,23:30:09","sentbeing","#5672","35.56b3d128.chunk.js:2 
+ GET https://api.portals.fi/v1/portal/ethereum?takerAddress=0xDF305010fb9D588635…age=0.99&partner=0xFEB4acf3df3cDEA7399794D0869ef76A6EfAff52&validate=false 400
+(anonymous)    @    35.56b3d128.chunk.js:2
+c    @    35.56b3d128.chunk.js:2
+(anonymous)    @    35.56b3d128.chunk.js:2
+(anonymous)    @    35.56b3d128.chunk.js:2
+m    @    35.56b3d128.chunk.js:2
+o    @    35.56b3d128.chunk.js:2
+(anonymous)    @    35.56b3d128.chunk.js:2
+(anonymous)    @    35.56b3d128.chunk.js:2
+(anonymous)    @    35.56b3d128.chunk.js:2
+(anonymous)    @    35.56b3d128.chunk.js:2
+c    @    35.56b3d128.chunk.js:2
+(anonymous)    @    35.56b3d128.chunk.js:2
+(anonymous)    @    35.56b3d128.chunk.js:2
+m    @    35.56b3d128.chunk.js:2
+o    @    35.56b3d128.chunk.js:2
+Promise.then (async)","",""
+"2022-12-12,10:42:02","Crolev","#3404","Could you please copy the full link from the logs?
+It got abbreviated with ... in the middle.","sentbeing#5672",""
+"2022-12-12,20:25:24","Crolev","#3404","I got a report that it is fixed now, could you please try again?","CVJoint#6493",""
+"2022-12-13,02:27:02","CVJoint","#6493","Yep it works now! Thanks a lot for your help!","Crolev#3404",""
+"2022-12-13,10:19:05","Isaac - QUAD - Never DM you 1st","#3730","Hi YFI Team!
+
+Isaac here from Quadency.com. 
+
+I’m glad to let you know that we’re considering listing YFI on QUADX, our platform’s native exchange which combines CEX and DEX liquidity. 
+
+Could anyone direct me to the right person to discuss a potential co-marketing campaign between YFI and Quadency?
+
+We'd be interested in discussing any potential co-marketing activities we could run to educate Quadency’s 100k+ users about your project. If your team is interested, I would be happy to set-up a meeting with your representative and Quadency’s co-founder and Chief marketing officer.  
+
+Best,","",""
+"2022-12-13,10:24:52","arberx","#3367","<#766323679410913320>","Isaac - QUAD - Never DM you 1st#3730",""
+"2022-12-13,10:27:55","Isaac - QUAD - Never DM you 1st","#3730","Thanks! I just messaged the channel","arberx#3367",""
+"2022-12-14,18:39:48","Liarus","#1001","Hello, I'm a new yearn user and I'm seeing this ""failed to create fork"" , is there anything to worry about here?","","https://cdn.discordapp.com/attachments/734811808401063966/1052701466902671400/image0.png"
+"2022-12-14,18:41:34","Crolev","#3404","Hello, it seems there might be a problem with zap API from portals.fi
+~~Please try instead to deposit WETH instead of ETH (you can wrap it on uniswap)~~","Liarus#1001",""
+"2022-12-14,18:41:50","Crolev","#3404","Acutally nvm","",""
+"2022-12-14,18:41:54","Crolev","#3404","it's wrong vault","",""
+"2022-12-14,18:41:58","Crolev","#3404","for this one you have to go to curve.fi","",""
+"2022-12-14,18:42:04","Crolev","#3404","and deposit into curve steth pool","",""
+"2022-12-14,18:42:13","Crolev","#3404","and then deposit tokens into the vault","",""
+"2022-12-14,18:42:24","Liarus","#1001","<a:WAYTOODANK:1036998374232162374>","",""
+"2022-12-14,18:42:52","Liarus","#1001","Wasn't yearn's goal to make all of this easy so i don't have to go through curve?","",""
+"2022-12-14,18:43:15","Crolev","#3404","The vaults only compound the specific token - in this case that's curve pool tokens","",""
+"2022-12-14,18:43:27","Crolev","#3404","To make deposit easier we use zaps, but it seems something is wrong with the API","",""
+"2022-12-14,18:43:38","Crolev","#3404","zaps do all the transactions for you in one","",""
+"2022-12-14,18:43:55","Liarus","#1001","Okay, could that be on my side though? I have pihole on my Network maybe that could be it?","",""
+"2022-12-14,18:43:58","Crolev","#3404","Actually you might try to use their website directly:
+https://app.portals.fi/#/swap?chain=mainnet","",""
+"2022-12-14,18:44:30","Crolev","#3404","It's possible, but unlikely tbh","Liarus#1001",""
+"2022-12-14,18:45:03","Liarus","#1001","Let me try that before doing anything else, thanks for the super fast support though!","",""
+"2022-12-14,18:47:58","ONI","#6888","This is being looked into atm","Liarus#1001",""
+"2022-12-14,19:04:20","Liarus","#1001","Oh, good to know!","ONI#6888",""
+"2022-12-14,19:05:12","Liarus","#1001","I'm new to yield farming in general, and yearn was recommended to me to simplify things, seems like i came in at the wrong time 😂","",""
+"2022-12-14,22:42:09","FIBBA","#3820","Does anyone know why Yearn isnt connecting to my wallet? Its stuck on ""connecting..."" When i go to the yCRV link i am already connected somehow.","",""
+"2022-12-15,07:48:19","Liarus","#1001","Looks to be fixed now!","ONI#6888",""
+"2022-12-15,07:48:25","Liarus","#1001","Thanks 👍","",""
+"2022-12-15,16:41:21","liptu","#8490","I try to understand veyfi. context: i have yfi but not a lot of money in the vaults because i don't have much. so i read https://docs.yearn.finance/contributing/governance/veyfi and try to understand if it make sense to lock my yfi. the text says: A user must have a **veYFI lock to continue to earn rewards**. why does it say **continue**? currently i have yfi and i earn no rewards.","",""
+"2022-12-15,16:45:27","liptu","#8490","can you give an example of what Vault Gauges are? what can i vote for? can i vote that DAI yVault has more APY? but why and how does voting increas apy?","",""
+"2022-12-15,17:02:24","liptu","#8490","One question: Does it make sense to lock if i don't have a lot of liquidity?","",""
+"2022-12-16,15:23:28","ONI","#6888","its kind of not well written. what it is trying to say is that if your lock expires in the final model you will stop earning rewards","liptu#8490",""
+"2022-12-16,15:26:49","ONI","#6888","This part is not yet implemented, you can only lock veYFI for voting on yip governance as per the latest in <#735617936206594249>","liptu#8490",""
+"2022-12-16,15:28:11","ONI","#6888","atm there are no rewards so no, but on the website when phase 2 launches it should be able to tell you about how much boost per vault you will have, for the gauges that launch for boost","liptu#8490",""
+"2022-12-19,11:12:32","rogeroger","#6816","Hello, I am having trouble to do a zap usdc withdraw. I can withdraw yCRV but not USDC or even USDT or ETH Using Zap. Is Zap working correctly","",""
+"2022-12-19,11:12:44","rogeroger","#6816","<@137743751656243201>","ONI#6888",""
+"2022-12-19,13:43:15","ONI","#6888","on y.finance?","rogeroger#6816",""
+"2022-12-19,13:43:46","rogeroger","#6816","on yearn finance","",""
+"2022-12-19,13:44:11","rogeroger","#6816","i did not know there was a way to convert to usdc or crv on y.finance. I would like a way to convert to either","",""
+"2022-12-19,13:44:30","ONI","#6888","Your right I dont believe there is, this is for st-ycrv or?","",""
+"2022-12-19,13:45:12","rogeroger","#6816","st-crv","",""
+"2022-12-19,13:45:24","rogeroger","#6816","i have converted to yCRV but i would like to liquidate","",""
+"2022-12-19,13:56:01","ONI","#6888","what error message is it showing?","",""
+"2022-12-19,13:56:59","rogeroger","#6816","i do not think there is enough liquidity on portals.fi","",""
+"2022-12-19,13:57:32","rogeroger","#6816","i can approve the transactions but when i click to actually do it, nothing happens","",""
+"2022-12-19,14:04:02","ONI","#6888","is this on mobile or desktop? is there an error msg in the console cntrl + shift + i","",""
+"2022-12-19,14:10:24","ONI","#6888","Seems like an issue with portal we are looking into it now, thanks for letting us know","",""
+"2022-12-19,16:50:15","forever iron","#9291","My balance is showing basically double what it should be","",""
+"2022-12-19,17:46:40","ONI","#6888","on yearn.finance? try cntl+shift+r","",""
+"2022-12-19,20:00:50","Blafasl","#0760","Yeah have the same issue, looks like portals isnt able to unstake ycrv","",""
+"2022-12-19,20:01:06","Blafasl","#0760","","","https://cdn.discordapp.com/attachments/734811808401063966/1054533869484904550/image.png"
+"2022-12-19,20:03:39","Blafasl","#0760","So the zap feature on the main yearn site doesnt work","",""
+"2022-12-19,20:05:14","Blafasl","#0760","Hope its going to be fixed soon 🙂","",""
+"2022-12-19,20:40:52","ONI","#6888","they are working on it","",""
+"2022-12-20,09:44:02","OneGoodDude","#9881","Ayo, wen support for Frame Wallet? (Injecting as MetaMask is NOT WORKING.)","","https://cdn.discordapp.com/attachments/734811808401063966/1054740966134784040/Screenshot_2022-12-20_at_7.40.14_AM.png"
+"2022-12-20,09:53:26","j.","#6352","same for me. Frame not working injecting as Metamask","",""
+"2022-12-20,11:19:45","ONI","#6888","will look into this","OneGoodDude#9881",""
+"2022-12-20,14:28:57","ShamaNickCryptoBull84","#5740","Hello there! I see Yearn Finance has updated it's UI. Thumbs up for that. Looks very nice. 
+Something certainly doesn't seem right though. See the image below.
+The amount of yvWETH to withdraw doesn't reflect the true amount of ETH I should be able to receive for that. 
+1.9605 yvWETH should be worth around 2.01 ETH. However, it shows I will only receive 1.025 ETH for that. That's a difference of almost 50%.
+2.01 ETH is what I deposited more than a month ago and when I checked earlier this week on the old UI that was still the case.
+Is this just a bug in the new UI or should I be more worried? Can someone explain what's going on over here?
+
+What happened to the old Zap feature btw?","","https://cdn.discordapp.com/attachments/734811808401063966/1054812666067177502/image.png"
+"2022-12-20,14:43:29","DonaldDuck","#0882","Hi, I'm not able to see my st-ycrv...","","https://cdn.discordapp.com/attachments/734811808401063966/1054816324167151727/Screenshot_20221220_184056.jpg"
+"2022-12-20,14:43:51","DonaldDuck","#0882","Ps. I'm on mobile","",""
+"2022-12-20,14:54:22","DonaldDuck","#0882","Ps2. Working on desktop","",""
+"2022-12-20,19:15:35","ONI","#6888","dont worry if anything it is only a bug on the new ui","ShamaNickCryptoBull84#5740",""
+"2022-12-20,19:16:01","ONI","#6888","We are working on adding zaps should be up soon on the new site","ShamaNickCryptoBull84#5740",""
+"2022-12-20,19:16:11","ONI","#6888","which wallet?","DonaldDuck#0882",""
+"2022-12-20,19:16:40","DonaldDuck","#0882","Metamask","ONI#6888",""
+"2022-12-20,19:16:46","ONI","#6888","Hello there I see Yearn Finance has","",""
+"2022-12-20,19:16:55","DonaldDuck","#0882","But working on desktop","",""
+"2022-12-20,19:17:47","ONI","#6888","the metamask mobile wallet?","DonaldDuck#0882",""
+"2022-12-20,19:18:00","DonaldDuck","#0882","Yep","ONI#6888",""
+"2022-12-20,21:36:13","ONI","#6888","Should be fixed tmrw it's a bug","ShamaNickCryptoBull84#5740",""
+"2022-12-20,23:28:17","Plisken","#0995","Is there a bug with the yearn website not showing holdings?","",""
+"2022-12-20,23:35:48","arberx","#3367","Yes","Plisken#0995",""
+"2022-12-21,00:57:51","sam.roh","#8160","Hi, nice to have new UI, but im wondering why my balance shows less yCRV than yesterday's?","",""
+"2022-12-21,01:00:43","sam.roh","#8160","i mean st-yCRV","",""
+"2022-12-21,01:01:16","ONI","#6888","for now i'd check at y.finance, any balance issues thought should be fixed soon","sam.roh#8160",""
+"2022-12-21,01:50:43","j.","#6352","should work now with the new UI out","OneGoodDude#9881",""
+"2022-12-21,07:19:17","Major","#8127","Appears that you are not connected (no address displayed on top right next to the wallet icon). Could you click this icon, select metamask and tell me if you still have this issue ? Thank you!","DonaldDuck#0882",""
+"2022-12-21,07:25:30","DonaldDuck","#0882","You are right! Sorry! But I'm sure that it was connected with old interface, I mean, i never disconnect the wallet when I navigate using metamask mobile. Anyway now it's connected 🙂","Major#8127",""
+"2022-12-21,07:39:22","Major","#8127","Hi nice to have new UI but im wondering","",""
+"2022-12-21,08:54:20","ONI","#6888","Make sure your wallets connected this should be fixed now","",""
+"2022-12-21,11:40:33","A K","#1508","Hello guys! Been swapping zkyvWETH from aztec back to ETH via yearn.finance, transaction completed but Iam waiting for about 1 hour already and money are not coming to my metamask wallet","",""
+"2022-12-21,11:41:39","j.","#6352","the transaction is confirmed?","",""
+"2022-12-21,11:46:04","A K","#1508","https://etherscan.io/tx/0x829c38fef776727e6883a4aae10e5dfa24845935ef09bb60c45c5b144ddee7bb","j.#6352",""
+"2022-12-21,11:46:23","j.","#6352","*ah yes i havent seen one of these in a while*","",""
+"2022-12-21,11:46:49","j.","#6352","it's an approval transaction. you have to do the actual deposit/withdrawal, which is another different transaction","",""
+"2022-12-21,11:48:08","A K","#1508","oh ok I get it","",""
+"2022-12-21,11:48:12","A K","#1508","will try one more time","",""
+"2022-12-21,12:17:50","A K","#1508","ty for help ❤️","j.#6352",""
+"2022-12-21,12:18:04","j.","#6352","<:peepohug2:754852084603682837>","",""
+"2022-12-21,15:37:53","RICKETY RICK","#4408","Hi all, is there a good run down/ explanation somewhere (as I'm sure this has been asked alot) on how to remove cvxcrv from llama.airforce and stake on yearn?","",""
+"2022-12-21,18:11:23","ONI","#6888","you should be able to zap here https://y.finance","",""
+"2022-12-22,03:43:21","Dan1980","#8505","Hi, I am using metamask on mobile - trying to withdraw YFI from yvYFI vault but the GUI doesn't show a 'withdraw' option. I think there should be a toggle function on the deposit button but it seems to be inactive. Can someone check?","",""
+"2022-12-22,06:08:24","sixflux","#0188","Hello using meta mask on Arbitrum, I have some yvCurve-Tricrypto that I am not able to withdraw  on the new interface https://arbiscan.io/tx/0x39657e89b60e65a31289ac2d5ee2aae2d308f214fedd2063e687d9f71455e221
+let me know,","","https://cdn.discordapp.com/attachments/734811808401063966/1055411474140516412/image.png"
+"2022-12-22,06:56:12","CryptoPiplup","#8211","need some help on Iron Bank
+can i get support from here?","",""
+"2022-12-22,06:58:59","CryptoPiplup","#8211","<@137743751656243201> will you be able to help?","ONI#6888",""
+"2022-12-22,07:21:31","Barry Pooter","#5492","You’ll need to check out their discord","CryptoPiplup#8211",""
+"2022-12-22,07:21:54","Barry Pooter","#5492","https://discord.gg/5wxj3Wmr","",""
+"2022-12-22,07:21:56","CryptoPiplup","#8211","not much activity at that discord","Barry Pooter#5492",""
+"2022-12-22,07:22:14","Barry Pooter","#5492","Ah that invite is invalid my bad","",""
+"2022-12-22,07:42:13","Major","#8127","Hi I am using metamask on mobile trying","",""
+"2022-12-22,11:55:02","ONI","#6888","what is the problem your having is it giving you an error? you can also try v3.yearn.finance","sixflux#0188",""
+"2022-12-22,11:56:04","ONI","#6888","Need Help with Iron Bank","",""
+"2022-12-22,12:46:28","sixflux","#0188","thanks sorted out with Major, issue on RPC in arbitrum","ONI#6888",""
+"2022-12-24,05:40:58","daramir","#1305","Is it expected for the website to be bricked? can't see TVL of any Ethereum vault, vault descriptions, strats, etc","",""
+"2022-12-24,08:59:14","Major","#8127","We had an issue with our nodes a few hours ago, this should be fixed","daramir#1305",""
+"2022-12-24,09:38:41","willienter","#5794","Hi all, new GUI seems cool but i cannot see my deposits in Vaults (fantom). I can see them through apeboard though. Am i doing something wrong or there is still a problem with new gui as i read above ?  Thank you for your time reading this.","",""
+"2022-12-24,13:57:20","scottcoin","#3727","What happened to the Curve stETH vault?  on the new UI I am seeing this and getting ""Transaction failed"" when I try to migrate?","","https://cdn.discordapp.com/attachments/734811808401063966/1056254264030265414/image.png"
+"2022-12-24,15:46:00","nopiulian","#7228","same here. i can`t migrate","scottcoin#3727",""
+"2022-12-24,15:48:14","nopiulian","#7228","","","https://cdn.discordapp.com/attachments/734811808401063966/1056282169284243527/image.png"
+"2022-12-24,15:52:58","Major","#8127","My fault, fixing the rpc I deployed this alpha a bit early 👀
+Soon you will be able to migrate to the new version : same safety and strategies but less fees
+Ignore for now as we update that","",""
+"2022-12-24,15:55:01","scottcoin","#3727","Got it thx","",""
+"2022-12-24,16:11:25","nopiulian","#7228","do you have a perspective of time when we can migrate? Thank you !","",""
+"2022-12-24,23:03:17","daramir","#1305","what's the old and new address? Asking for a fren who might have funds in a vault with this name 😉","nopiulian#7228",""
+"2022-12-25,09:08:50","im0rt","#1987","Hello, i can see that team is working hard on a new site.
+Meanwhile I just wanted to deposit some CRV into st-yCRV, but transaction fails. Tried a few times. Using Ledger through wallet connect.
+Is this a temporary issue?","",""
+"2022-12-25,10:20:10","tomfeld","#4986","I can’t seem to find how to withdraw liquidity from vaults in the UI. How should it be done?","",""
+"2022-12-25,10:51:12","Major","#8127","You can click the arrow between the input and ouput","tomfeld#4986","https://cdn.discordapp.com/attachments/734811808401063966/1056569805521571900/Screenshot_20221225-145023__01.jpg"
+"2022-12-25,11:27:39","tomfeld","#4986","Thanks!","Major#8127",""
+"2022-12-26,02:42:51","henryz","#9599","In the apps in gnosis safe, I found the entry of Yearn.finance, but it doesn't work properly","",""
+"2022-12-26,02:43:27","henryz","#9599","Application error: a client-side exception has occurred (see the browser console for more information).","",""
+"2022-12-26,02:44:14","henryz","#9599","Reported this error","",""
+"2022-12-26,02:45:56","henryz","#9599","<@841762655236653106> I want to use yearn with a multisig wallet.","Major#8127",""
+"2022-12-26,06:35:33","Major","#8127","I will take a look today","henryz#9599",""
+"2022-12-26,06:37:59","henryz","#9599","Thank you","Major#8127",""
+"2022-12-28,05:21:09","henryz","#9599","Anything update?","Major#8127",""
+"2022-12-28,07:43:55","Major","#8127","I sent you a PM yesterday 😅 
+But if it was firefox + gnosis, this was fixed 🙂","",""
+"2022-12-28,10:36:12","Mercurina","#6658","Hi community,
+
+I tried to make an AAVE deposit on Yearn, but the operation did not work. Indeed, I have an etherum debit for my transaction, available here: https://etherscan.io/tx/0xa5320253dd714943d55e91ec5c6df49a3a8bc932077f5ed044cf9c6798a04a95 but nothing is displayed in my Yearn account
+
+Any ideas?","",""
+"2022-12-28,10:48:00","Crolev","#3404","This is the approval transaction. To make the actual deposit you need to make a second transaction.","Mercurina#6658",""
+"2022-12-28,10:48:12","Crolev","#3404","The one you made only allowed Yearn Vault contract to receive your tokens.","",""
+"2022-12-28,10:50:33","Mercurina","#6658","I tried to file my AAVEs again, but I was charged again in ETH. I would have thought that the first transaction would be the right one...","Crolev#3404",""
+"2022-12-28,11:13:32","stimorol27","#4192","","","https://cdn.discordapp.com/attachments/734811808401063966/1057662591389929482/Screenshot_4.png"
+"2022-12-28,11:13:35","stimorol27","#4192","Hello. All day today I can't confirm the token exchange. I confirm the transaction in metamask and nothing happens. I have ETH on my wallet to pay the fee. What could be the problem?","",""
+"2022-12-29,00:38:38","OhmerSimpson 🍩,🍩","#0033","I see a pool listed as EURN but the EURN tokens have been deprecated by Neutrino/WAVES. Is there any reason why Y Earn would keep this listed on their website? or should it be removed? The APY advertised is very high, but there is no liquidity for these tokens","",""
+"2022-12-29,11:38:37","Crolev","#3404","When you click the button do you see a metamask transaction come up or not?","stimorol27#4192",""
+"2022-12-29,11:40:26","Crolev","#3404","Thanks for the suggestion, yeah it should be disabled - I will let the dev team know.","OhmerSimpson 🍩,🍩#0033",""
+"2022-12-29,16:29:27","ChuckMan","#4982","This is still happening for me.","henryz#9599",""
+"2022-12-29,20:26:18","Major","#8127","Which network and browser?","",""
+"2022-12-30,16:46:07","Deleted User","#0000","Why not use through the blockscan server","Major#8127",""
+"2022-12-30,17:15:33","Major","#8127","Wut?","Deleted User#0000",""
+"2022-12-31,01:17:53","sngwinner","#1086","Hello- I have yvYFI from the retired vault.  I would like to exit so I can realize losses for tax purposes.  The migrate function on the website didn't work as the transaction reverted.  Is there a way to exit the vault using any existing UI?","",""
+"2022-12-31,01:28:23","Crolev","#3404","Depending on how long ago you've made your deposit try:
+https://v1.yearn.finance
+https://v2.yearn.finance
+https://v3.yearn.finance","sngwinner#1086",""
+"2022-12-31,01:30:47","sngwinner","#1086","ty ser!  Didn't see the link for v2 on the site.  That did it","",""
+"2022-12-31,08:49:59","Major","#8127","I am curious why this failed. Do you have the address of the vault you had your tokens?","sngwinner#1086",""
+"2023-01-03,09:45:59","crazystone","#2773","a few days ago, Sturdy announced the third part of the airdrop qualification list, which includes users who have saved more than 1 ETH in the yearn's stETH vault. I want to know how to confirm the airdrop qualification for those who have saved more than 1 ETH in the yearn's vault through the EARN interface in zk.money(AZTEC)?","",""
+"2023-01-03,09:47:53","Crolev","#3404","Well you have to ask the protocol doing the airdrop then
+How would we know if they will qualify you?","",""
+"2023-01-03,11:56:08","Blafasl","#0760","has there been any update from portals? Doesnt seem to work still","",""
+"2023-01-04,14:41:08","Brilliant","#8591","Hi @everyone
+Happy new year <:100k:754501403656847510> !!!
+Now I am studying about yearn
+Could you help me?","",""
+"2023-01-04,14:44:53","old_frog_","#6669","https://docs.yearn.finance/ this is the best place to start","Brilliant#8591",""
+"2023-01-04,14:45:18","Brilliant","#8591","Thanks for your help?","old_frog_#6669",""
+"2023-01-04,14:45:42","Brilliant","#8591","Btw is there auto-rebalancing function in yearn?","",""
+"2023-01-04,14:46:38","old_frog_","#6669","Yearn’s work to automate the yield generation and rebalancing of your crypto assets is especially true in the case of your CRV holdings, and Yearn’s yveCRV or yvBOOST offers a powerful, compounding, “set-and-forget” place to stake your CRV!","Brilliant#8591",""
+"2023-01-04,14:47:46","Brilliant","#8591","oh got it
+And is it multi-chain protocol?","",""
+"2023-01-04,14:55:33","old_frog_","#6669","yes, again i would recommend checking out https://docs.yearn.finance/","Brilliant#8591",""
+"2023-01-04,14:55:44","old_frog_","#6669","the search bar function on the website answers your questions faster","",""
+"2023-01-04,15:17:53","Brilliant","#8591","Thanks for your help","",""
+"2023-01-04,15:50:36","Brilliant","#8591","Where Can I see auto-rebalancing function???","",""
+"2023-01-04,20:43:27","ONI","#6888","The vault strategies update debt ratio when harvest is called and the strategists change it based on if they want to scale up or down a strategies tvl.","Brilliant#8591",""
+"2023-01-04,21:35:45","B cryptsky","#1361","hey <@137743751656243201>  im trying to find historical APY data for yearn vaults over various timeframes. cant seem to find anything. can you point me in the right direction?","ONI#6888",""
+"2023-01-04,21:37:56","j.","#6352","https://yearn.vision/goto/fc3khmh4k?orgId=1","",""
+"2023-01-04,22:25:31","B cryptsky","#1361","<@112535156417363968> appreciate it. thnx","j.#6352",""
+"2023-01-05,01:49:53","ONI","#6888","Yes yearn.vision should have what your looking for if you don't see something let us know","",""
+"2023-01-05,12:50:07","Xrivijayan","#9777","Is this migration message real?","","https://cdn.discordapp.com/attachments/734811808401063966/1060586002755899482/image.png"
+"2023-01-05,13:08:51","arberx","#3367","Is it on yearn.finance?","Xrivijayan#9777",""
+"2023-01-05,13:08:54","arberx","#3367","<#752308600164057199>","",""
+"2023-01-05,14:03:41","ONI","#6888","yes","Xrivijayan#9777",""
+"2023-01-05,14:03:57","ONI","#6888","we have just launched our vault factory ann soon https://docs.yearn.finance/getting-started/products/yvaults/vault-factory tldr cheaper fees and permissionless harvest for curve vaults so migrating is encouraged.","",""
+"2023-01-05,14:52:00","bryankerr","#1194","Is Zap available on the new Curve stETH Factory? I don't see the option anywhere","ONI#6888",""
+"2023-01-05,15:02:24","Major","#8127","Zap are a wip, you can use V3.yearn.finance in the meantime","",""
+"2023-01-05,15:18:04","bryankerr","#1194","Ok thanks, last question I migrated to the new stETH pool but it appears empty? do you know when the TVL and APY will be updated?","",""
+"2023-01-05,16:01:41","CyboAngel","#7681","Hi I had about 4 eth worth in a curved staked eth vault back in May. When I look for it now I do not see it. Can someone help me?","",""
+"2023-01-05,16:13:23","bryankerr","#1194","I had the same issue this morning, i found the new pool and it asked me to migrate, so I did","",""
+"2023-01-05,16:13:47","bryankerr","#1194","YF needs to put out a tweet or something, they're giving ppl heart attacks","",""
+"2023-01-05,16:13:50","ONI","#6888","Working on apy tvl will migrate over time","bryankerr#1194",""
+"2023-01-05,16:14:27","ONI","#6888","It didnt show you your funds in the old vault?","bryankerr#1194",""
+"2023-01-05,16:14:33","ONI","#6888","in stETH?","",""
+"2023-01-05,16:14:34","bryankerr","#1194","no","",""
+"2023-01-05,16:15:55","CyboAngel","#7681","On my end I am not sure if I am looking at an old vault or a new vault. I've just had yearn.finance bookmarked and randomly decided to check on the performance. If I am supposed to be looking elsewhere or doing something I have no idea.","",""
+"2023-01-05,16:16:03","ONI","#6888","your saying you couldnt see your funds in the old vault correct or?","bryankerr#1194",""
+"2023-01-05,16:16:21","ONI","#6888","No that is the right place it should show you your balance, but if it doesnt atm dont worry","CyboAngel#7681",""
+"2023-01-05,16:22:24","ONI","#6888","you should see your funds here https://yearn.finance/vaults/1/0xdCD90C7f6324cfa40d7169ef80b12031770B4325 and it should ask you to migrate","",""
+"2023-01-05,16:24:49","CyboAngel","#7681","I am not seeing it and am not blockchain literate enough to read the explorer and see where things are at. Too many contract calls. What do you recommend I do?","ONI#6888",""
+"2023-01-05,16:29:03","ONI","#6888","This is likely related to us updating the website and a bug. If you want you can dm me your address and I can show you your vault tokens. I wouldnt be worried","CyboAngel#7681",""
+"2023-01-05,16:29:34","CyboAngel","#7681","Thank you will do","",""
+"2023-01-05,19:59:22","Major","#8127","<@1058271177216368651> pm me, I will fix that tomorrow, all fund safe, just ui not displaying balance 🙂","CyboAngel#7681",""
+"2023-01-06,01:38:48","bryankerr","#1194","Am about to deposit a significant chunk of LINK. Will those vaults be migrated soon? If so I'll hold off so I don't have to migrate","",""
+"2023-01-06,01:38:52","Xrivijayan","#9777","Thanks, didn't see this","ONI#6888",""
+"2023-01-06,01:43:57","bryankerr","#1194","Will the curve LINK pool be migrated?","ONI#6888",""
+"2023-01-06,02:00:54","ONI","#6888","All curve pools will migrate to factory vaults. After someone makes it the migration will show up.","bryankerr#1194",""
+"2023-01-06,12:59:56","guyppt","#4469","So will the old vaults still earn yield?","",""
+"2023-01-06,13:31:02","ONI","#6888","Yes they will but the new factory vaults have lower fees and permissionless harvest","guyppt#4469",""
+"2023-01-06,16:10:44","Hipsterman","#5353","I did a dumb, and I think maybe I lost $100 on impermanent loss. 
+Deposited into ape.tax ""Meet Your Maker-lev"" Strat: https://ape.tax/meet-your-maker 
+
+Was able to pull out a bit, but still have like 102 usdc or so that I can't migrate or pull out:
+https://etherscan.io/address/0x7158c1Bee7a0Fa5BD6AFFc77b2309991D7ADCdd4
+
+Should I just assume this is a loss or does anyone have an idea how to recoup the last bit of funds?","","https://cdn.discordapp.com/attachments/734811808401063966/1060998874656952430/image.png"
+"2023-01-06,17:45:26","ONI","#6888","its possible they are tied up in the sushi joint provider since it has 100% debt ratio and cannot be fully withdrawal atm will look into it","Hipsterman#5353",""
+"2023-01-06,20:37:29","CyboAngel","#7681","","Major#8127","https://cdn.discordapp.com/attachments/734811808401063966/1061066003796201472/major.png"
+"2023-01-06,20:45:41","Major","#8127","Add me as friend first 🙂","",""
+"2023-01-06,20:45:59","Major","#8127","But tldr we have a pr open to fix your issue and this just need a review to be pushed and fixed!","",""
+"2023-01-07,06:40:33","coinbull","#8122","Hello. I would like to humbly request consideration for lowering the minimum amount required for locking YFI for veYFI. Thank you and have a nice day.","",""
+"2023-01-07,07:08:38","Barry Pooter","#5492","You can lock in Stake DAO if you have lower than 1 yfi","coinbull#8122",""
+"2023-01-07,07:08:47","Barry Pooter","#5492","Its hardcoded into the contract and probably won’t get changed","",""
+"2023-01-07,07:09:43","coinbull","#8122","Great. Thanks.","",""
+"2023-01-07,07:10:26","j.","#6352","you might be able to write something for <#734805853768777738>","",""
+"2023-01-07,07:10:52","j.","#6352","*then it passes then i'll see you in 2025*","",""
+"2023-01-07,14:07:13","divine_comedian","#5493","Hey folks - coming back to check on my holdings - the CRV MIM3Pool - I just migrated it and it is showing 0% rewards - it looks to be a new vault, is this  a UI bug or something with migration? I'm wondering if I should withdraw or hold out for rewards to turn back on...","","https://cdn.discordapp.com/attachments/734811808401063966/1061330180049739836/image.png"
+"2023-01-07,14:07:44","divine_comedian","#5493","it looks to still be yielding good rewards on curve","",""
+"2023-01-07,14:55:27","divine_comedian","#5493","<@&763827806584569916>  scammer?","Joe . Dev | Ankr#1174",""
+"2023-01-07,16:47:11","Major","#8127","The apy is here, just an issue with the exporter, this will be solved soon, but yes, same apy as the old one, with less fees 🙂","divine_comedian#5493",""
+"2023-01-08,15:04:49","B cryptsky","#1361","So what <@112535156417363968> tagged me in : https://yearn.vision/goto/fc3khmh4k?orgId=1
+
+Is great, but I can’t seem to pull anything up outside of yvDAI. For example I tried yvWETH by inputting the address etc. Nothing popped up","j.#6352、ONI#6888",""
+"2023-01-08,15:25:08","ONI","#6888","You need to select network then vault first","B cryptsky#1361",""
+"2023-01-08,15:25:23","ONI","#6888","Address auto populates","",""
+"2023-01-08,17:59:49","B cryptsky","#1361","Vaults are just blank. Putting yvUSDC doesn’t generate anything","ONI#6888",""
+"2023-01-08,18:03:34","ONI","#6888","https://yearn.vision/d/apkUMx6nz/vault-overview?orgId=1&var-networks=ETH&var-exp=false&var-vaults=yvUSDC%200.4.3&var-address=0xa354F35829Ae975e850e23e9615b11Da1B3dC4DE&var-version=v2","",""
+"2023-01-08,18:03:50","ONI","#6888","Works for me you have to click the drop down arrow for each section","",""
+"2023-01-09,06:03:14","wrybakiewicz","#5109","guys WTF is that ""migration"" ? looks like hack - you write NOTHING about this on your twitter ... also i want to withdraw my coins but can't do that, need VERY EXPENSIVE migration to do it ... can you fix it ? i just want to withdraw thats all, why can't you just let users use yearn ... ?","",""
+"2023-01-09,06:10:39","wrybakiewicz","#5109","do users really need to use manual https://etherscan.io/address/0xdcd90c7f6324cfa40d7169ef80b12031770b4325#writeContract#F26 to access their funds ?","",""
+"2023-01-09,09:56:35","Kenshiro","#7911","(it's Korean Won?)","",""
+"2023-01-09,12:32:13","leon131930","#3044","I have a question on risk scoring  - does the risk score (vertical axis) on yearn.watch/risk only reflect TVL impact of a strategy? And if further dimensions are included, how are those weighted? Thanks","",""
+"2023-01-09,13:11:00","ONI","#6888","Looking at this some more it seems that its expensive to migrate or withdrawal because all funds are currently in convex and they need to be unwound. You can follow this chart at Asset Graphs > assets free in vault https://yearn.vision/d/apkUMx6nz/vault-overview?orgId=1&var-networks=ETH&var-exp=false&var-vaults=yvCurve-stETH+0.3.0&var-address=0xdCD90C7f6324cfa40d7169ef80b12031770B4325&var-version=v2&from=now-30d&to=now
+to see when is a good time to withdrawal cheaply. when you see that number higher than the amount you want to withdrawal it will be cheaper for you. Right now it seems migrating or withdrawal is about 50$","wrybakiewicz#5109",""
+"2023-01-09,13:11:28","ONI","#6888","<@839384829492854825>","wrybakiewicz#5109",""
+"2023-01-09,13:13:15","Major","#8127","You can also access the vault page for any vault like this: https://yearn.finance/vaults/1/PUT_THE_VAULT_ADDRESS_HERE (and then access withdraw/deposit mode)","",""
+"2023-01-09,13:56:14","guyppt","#4469","Not the original commenter but, what would the fox entail?","ONI#6888",""
+"2023-01-09,13:56:22","guyppt","#4469","Fix*","",""
+"2023-01-09,14:12:13","ONI","#6888","Sorry my understanding is this isn't a website problem, but just an expensive migration due to funds fully allocated to strategies in the vault. We did however just push a few updates to the website. lmk if you are having any problems","guyppt#4469",""
+"2023-01-09,14:56:00","borrito","#3179","we usually refer to the horizontal axis when we say risk score, which is computed by the median value of various risk dimensions (id like to refer to the wonderful post by worms for the risk dimensions: https://medium.com/iearn/measuring-risk-for-defi-yield-strategies-b53f62b83b92)
+the vertical axis reflects the TVL impact of the risk group, which is computed from the sum of the TVLs of the strategies under the same group","leon131930#3044",""
+"2023-01-09,15:47:18","guyppt","#4469","What updates? Can see any charge.","ONI#6888",""
+"2023-01-09,15:47:27","guyppt","#4469","Change*","",""
+"2023-01-09,15:48:17","ONI","#6888","what problem are you having?","guyppt#4469",""
+"2023-01-09,16:43:22","guyppt","#4469","How do I withdraw from the old Steth pool","ONI#6888",""
+"2023-01-09,17:21:36","ONI","#6888","https://yearn.finance/vaults/1/0xdCD90C7f6324cfa40d7169ef80b12031770B4325 you can withdrawal/migrate here","guyppt#4469",""
+"2023-01-09,17:22:31","guyppt","#4469","Thank you!","ONI#6888",""
+"2023-01-09,17:22:39","ONI","#6888","Or it also might show here https://yearn.finance/vaults/1/0x5B8C556B8b2a78696F0B9B830B3d67623122E270","",""
+"2023-01-09,18:53:13","hugh_jazz99","#3906","Hi there, first time using yearn 👋 
+
+https://yearn.finance/vaults/1/0xc97232527B62eFb0D8ed38CF3EA103A6CcA4037e
+
+On the  LP Yearn CRV Vault page, does `Balance, lp-yCRV` include the amount in `Earned, yCRV-f`? And if no, do I need to claim the yCRV-f from somewhere?","",""
+"2023-01-10,09:35:32","Rossen","#9958","Hey guys. I cant connect to the vaults UI. Neither on desktop noelr on mobile. It just said “invalid network” although my network is ethereum and that is the kne selected…","",""
+"2023-01-10,09:35:49","Rossen","#9958","Its super weird","",""
+"2023-01-10,09:36:19","Rossen","#9958","Doesnt work in the metamask browser too…","","https://cdn.discordapp.com/attachments/734811808401063966/1062349168884064357/IMG_2958.png"
+"2023-01-10,09:37:14","Rossen","#9958","Cleared cache on desktop and everything but it doesnt try to connect at all…","",""
+"2023-01-10,09:45:10","Ben Middleton","#7011","I have the same issue","",""
+"2023-01-10,09:45:55","Rossen","#9958","I can connect to the vote.yearn.finance normally. But cant connect to vaults etc….","",""
+"2023-01-10,09:57:23","Rossen","#9958","friends have the same issue too","",""
+"2023-01-10,09:57:56","j.","#6352","same here","",""
+"2023-01-10,10:16:15","Barry Pooter","#5492","Same 😦","",""
+"2023-01-10,11:46:48","Wolfie1","#2559","Hi I am having this message","","https://cdn.discordapp.com/attachments/734811808401063966/1062382004856946738/image.png"
+"2023-01-10,11:54:17","Barry Pooter","#5492","yeah its bwoken atm","",""
+"2023-01-10,12:04:08","Wolfie1","#2559","Oh thank you!","Barry Pooter#5492",""
+"2023-01-10,12:04:53","Barry Pooter","#5492","probably check back in a day it will get fixed 🙂","Wolfie1#2559",""
+"2023-01-10,13:27:34","Pierrick","#1350","Any ETA for a launch on Arbitrum and/or Optimism?","ONI#6888",""
+"2023-01-10,13:41:32","ONI","#6888","Havent heard yet but will look into it","Pierrick#1350",""
+"2023-01-10,13:51:26","Pierrick","#1350","Thanks!","ONI#6888",""
+"2023-01-10,15:11:15","Kenshiro","#7911","<@137743751656243201> it looks we can't deposit on this Vault:  https://yearn.finance/vaults/1/0xF6B9DFE6bc42ed2eaB44D6B829017f7B78B29f88","ONI#6888",""
+"2023-01-10,15:12:24","ONI","#6888","are you trying to zap in?","Kenshiro#7911",""
+"2023-01-10,15:12:45","Kenshiro","#7911","yeah, using ""from Wallet"" -> ""to Vault""","ONI#6888",""
+"2023-01-10,15:12:56","ONI","#6888","I mean which coin are you depositing?","",""
+"2023-01-10,15:13:14","Kenshiro","#7911","ibKRWUSDC-f , the UI detect my tokens","",""
+"2023-01-10,15:13:42","Kenshiro","#7911","approve button is unclickable too","",""
+"2023-01-10,15:13:49","ONI","#6888","Ok let me look into it","",""
+"2023-01-10,15:14:02","Kenshiro","#7911","thx! 🙂","",""
+"2023-01-10,15:25:20","ONI","#6888","you can try to deposit here for now https://v3.yearn.finance/#/vault/0xF6B9DFE6bc42ed2eaB44D6B829017f7B78B29f88","",""
+"2023-01-10,15:40:40","ahmedcoe","#0233","Hi everyone, 
+I came to the new landing site for yearn and noticed that it is updated. I was in the steth pool and found that it is recommended that we migrate to  a new one. I noticed that the new one is in the factory section and has very low TVL. Is that normal, is it because its a new pool or are people not using it and staking somewhere else? Also, the last i remember the curve steth pool had 70 million in TVL where did that go?","",""
+"2023-01-10,15:45:14","Kenshiro","#7911","ok, thank you! 🙂","ONI#6888",""
+"2023-01-10,16:37:43","ONI","#6888","yes that is normal the vault was just released and people are in the process of migrating","ahmedcoe#0233",""
+"2023-01-10,16:38:22","ahmedcoe","#0233","Thanks","ONI#6888",""
+"2023-01-10,16:38:26","ONI","#6888","https://curve.fi/#/ethereum/pools/steth/deposit yes it has almost 1b in tvl","",""
+"2023-01-10,18:14:10","ONI","#6888","This vault was set to not accept deposits becuase the apy was high on low tvl, it might say it has an apy of 50% ect but the curve pool has $4k tvl in it atm and any deposits will tank the yield. https://curve.fi/#/ethereum/pools/factory-crypto-32/deposit if someone were to vote for the curve gauge for crv rewards we'd be more than happy to deploy a factory vault for this pool, but at the moment it doesn't make economic sense to do so.","Kenshiro#7911",""
+"2023-01-10,18:17:51","ONI","#6888","Yearn has to deploy factory vaults which already had production vaults avaliable. We deployed the ones which made economic sense (tvl + crv rewards) to do so. A few weren't deployed, and the ibxx-usdc vaults are among those.","",""
+"2023-01-10,18:35:28","Kenshiro","#7911","there is also a Convex Finance pool for this","",""
+"2023-01-10,18:36:28","Kenshiro","#7911","here search ibKRW: https://www.convexfinance.com/stake","",""
+"2023-01-10,18:37:55","Kenshiro","#7911","my question is if the Vault is working (someone is triggering compounds) or I  should invest directly in Convex to earn both CRV and CVX rewards","",""
+"2023-01-10,20:08:29","ONI","#6888","This specific vault ibkrw-usdc has deposits closed due to low tvl/yield.","Kenshiro#7911",""
+"2023-01-10,23:23:57","adamg82","#1333","Hey guys, I hadn't connected to to yearn in a while, and it turns out my vault no longer exists (CRV steth).  The protocol recognizes I have the old tokens and a migrate button shows up.  I click it, but my ledger wallet is having a tough time with the transaction.  Is there another way to migrate?","",""
+"2023-01-11,02:59:38","old_frog_","#6669","will pass it on to devs, may need to do a manual function","",""
+"2023-01-11,03:00:04","old_frog_","#6669","but dont do anything u less its posted in this channel by a mod or dev","",""
+"2023-01-11,07:18:00","Kenshiro","#7911","ok, thank you! 🙂","ONI#6888",""
+"2023-01-11,08:10:46","emiliof","#0922","Hi guys, I have migrate my vault to the new ""Curve stETH Factory"".  My balance appears to be ok (under Balance, yvCurve-stETH-f), but I cannot find a button to simulate a withdraw. Where is the option to withdraw??","",""
+"2023-01-11,08:24:30","adamg82","#1333","thanks!  i'll hang tight.  the issue could also be with ledger, but they've actually been pretty good lately","old_frog_#6669",""
+"2023-01-11,12:58:08","ONI","#6888","<@239477298598903818> see these two msgs here connect your wallet one of them should let you migrate","emiliof#0922",""
+"2023-01-11,13:01:59","! Annaky ⛔","#7744","is website dead ?","",""
+"2023-01-11,17:47:50","forever iron","#9291","how do i convert my crv-f i just withdrew from the gauge vault back into regular crv","",""
+"2023-01-11,18:33:44","emiliof","#0922","Thank you, very useful!","ONI#6888",""
+"2023-01-11,22:45:12","Hipsterman","#5353","Thank you <@137743751656243201> and thanks, <@837916569942097932> for both of your help. You guys are the best.","ONI#6888、wavey#9439",""
+"2023-01-11,23:50:08","TheRealTuna","#1036","Hi, I found a small balance of claimable tokens via Zapper that are locked up on Yearn. Trying to figure out where I can claim them.","",""
+"2023-01-11,23:51:26","TheRealTuna","#1036","","","https://cdn.discordapp.com/attachments/734811808401063966/1062926756245422130/Yearn_2.PNG"
+"2023-01-11,23:52:02","TheRealTuna","#1036","Don't see them on the main page, these are probably real old, like V1 or something.","",""
+"2023-01-12,00:13:51","Liu","#3857","Hello, what is the reason i deposited steCRV on Yearn Factory for more than 17 hours. But my amount of steCRV without any increase ? And ""Earned steCRV"" show $0 also.","","https://cdn.discordapp.com/attachments/734811808401063966/1062932397596872754/image.png"
+"2023-01-12,00:15:14","TheRealTuna","#1036","Found the claimable locked here. Locked forever?","","https://cdn.discordapp.com/attachments/734811808401063966/1062932742070861928/yearn3.PNG"
+"2023-01-12,00:42:42","j.","#6352","v1.yearn.finance","TheRealTuna#1036",""
+"2023-01-12,00:43:07","j.","#6352","says right there no vote no claim","TheRealTuna#1036",""
+"2023-01-12,01:43:10","Hipsterman","#5353","Yield is realized during harvests. Strategists maintaining Yearn Vaults have different harvest strategies. Some harvests occur more often than others because they may be dependent on other factors – including Vault balance and market conditions.","Liu#3857",""
+"2023-01-12,01:44:50","TheRealTuna","#1036","Yes, I just wanted to confirm it's locked forever as I won't be able to vote on yearn v1.","j.#6352",""
+"2023-01-12,05:18:07","Crolev","#3404","Hello, you can do it using the curve pool:
+https://curve.fi/#/ethereum/pools/factory-v2-192/swap","forever iron#9291",""
+"2023-01-12,05:56:15","NatKumForm","#4529","Hello. Who is admin in this channel, please?","",""
+"2023-01-12,05:59:46","j.","#6352","pick one from the right","",""
+"2023-01-12,06:56:18","Barry Pooter","#5492","Hello","",""
+"2023-01-12,07:51:41","Fizbano","#1173","same here, how do i withdraw? alo is there a way to zap in eth directly?","emiliof#0922",""
+"2023-01-12,07:58:28","emiliof","#0922","Click on the arrow and the deposit will change to withdraw. I was told the zap is not implementes yet, but they are working on it","Fizbano#1173",""
+"2023-01-12,07:59:45","Fizbano","#1173","amazing thanks.","emiliof#0922",""
+"2023-01-12,08:45:21","NatKumForm","#4529","Thank you. I can pick, but I can not communicate with any of them)","j.#6352",""
+"2023-01-12,15:09:00","ONI","#6888","Just ask here no need to dm admins or try <#766323679410913320> if that is more suitable","NatKumForm#4529",""
+"2023-01-13,00:55:38","cinestir","#2017","Same here.  Even tried migrating back on one account.  Still don't see how to withdraw!","emiliof#0922",""
+"2023-01-13,16:24:11","kunjila","#5914","I cannot connect Metamask to the new website, on v3 and v2 all is fine. Using Chrome on my desktop, tried all the basic troubleshooting. Anyone else experiencing the same?","",""
+"2023-01-13,19:15:51","italianfoot","#3914","I withdraw something some cure ibAUD and resulted in this transaction: 0x8fa339b2bd51ea71db58004077198a536b3a7d0211fcf615f54c9d1ee5827ba8","",""
+"2023-01-13,19:15:57","italianfoot","#3914","why don't i see the coins in my wallet?","",""
+"2023-01-13,19:28:22","italianfoot","#3914","nvm, I see them but how do I exchange it for eth?","",""
+"2023-01-14,04:15:57","emiliof","#0922","Click on the arrow and the deposit will change to withdraw. I was told the zap is not implementes yet, but they are working on it","cinestir#2017",""
+"2023-01-14,04:19:05","ThanksSkeleton","#9425","are the new factory pools on mainnet harvested by bots","",""
+"2023-01-14,08:19:44","yakitori","#2367","Hi, I have st-yCRV deposited and earned some yCRV. How can I harvest that earned yCRV? Is there any interface for that? (like harvesting CAKE in PancakeSwap)","",""
+"2023-01-14,08:30:38","Crolev","#3404","You don't need to make manual harvests. They are done automatically through keep3r jobs. While the amount of st-yCRV tokens in your wallet will remain constant the price per share will grow which means you will be able to withdraw more yCRV in the future than you deposited in the past.","yakitori#2367",""
+"2023-01-14,08:32:14","Crolev","#3404","If the decoded input data of harvest tx has _job parameter then it's a keep3r job executed by a bot.","ThanksSkeleton#9425",""
+"2023-01-14,09:15:43","yakitori","#2367","I see, thanks.","Crolev#3404",""
+"2023-01-14,10:41:16","Kriptopoes","#4957","Hello, I have deposited FTM about a year ago. Now is visible in in the yearn.finance vaults as YVWFTM. However, it is unclear to me how I can unstake/withdraw. I only see a deposit button on my screen. Can anyone advise please? Thank you (interestingly there are also no rewards shown for >year locked staking)","",""
+"2023-01-14,12:15:34","arberx","#3367","checkout: https://v2.yearn.finance/vaults","Kriptopoes#4957",""
+"2023-01-14,12:19:10","Kriptopoes","#4957","this is the site I remember 🙂","arberx#3367",""
+"2023-01-14,12:19:13","Kriptopoes","#4957","tnx","",""
+"2023-01-14,19:28:28","cinestir","#2017","How does one withdraw crv3crypto to eth?  Doesn't show up on curve and can't seem to find a way on yearn.","","https://cdn.discordapp.com/attachments/734811808401063966/1063947741778169896/Screen_Shot_2023-01-13_at_6.55.27_PM.png"
+"2023-01-14,23:04:42","neau","#6884","https://discord.com/channels/734804446353031319/734811808401063966/1063782192720924672","cinestir#2017",""
+"2023-01-14,23:43:19","cinestir","#2017","what does zap mean?","",""
+"2023-01-15,00:00:03","adamg82","#1333","will pass it on to devs may need to do a","",""
+"2023-01-15,09:10:51","kunjila","#5914","can someone confirm that this is UX bug and it's being worked on? Evan after manually connecting MM, I still cannot interact with the website, it doesn't recognize my balances etc. Issue is only with Chrome on desktop, in other browsers all is good. Other web3 protocols (i.e. Uniswap, Sushi...) work fine in Chrome","",""
+"2023-01-16,09:47:19","youngest investor","#0289","I need some assistance.  It has been a while i since I visited yearn.  I have a holding in the Curve stETH pool.  Site says I have to migrate to the current vault.  When I try the transaction fails or says I do not have enough for gas.  I do have enough ETH for gas.  How do I resole this?","",""
+"2023-01-16,11:15:53","DukeMittens","#2494","How exactly does one withdraw their st-yCRV? Vault shows how much st-yCRV I have in Yearn, but I cannot find a way to withdraw. The docs don't seem to indicate how to do this with the redesigned site. Thoughts?","Crolev#3404",""
+"2023-01-16,12:02:16","Crolev","#3404","Try to instead make a withdrawal from the vault and deposit into the other steth vault.","youngest investor#0289",""
+"2023-01-16,12:04:18","Crolev","#3404","You can withdraw yCRV using either https://yearn.finance/vaults or https://yearn.finance/ycrv UI.
+Then if you want to sell your yCRV then you can do it on Curve: https://curve.fi/#/ethereum/pools/factory-v2-192/swap","DukeMittens#2494",""
+"2023-01-16,18:53:27","youngest investor","#0289","There is no where to withdraw.  This is what it shows.  I try to migrate but the transaction either fails immediately or says I do not have enough ETH for gas, but there is enough.","Crolev#3404","https://cdn.discordapp.com/attachments/734811808401063966/1064663705649946695/Screenshot_2023-01-16_at_4.49.48_PM.png"
+"2023-01-16,19:43:12","Crolev","#3404","Sorry about this, I will let web team know about this UI issue.
+In the meantime try using the previous version of the UI to make a withdrawal: https://v3.yearn.finance/","youngest investor#0289",""
+"2023-01-16,19:53:47","Crolev","#3404","However just to make sure - you don't get to the point where you have a transaction in metamask, right?","youngest investor#0289",""
+"2023-01-16,19:53:59","Crolev","#3404","Could you please also share the screenshot of the error you see?","",""
+"2023-01-17,03:33:41","sethwii","#5607","Hi, is that possible to withdraw from atricrypto vault without migration","",""
+"2023-01-17,05:23:26","Crolev","#3404","Try using either of the previous UI versions:
+https://v3.yearn.finance/
+https://v2.yearn.finance/","sethwii#5607",""
+"2023-01-17,07:36:31","aMorales","#1258","<@137743751656243201> Hello, can I write you a private message? It's about security and fraud protection, or please tell me who I can contact","ONI#6888",""
+"2023-01-17,08:31:26","Tomz84","#4527","Hi <@573280701378723882>  got the same issue but with a contract allowance to accept and then nothing .... always asks me for allowance approbation ... did it 3 times and nothing happens :/ on yearn V3 i can see my portfolio amount but nothing to withdraw :/ Do you know what we can can do ?","youngest investor#0289、Crolev#3404",""
+"2023-01-17,09:15:06","youngest investor","#0289","No, there is no transaction.  It just shows transaction failed or says not enough gas.","Crolev#3404",""
+"2023-01-17,09:19:01","youngest investor","#0289","Tried the previous version of the vault as you suggested.  My balance there shows 0, so cannot withdraw from there.","",""
+"2023-01-17,10:56:22","Crolev","#3404","<@889415972128165898> <@857611169215807489> 
+I let our web team know about this issue. Sorry about this.
+If you need those funds urgently then let me know and I will walk you through how to make a withdrawal in etherscan by interacting with the smart contract directly. If it is not urgent then I recommend to wait until web team fixes the frontend.","youngest investor#0289、Tomz84#4527",""
+"2023-01-17,11:18:32","ONI","#6888","So you don't get a transaction to sign in your wallet or you do and sign it but it shows failed on etherscan?","youngest investor#0289",""
+"2023-01-17,12:54:40","Tomz84","#4527","Ok thanks 🙏 let me know when the frontend is fixed ! Thks","Crolev#3404",""
+"2023-01-17,12:57:27","ONI","#6888","Can you try again? I dont see any that have reverted on the migration contract recently <@889415972128165898> I do however see a few that were sent with low gas and are still pending?","Tomz84#4527",""
+"2023-01-17,12:58:14","ONI","#6888","https://etherscan.io/address/0x9327e2FDc57c7d70782F29AB46F6385afaf4503C
+If yours is one that is pending because of low gas see this article https://info.etherscan.com/how-to-cancel-ethereum-pending-transactions/#replacing-cancel-pending-transactions","",""
+"2023-01-17,13:24:47","youngest investor","#0289","i approve the transaction and it immediately fails.  i can wait.  there is no urgency.  i would just like it resolved.","Crolev#3404",""
+"2023-01-17,13:25:40","youngest investor","#0289","in metamask.  i am signed in and it does ask for approval.","",""
+"2023-01-17,21:21:12","vageta","#9218","Can anyone give me instructions for n how to stake my YFI tokens ??","",""
+"2023-01-17,21:33:34","old_frog_","#6669","https://yearn.finance/veyfi","",""
+"2023-01-18,11:28:25","screwTheJustice","#0314","What's the difference between Gross APR and Net APY?Are they after tax(I mean the performance fee)?","",""
+"2023-01-18,11:29:52","Crolev","#3404","Net APY is what you get and this is the APY shown in Yearn UI.
+Gross APR is the yield before fees and can be seen in the tooltip that shows when you hover your mouse over APY.","",""
+"2023-01-18,13:25:59","Tomz84","#4527","Thing is when I go to that page : https://yearn.finance/vaults I can see the pool Curve stETH Pool with the migration button and which ask well for approbation, approbation works well (i nevertheless limit it with an amount a little bite higher that my real possession) and then nothing else happens, same migration button remains and if I click on it again i am asked for approbation again :/ I could try again but already did 4 times and fees go up quickly :/","ONI#6888",""
+"2023-01-18,14:01:14","ONI","#6888","you should only have to approve it once, I also wouldnt manually override the value it suggests","Tomz84#4527",""
+"2023-01-18,14:41:54","Tomz84","#4527","i ll try again once the gas is lower, maybe my limit was wrong :/ but can you confirm that once contract approved a new button to withdraw should appear ? thanks","ONI#6888",""
+"2023-01-18,14:48:46","ONI","#6888","Yes that is correct","Tomz84#4527",""
+"2023-01-18,17:44:32","bryankerr","#1194","I deposited into the curve steth pool a few weeks ago and still see zero earning. Is this expected?","",""
+"2023-01-19,10:21:57","bryankerr","#1194","<@137743751656243201> any chance I can get a hand with the above?","ONI#6888",""
+"2023-01-19,12:09:18","ONI","#6888","the factory vault or? The factory vault has yet to have a harvest so yes its normally this could take 2 to 3 weeks to show yield on your deposits.","bryankerr#1194",""
+"2023-01-19,12:09:59","bryankerr","#1194","Yes that's right. I migrated from the old version and haven't seen any apy in weeks","ONI#6888",""
+"2023-01-19,12:10:30","ONI","#6888","The apy your getting is shown on the main site its just that the rewards (CRV) has yes to be harvested. It will happen soon","",""
+"2023-01-19,14:23:56","screwTheJustice","#0314","What's the frequency of reinvesting?Does it work by calling harvest function by some bot periodically?","",""
+"2023-01-19,17:44:10","ONI","#6888","Harvest is permissionless so whenever anyone wants to call harvest on the factory vaults it will compound the rewards into the base token. 
+
+If you want to know how much is available to claim before calling harvest you can check this way.
+
+For curve you can go to https://curve.fi/#/ethereum/dashboard and put in Yearn's curve voter proxy address (curve-voter.ychad.eth). It will show, for your vault, how much is available to harvest from the curve strategy.
+
+For convex strategies and frax
+claimableProfitInUsdc()
+On the strats will tell you how much usd has accumulated to harvest","screwTheJustice#0314",""
+"2023-01-19,17:46:18","ONI","#6888","So for stETH this is what is currently claimable in the curve strategy (not the 8k, that is over all vaults, just the 574$)","","https://cdn.discordapp.com/attachments/734811808401063966/1065733968298778704/image.png"
+"2023-01-20,06:00:26","Tomz84","#4527","Hi <@137743751656243201> it was well a limitation issue 🙂 nevertheless i'd like to withdraw my LP instead of Migration (cost so much) how can I get back my LP token without migration ? Thanks","ONI#6888",""
+"2023-01-20,09:28:35","TurtleBear","#3325","Hi team, was hoping someone could direct me who to contact regarding chain integrations/partnerships, thanks!","",""
+"2023-01-20,09:41:29","j.","#6352","<#766323679410913320>","TurtleBear#3325",""
+"2023-01-20,12:41:03","joaorcsilva","#2787","I have some questions about ybribe:
+1- do I need to claim everytime before current period ends?
+2- does it accrue everyday? every block? how does it work for the current weeks payout formula","",""
+"2023-01-20,13:21:34","defiglenn","#3350","Hey, you do need to claim everytime. 1- The period runs from Thursday to Thursday. Otherwise you are locked out the rewards till the nexy week. 2- pretty sure it accrues daily but not 100%","joaorcsilva#2787",""
+"2023-01-20,13:29:17","joaorcsilva","#2787","""Otherwise you are locked out the rewards till the nexy week."" i dont understand. Do I lose it permanently? or just cant withdraw that amount until 2 weeks ahead?","defiglenn#3350",""
+"2023-01-20,13:29:58","joaorcsilva","#2787","right now i have x$ claimable. if i dont claim now, can i claim several weeks in like 2 months from now?","",""
+"2023-01-20,13:30:23","joaorcsilva","#2787","or only the ""previous period"" will be available all rest void","",""
+"2023-01-20,13:30:52","joaorcsilva","#2787","regarding question 2 would be interesting to know also","defiglenn#3350",""
+"2023-01-20,13:46:37","Worms","#0026","AFAIK
+
+1 - Yes, you need to claim any claimable rewards before the current period ends
+2 - Rewards accrue on a weekly basis (the payout formula is based on the total amount of veCRV votes for the chosen gauge and the amount of the overall bribe)
+
+read more here: https://medium.com/iearn/introducing-yearns-new-bribe-platform-for-curve-gauge-voting-e87e6f929f3e
+also here: https://yearn-docs-git-fork-marcoworms-master.yearn.farm/getting-started/products/ybribe/overview","joaorcsilva#2787",""
+"2023-01-20,13:47:18","Worms","#0026","if this doesn't answer lmk more details about your question so I can dive deeper!","",""
+"2023-01-20,15:02:04","Tomz84","#4527","<@137743751656243201> <@137743751656243201> any feedback guys please ?","ONI#6888",""
+"2023-01-20,15:07:25","defiglenn","#3350","I dont think you can do this on the UI. You may be able to interact with the smart contract directly to do this","Tomz84#4527",""
+"2023-01-20,15:08:05","ONI","#6888","did you try on the v3 ui?","Tomz84#4527",""
+"2023-01-20,15:08:10","ONI","#6888","v3.yearn.finance","",""
+"2023-01-20,16:01:36","Tomz84","#4527","on V3 I can see my portfolio net value but no view on the vault :/","ONI#6888",""
+"2023-01-20,16:20:24","Richard Feynmann","#2145","As you someone mentioned above, you can easily call withdrawAll() function in the vault contract using etherscan","",""
+"2023-01-20,16:20:45","Richard Feynmann","#2145","Do you know the address of the vault? You should be able to find it searching on etherscan","",""
+"2023-01-20,16:31:59","Tomz84","#4527","if im not mistaken, i d say : https://etherscan.io/token/0xdcd90c7f6324cfa40d7169ef80b12031770b4325","",""
+"2023-01-20,16:32:35","Tomz84","#4527","but i have no clue in doing this : call withdrawAll() function","",""
+"2023-01-20,16:32:37","ONI","#6888","yes that should be it","",""
+"2023-01-20,16:33:03","ONI","#6888","connect wallet to etherscan, go to write contract call 25 withdrawal()","",""
+"2023-01-20,16:33:43","ONI","#6888","that will withdrawal all funds and give you the deposit token back. Sorry this is the easiest way to do this will look into how we can fix the website on this","",""
+"2023-01-20,16:37:51","Tomz84","#4527","ok ill try this and come back to you in any cases","",""
+"2023-01-20,16:44:02","joaorcsilva","#2787","thanks, i see that regarding 1, its really necessary to claim, otherwise it will be splitted across future week's payouts","Worms#0026",""
+"2023-01-20,16:45:30","joaorcsilva","#2787","however regarding the ""snapshots"" not sure if i understand, example: i joined mid previous period and i have some claimable balance. i wanted to understand if it was the ""full week"" regardless of me entering in the middle, or if i just received part","",""
+"2023-01-20,16:46:09","joaorcsilva","#2787","from your reply i see its like binary, so my veCRV votes were accounted, and i received the same proportion, as people who joined previous week from the beggining","",""
+"2023-01-20,17:09:19","Worms","#0026","understood, will go after the info for you, not sure if I will answer it today though!","joaorcsilva#2787",""
+"2023-01-20,17:23:14","joaorcsilva","#2787","i received more than the announced token/veCRV","Worms#0026",""
+"2023-01-20,17:23:35","joaorcsilva","#2787","so i assume it may have accounted for full week PLUS, unclaimed amounts from prev period","",""
+"2023-01-20,23:58:06","indigo","#0520","what is the status on v3 vaults? was announced last year in may but havent heard of anything since","",""
+"2023-01-20,23:59:31","j.","#6352","https://discord.com/channels/734804446353031319/734862139386232902/1065645113176506378","",""
+"2023-01-20,23:59:50","j.","#6352","https://support.discord.com/hc/en-us/articles/115000468588-Using-Search","",""
+"2023-01-21,00:55:30","LexS","#6332","Hello. I need some help. Turns out that I just went back to check my old wallets, and find out that in Yearn site says, under the Portfolio tap, that I have a few bucks on Holdings, but I don't know where is that deposited. Any clue on how I can verify that?","",""
+"2023-01-21,12:38:47","Tomz84","#4527","Ok it's working but withdraw was same price as migration then i just migrated 🙂 Thanks guys for your precious support 🙂","ONI#6888",""
+"2023-01-21,13:37:08","italianfoot","#3914","what is the cheapest way to start staking yCRV?","",""
+"2023-01-21,13:37:35","italianfoot","#3914","I was buying ETH from coinbase, then swapping it to CRV via curve.fi, and then staking it through yearn","",""
+"2023-01-21,13:37:49","italianfoot","#3914","there must be a cheaper way...","",""
+"2023-01-21,14:23:11","Hipsterman","#5353","Try cowswap - I had to manually add the st-yCRV address to the token list, but it allowed me to trade ETH to st-yCRV and was significantly cheaper gas-wise.","",""
+"2023-01-21,14:45:56","italianfoot","#3914","how do you manually add the st-yCRV address? Or better yet, what is that address?","",""
+"2023-01-21,14:46:26","italianfoot","#3914","nvm, i think it is 0x27B5739e22ad9033bcBf192059122d163b60349D","",""
+"2023-01-21,14:46:27","italianfoot","#3914","?","",""
+"2023-01-21,14:46:53","italianfoot","#3914","can i buy with fiat? buying ETH first also involves spending more gas...","",""
+"2023-01-21,14:47:23","ONI","#6888","on cowswap no you cannot","",""
+"2023-01-21,14:47:49","ONI","#6888","its just for swapping tokens, but yes at cowswap you can swap into vaults > v0.3.4","",""
+"2023-01-21,15:18:55","Hipsterman","#5353","If you need to buy with fiat first, cheapest way I know of is going to be a cex you trust that accepts fiat payments, followed by some dex's. 
+- A cex like binance or coinbase may have less fees associated with your purchase, but there may be a hold on the ETH you purchase until the bank transfer clears.
+- Some dex's have the ability to use fiat purchases (like Moonpay; which can also be utilized via Metamask), but those fees can be a bit higher. These funds are usually immediately available.","italianfoot#3914",""
+"2023-01-21,15:20:34","ref","#8984","Hi, it appears that my vault  yvCurve-stETH-WETH is not active on yearn.finance anymore, I can't even display it. Does it mean that I have to withdraw it by this way ? : https://etherscan.io/address/0x828b154032950c8ff7cf8085d841723db2696056#writeContract","",""
+"2023-01-21,15:23:45","ONI","#6888","https://yearn.finance/vaults/1/0x5faF6a2D186448Dfa667c51CB3D695c7A6E52d8E","",""
+"2023-01-21,15:25:26","ONI","#6888","you should be able to withdrawal here. Make sure you connect your wallet","",""
+"2023-01-21,15:28:42","ref","#8984","yes i see it, thanks 😀","ONI#6888",""
+"2023-01-22,10:41:12","GroagJI","#2849","On Fantom vaults the earnings / earned coins display is not working for me. Does it actually calculate anything ?","",""
+"2023-01-22,11:30:35","defiglenn","#3350","Yeah it should show how much you have earned so far. How long ago did you deposit in the vault? It can be every few days to a few weeks for a harvest occur, up until your first occurrence of this your earnings would be 0","GroagJI#2849",""
+"2023-01-22,13:29:19","TraderJoe","#0870","Hi, i have converted my crv into st-ycrv
+
+when i try to see if i can swap from st-yCRV into yCRV the max button is greyed out and when i enter any number in it says insufficient balance, but when i click the drop down menu to choose what I want to swap from it shows my st-yCRV amount correctly","",""
+"2023-01-22,13:36:44","TraderJoe","#0870","nm its in the vault","",""
+"2023-01-22,13:38:16","TraderJoe","#0870","but when i try to withdraw from the vault, the UI shows i will receive 0, no matter what number i put in 😦","",""
+"2023-01-22,13:38:53","Ollizy","#2673","Maybe it’s a UI bug which wallet are you interacting with ? <@181805202343591936>","TraderJoe#0870",""
+"2023-01-22,13:39:09","TraderJoe","#0870","rabby, maybe i'll. reload brwoser with metamask","",""
+"2023-01-22,13:40:02","TraderJoe","#0870","metamask works","",""
+"2023-01-22,13:40:07","TraderJoe","#0870","thanks ollizy","",""
+"2023-01-22,13:41:19","Ollizy","#2673","You’re welcome! <@181805202343591936>","TraderJoe#0870",""
+"2023-01-23,06:02:23","GroagJI","#2849","More than a few weeks ago. Earnings work, just does not display. Maybe because I now hold a staking composit or however you call it ? yvBoo and it earns Boo, but shows no Boo earned.","defiglenn#3350",""
+"2023-01-23,06:50:01","defiglenn","#3350","Ok thanks for letting us know. I will pass this issue on and we will get it fixed. So you are managing to earn but u can't see it on the UI? Are you finding out the amount earned by looking at the etherscan contract?","GroagJI#2849",""
+"2023-01-23,06:51:27","GroagJI","#2849","Sure. Yes either that or if I click on withdraw it also shows the correct amount with earnings included.","",""
+"2023-01-23,06:52:06","GroagJI","#2849","I guess the UI just shows the yvBoo holding,  which is static","",""
+"2023-01-24,01:29:01","SesuaiAplikasi","#0100","Hi there - I have an old deposit in a stETH vault that apparently doesn't exist anymore. When I'm on Yearn, the balance shows in my Holdings but I can't find the vault anymore. What do I do if I want to withdraw it?","",""
+"2023-01-24,04:53:16","defiglenn","#3350","Try using v1.yearn.finance or v2.yearn.finance to see it and withdraw it","SesuaiAplikasi#0100",""
+"2023-01-24,07:23:20","berus","#4408","Hello !  cowswap is the only way to swap st-ycrv for crv   ?","",""
+"2023-01-24,07:23:56","defiglenn","#3350","Have you tried sushiswap?","berus#4408",""
+"2023-01-24,07:25:14","berus","#4408","yes don't seem that there is liquidity","defiglenn#3350",""
+"2023-01-24,07:25:51","berus","#4408","however cowswap it's ok ..only to know if there was something within yearn finance","",""
+"2023-01-24,07:32:07","defiglenn","#3350","If you could it would be here:https://yearn.finance/vaults/1/0x27B5739e22ad9033bcBf192059122d163b60349D. I can't see if it would work as on my phone right now so please let me know if this helps","berus#4408",""
+"2023-01-24,10:44:49","Worms","#0026","hello ser! I confirmed with one of our devs and this is indeed the expected behavior/formula, you can join in the middle of the week and get full rewards for it","joaorcsilva#2787",""
+"2023-01-24,12:44:11","Worms","#0026","I think there is a uniswap v3 pool but idk about the liquidity there, cowswap is what the yearn UI uses!","berus#4408",""
+"2023-01-24,16:49:24","Tomz84","#4527","<@137743751656243201> Hello, to follow up. I did the migration on the new vault Curve stETH since few days but i don't see any earnings on the front end and when I look into ether scan the amount deposited and the amount i can withdraw is the same, meaning there is no rewards at all since 4 days :/ do you have please any idea ?","ONI#6888",""
+"2023-01-24,16:58:40","ONI","#6888","Yes we have yet to harvest any rewards last I checked, they will be getting this set up this week to sell the rewards accumulated by the factory vaults. Best to just wait for now, you're earning the apy shown on the website no worries.","Tomz84#4527",""
+"2023-01-24,16:59:39","Tomz84","#4527","OK great to read ! Thanks again for your prompt reply and precious help 🙂 Cheers","ONI#6888",""
+"2023-01-25,02:39:11","SesuaiAplikasi","#0100","thank you so much!","defiglenn#3350",""
+"2023-01-25,04:06:23","Peky","#8276","Hi, can i ask you? I have st-yCRV https://yearn.finance/ycrv  where will I see rewards? thanks","",""
+"2023-01-25,07:54:03","defiglenn","#3350","Answered in general. Please don't double post","Peky#8276",""
+"2023-01-25,08:36:40","Guybrush","#1021","not sure if this is the same problem as peky but im in a few factory vaults and not seeing any rewards at all","",""
+"2023-01-25,08:37:15","Guybrush","#1021","i deposited curve LP tokens , is there some other step i need to do as well?","",""
+"2023-01-25,08:37:31","Guybrush","#1021","i see people talking about harvests but i dont see any button for that on the UI","",""
+"2023-01-25,08:38:12","Guybrush","#1021","oh i guess maybe this is the issue? so i just need to wait for the harvest to happen on factory vaults?","ONI#6888",""
+"2023-01-25,08:38:40","Guybrush","#1021","have been in some of these vaults for a week now so its a bit odd to see no rewards at all accumulated","",""
+"2023-01-25,08:39:50","defiglenn","#3350","Had someone asking a similar question yesterday. This should help you: https://discord.com/channels/734804446353031319/740414025481060382/1067456725474619462","Guybrush#1021",""
+"2023-01-25,12:16:11","itsdarkbunny","#1599","hi, I want to deposit stETH to this vault but it's not recognized (0.00 stETH) - it is in my wallet though, why is that?","","https://cdn.discordapp.com/attachments/734811808401063966/1067825217805762560/Screenshot_2023-01-25_at_16.05.08.png"
+"2023-01-25,12:24:32","ONI","#6888","yes that is correct","Guybrush#1021",""
+"2023-01-25,13:25:30","ONI","#6888","is your wallet connected?","itsdarkbunny#1599",""
+"2023-01-25,13:26:56","itsdarkbunny","#1599","yes, dmed you","ONI#6888",""
+"2023-01-25,22:16:59","bryankerr","#1194","I just moved my steth and ylink pool tokens from metamask to a ledger and connected to yearn with wallet connect. I see my balance but it says no deposits. Is my yearn position attached to my old metamask?","",""
+"2023-01-25,22:17:54","j.","#6352","no. could be just the UI spazzing out. as long as you have the yv tokens in your new address/wallet, you should be good","",""
+"2023-01-26,09:52:42","Bitcoinwu | poap中文社区小助理","#8378","hi","",""
+"2023-01-26,09:53:03","Bitcoinwu | poap中文社区小助理","#8378","I bought yvUSDT via Zerion 287 days ago , and the hash was https://etherscan.io/tx/0xa66294ca287677db42fa537877dcc02bb6e9a3238c159bfd42f624
+Currently, I'm running into a problem about swap. I want to swap yvUSDT for eth via zerion, but the liquidity is insufficient, and I also can’t swap it for other stable coins.
+And then, try to withdraw via  yearn website.After linking the wallet on the yearn official website (https://yearn.finance/vaults/1/0x3B27F92C0e212C671EA351827EDF93DB27cc0c65 ), my yvusdt assets are not displayed? what should I do?","",""
+"2023-01-26,09:53:09","Bitcoinwu | poap中文社区小助理","#8378","<@112535156417363968>","j.#6352",""
+"2023-01-26,09:54:16","j.","#6352","tx hash seems incorrect. can you sent the right one?","Bitcoinwu | poap中文社区小助理#8378",""
+"2023-01-26,09:57:05","Bitcoinwu | poap中文社区小助理","#8378","thaks","",""
+"2023-01-26,10:33:10","j.","#6352","try withdrawing from v3.yearn.finance or v2.yearn.finance if that also doesnt work","Bitcoinwu | poap中文社区小助理#8378",""
+"2023-01-26,10:36:39","j.","#6352","if that also doesnt work, try on etherscan https://etherscan.io/token/0x7da96a3891add058ada2e826306d812c638d87a7#writeContract
+connect your wallet
+click Write under 26. withdraw","",""
+"2023-01-26,10:37:34","Bitcoinwu | poap中文社区小助理","#8378","v3 site send me one<@112535156417363968>","j.#6352",""
+"2023-01-26,10:42:23","Bitcoinwu | poap中文社区小助理","#8378","What are the addresses of the v3 official website?","",""
+"2023-01-26,10:42:29","Bitcoinwu | poap中文社区小助理","#8378","<@112535156417363968>","j.#6352",""
+"2023-01-26,10:42:33","j.","#6352","v3.yearn.finance","",""
+"2023-01-26,10:44:15","Bitcoinwu | poap中文社区小助理","#8378","ok","",""
+"2023-01-26,15:05:59","bryankerr","#1194","Are you sure? Shouldn't I see my past earnings? Or does that reset?","j.#6352",""
+"2023-01-26,16:34:14","defiglenn","#3350","Your yv tokens are like a receipt so these will track your earnings once you deposit into that vault. Even if you move these to ledger or something and then back, or transfer it to someone else whoever has it in their wallet can redeem in from the yearn vault","bryankerr#1194",""
+"2023-01-26,20:39:24","bryankerr","#1194","So why aren't I seeing my earnings then? Lol the earnings read zero","defiglenn#3350",""
+"2023-01-26,20:42:52","defiglenn","#3350","Ok I see what you are saying. So you can see your Yearn balance which includes your deposit amount and the amount you have earned. But you can't see the amount you earned in one separate figure. Is this just saying 0 for earned? If this is what you mean I can understand your frustration. I will look to see an alternative way for you","",""
+"2023-01-26,20:47:11","j.","#6352","as mentioned above, UI spazzing out etc etc","",""
+"2023-01-26,22:06:14","bryankerr","#1194","Exactly, so my earnings weren't tracked from old address to the new one.","defiglenn#3350",""
+"2023-01-26,22:09:31","defiglenn","#3350","Ok yeah I can see that is frustrating. As J says above re the UI spazzing out,  sorry about this. We will work on fixing this asap. Please be assured though that the amount you are earning hasn't changed, and will continue as normal. It will just show as your balance","bryankerr#1194",""
+"2023-01-26,22:10:43","bryankerr","#1194","Ok cool makes sense, I know we talked about this before but my curve steth pool never displayed earnings. Was told that bug is being fixed this week?","defiglenn#3350",""
+"2023-01-26,22:18:07","defiglenn","#3350","I will chase this tomorrow. I'm still getting back up to speed with all things Yearn after being away for a bit, but I believe you will be able to track the earnings of your vault in the meantime by looking at how the share price changes over the period your looking at https://yearn.vision/d/eybEevXnzz/v2-vaults?orgId=1&from=now-24h&to=now","bryankerr#1194",""
+"2023-01-26,23:50:31","Sasp","#4026","Maybe a super dumb q but why have I earned nothing in FTM?","",""
+"2023-01-27,06:49:15","Richard Feynmann","#2145","It could be an error on the website, when did you deposited?","",""
+"2023-01-27,09:18:57","dionnz","#4283","Hi - i tried to withdraw from the WETH vault, transaction was approved and completed via Metamask (gas burned) but my position is still showing on Yearn and I didn't receive any WETH. 
+
+Any idea?
+thx","",""
+"2023-01-27,09:23:57","defiglenn","#3350","That's an odd one. Do you want to share with me the etherscan for it and I can look to see what happened?","dionnz#4283",""
+"2023-01-27,09:24:30","dionnz","#4283","https://etherscan.io/tx/0x04aa1258afedde2f2385e973e338e269d849e1a7a18fb93fe0ada79d31b0fea1","",""
+"2023-01-27,09:27:13","defiglenn","#3350","So, afaik, when you are interacting, you have to approve the use of the WETH first (This is why it says on etherscan: ApprovedyvWETH For Trade On Wrapped Ether). And then also withdraw it. So there are 2 separate transactions each with gas. If you try withdrawing again, it shouldn't say approve and you can withdraw it.","dionnz#4283",""
+"2023-01-27,09:41:31","dionnz","#4283","Ok I will try again","",""
+"2023-01-27,11:58:29","Tomz84","#4527","Hi Dark Ghosty, do you have please any feedbacks on this ? I still can't see earnings and even on etherscan my balance deposite do not increase  :/","ONI#6888",""
+"2023-01-27,11:59:15","ONI","#6888","Will look into it which vault are you in?","",""
+"2023-01-27,12:20:19","Tomz84","#4527","Curve stETH Factory <@137743751656243201>","ONI#6888",""
+"2023-01-27,12:20:25","Tomz84","#4527","https://yearn.finance/vaults/1/0x5B8C556B8b2a78696F0B9B830B3d67623122E270","",""
+"2023-01-27,15:21:59","РilotVietnam","#0934","Is dark ghost also oni#6888?","",""
+"2023-01-27,15:23:17","arberx","#3367","<@137743751656243201> yes","ONI#6888、РilotVietnam#0934",""
+"2023-01-27,15:23:40","РilotVietnam","#0934","👋","Tomz84#4527",""
+"2023-01-27,15:23:44","РilotVietnam","#0934","Thanks","",""
+"2023-01-27,15:43:34","ONI","#6888","did you send me a dm we will never dm you first","РilotVietnam#0934",""
+"2023-01-27,15:43:38","ONI","#6888","if anyone did they are a scammer","",""
+"2023-01-27,15:43:53","РilotVietnam","#0934","No lol","",""
+"2023-01-27,15:44:01","РilotVietnam","#0934","I just saw you as dark ghosty on here","",""
+"2023-01-27,15:44:06","РilotVietnam","#0934","And also oni","",""
+"2023-01-27,15:44:10","РilotVietnam","#0934","I was confused","",""
+"2023-01-27,15:44:23","ONI","#6888","oh you have a discord username and server name, they dont have to be the same","",""
+"2023-01-27,15:44:46","РilotVietnam","#0934","Oh pardon me I’m noob","",""
+"2023-01-27,15:46:37","Tomz84","#4527","yes it happened to me ... same logo, same name but on discord since 2 days ! carefull guys","ONI#6888",""
+"2023-01-27,15:49:11","ONI","#6888","Looks like rewards were just sold and it has yield now. https://yearn.vision/d/apkUMx6nz/vault-overview?orgId=1&var-networks=ETH&var-exp=false&var-vaults=yvCurve-stETH-f+0.4.5&var-address=0x5B8C556B8b2a78696F0B9B830B3d67623122E270&var-version=v2 can be seen under harvest. Vault is working normally","Tomz84#4527",""
+"2023-01-27,15:50:50","ONI","#6888","","","https://cdn.discordapp.com/attachments/734811808401063966/1068604011273527346/image.png"
+"2023-01-27,16:03:39","Tomz84","#4527","on UI we still can't see anything :/ if i go on withdraw looks like the amount claimable is a little bit higher than the yearn deposited but yield seems working since today whereas i migrated a week ago :/ Can you confirm that the vault was never ""paused"" or anything ? Thanks","ONI#6888",""
+"2023-01-27,16:33:28","ONI","#6888","vault is working fine, harvests and yield take time best to leave it for 2 weeks or a month then come back and youll see it but the rewards are now being added to the vault as you can see above","Tomz84#4527",""
+"2023-01-27,16:33:36","ONI","#6888","all factory vaults are working normally","",""
+"2023-01-27,17:43:51","WARAMSKY","#1252","when you say time, how often is that? How often are rewards added to the principal? (I'm trying to calculate how often you compound)","ONI#6888",""
+"2023-01-27,17:48:28","ONI","#6888","should be once a week if it has > 500$ to claim","WARAMSKY#1252",""
+"2023-01-27,17:49:15","WARAMSKY","#1252","Got it, thanks. What about <$500?","ONI#6888",""
+"2023-01-27,17:49:36","ONI","#6888","then it will wait a week till it has 500$ of rewards or more","WARAMSKY#1252",""
+"2023-01-27,17:52:03","WARAMSKY","#1252","hmm.. so you're saying if rewards never cross the $500 mark, they will never be recognized?","",""
+"2023-01-27,17:53:51","ONI","#6888","It will be harvested sometime when its deemed cost efficient. This could be a month or so just depends for now the strategists are overseeing harvest but we are looking to fully automate it.","WARAMSKY#1252",""
+"2023-01-27,17:54:41","WARAMSKY","#1252","so if I have 1 BTC Deposited ($23K) on FTM Network (currently paying 2.82% APY) I will not recognize any rewards until month 8 of being deposited?","",""
+"2023-01-27,17:55:09","ONI","#6888","where did you get 8m from?","WARAMSKY#1252",""
+"2023-01-27,17:55:39","ONI","#6888","the vault factory isnt on fantom","",""
+"2023-01-27,17:55:55","ONI","#6888","this only applies to curve vaults from the vault factory on eth","",""
+"2023-01-27,17:56:28","WARAMSKY","#1252","assuming same APY (which I know fluctuates), 1 full year = $648, 3 months = <$500, so 12 months minus 3 months. 9 months not 8","",""
+"2023-01-27,17:56:41","ONI","#6888","this is for total vault tvl not your deposit","",""
+"2023-01-27,17:57:15","WARAMSKY","#1252","aaaah I see I see, sorry for the misunderstanding. I'm referring to normal vaults","ONI#6888",""
+"2023-01-27,17:57:40","WARAMSKY","#1252","isnt that the same? 5% of total vault, = same as 5% of portion of vault","ONI#6888",""
+"2023-01-27,17:57:49","ONI","#6888","depends on the strategies used, but all strategies have a max time till harvest. After that is reached the strategy should be harvested this can vary from 1m to 3m.","",""
+"2023-01-27,17:57:57","ONI","#6888","no","WARAMSKY#1252",""
+"2023-01-27,17:58:24","ONI","#6888","you can see harvest stats and strategy info for vaults at this dashboard https://yearn.vision/d/apkUMx6nz/vault-overview?orgId=1&var-networks=ETH&var-exp=false&var-vaults=yvCurve-stETH-f+0.4.5&var-address=0x5B8C556B8b2a78696F0B9B830B3d67623122E270&var-version=v2&from=now-1h&to=now","",""
+"2023-01-27,18:04:32","WARAMSKY","#1252","thanks 👍","ONI#6888",""
+"2023-01-27,18:08:06","WARAMSKY","#1252","Talk to me a little more about this? Or point me in a link if possible. For simplicity, lets say there are two depositors, a whale and a fren. If there's $1M deposited in a vault, and that $1M earns 10% (100K), the whale who was 900K deposited will earn 90K, and the fren who was 100K will earn 10K. 
+
+10K out of 100K is 10%, and 90K out of 900K is 10%. What am I missing?","ONI#6888",""
+"2023-01-27,18:11:30","ONI","#6888","ok yes that is correct. Vault pools funds and harvests compounding rewards into the want token for all in the vault. 
+https://docs.yearn.finance/getting-started/intro our docs are here which should help answer your questions","WARAMSKY#1252",""
+"2023-01-27,19:13:09","RoigeTrading","#4872","Hey guys! I deposited like a week ago on de st-yCRV Vault however rewards in yCRV are 0$, has there been any issue with the vault? Just farmed rewards before depositing again and everything was working fine. Should I withdraw and redeploy the funds or any fix?","",""
+"2023-01-27,21:07:39","defiglenn","#3350","Just an error in the UI. Vault working fine. Wouldn't bother withdrawing. Fix should be soon
+
+You can see that harvests are working in the vault. Search this to see: in:🌽mainnet-harvest ycrv","RoigeTrading#4872",""
+"2023-01-28,02:36:31","PΞPΞ","#8892","how can i convert old yvUSDC to the new one?","",""
+"2023-01-28,02:38:31","PΞPΞ","#8892","zapper sees it but yearn v2 doesn't seem to be detecting it","",""
+"2023-01-28,02:39:26","PΞPΞ","#8892","how do i do that?","",""
+"2023-01-28,02:39:44","PΞPΞ","#8892","to who?","",""
+"2023-01-28,02:40:33","PΞPΞ","#8892","thanks","",""
+"2023-01-28,04:08:39","Richard Feynmann","#2145","Try on v2.yearn.finance, withdraw and then deposit in the newer vault on yearn.finance","PΞPΞ#8892",""
+"2023-01-28,04:08:58","Richard Feynmann","#2145","If it’s not there, maybe try on v1.yearn.finance","",""
+"2023-01-28,05:02:24","PΞPΞ","#8892","don't see them on either one","Richard Feynmann#2145",""
+"2023-01-28,05:02:46","PΞPΞ","#8892","it's yvUSDC withdrawn from abracadabra","",""
+"2023-01-28,05:03:24","Richard Feynmann","#2145","You can withdraw manually using etherscan, what’s the token address?","",""
+"2023-01-28,05:45:27","PΞPΞ","#8892","i'm looking at the contract and there are 4 withdraw functions. which one do i use?","",""
+"2023-01-28,05:50:32","j.","#6352","no need to give your address to a random person who just joined. just connect your wallet to ether scan and click withdraw under **25. withdraw**
+https://etherscan.io/address/0x5f18c75abdae578b483e5f43f12a39cf75b973a9#writeContract","",""
+"2023-01-28,05:57:06","PΞPΞ","#8892","thanks","j.#6352",""
+"2023-01-28,06:00:02","PΞPΞ","#8892","it worked","",""
+"2023-01-28,06:49:23","Barry Pooter","#5492","Right..","",""
+"2023-01-28,12:08:27","dudeman9001","#2830","I'm trying to harvest this vault but MM keeps throwing this gas estimation error.
+https://yearn.watch/vault/0x04c8bfe2eb09a1e2e9fA97A2fd970E06d87B43de/0xccb0da3E219dE478A0975599d9c362E724A6DfF9","","https://cdn.discordapp.com/attachments/734811808401063966/1068910436193406996/image.png"
+"2023-01-28,12:14:41","dudeman9001","#2830","oohh, i was using the keeper wrapper from the docs and not the one shown in yearn.watch","",""
+"2023-01-28,12:15:06","dudeman9001","#2830","0x0D26E894C2371AB6D20d99A65E991775e3b5CAd7 estimates it correctly","",""
+"2023-01-28,15:29:31","Gag_","#9556","can an admin or a <@&902033723942375495> can confirm that ? Just want to make sure he's not lying","","https://cdn.discordapp.com/attachments/734811808401063966/1068961036926996516/image.png"
+"2023-01-28,15:31:22","Gag_","#9556","he means he was a dev","",""
+"2023-01-28,15:40:34","arberx","#3367","No","Gag_#9556",""
+"2023-01-28,15:40:41","arberx","#3367","What channel is that","",""
+"2023-01-28,15:40:44","arberx","#3367","Discord","",""
+"2023-01-28,15:44:16","Gag_","#9556","it's in the Cilistia discord","",""
+"2023-01-28,15:44:27","Gag_","#9556","https://cilistia.com/","",""
+"2023-01-28,15:44:33","Gag_","#9556","<@743220544303792210>","arberx#3367",""
+"2023-01-28,15:55:04","arberx","#3367","Scam","Gag_#9556",""
+"2023-01-28,16:00:59","Gag_","#9556","thanks","",""
+"2023-01-28,23:22:57","MarketPsychology","#1663","I’ve got kind of strange issue. I withdrew coins from the 
+Curve CVX-ETH Factory vault.  And I selected I wanted to receive YFI coins.  It looks like the transaction went through, I no longer have anything in the vault but the coins aren’t showing up in my wallet. 
+
+My wallet is not registering the receipt of the coins. It also shows up in the history of my YFI coins in the wallet, but not in the history of the wallet in general. Does anyone know why the heck is going on?","",""
+"2023-01-28,23:26:05","MarketPsychology","#1663","It’s like it got lost in the cow protocol or something. Here’s the transaction hash on ether scan 0xcc0f3b019d69ce61a977f496a3892669e35a9c3c37cd981549d9a3f05b1c8009","",""
+"2023-01-28,23:30:26","arberx","#3367","You sent the yfi to Coinbase","MarketPsychology#1663",""
+"2023-01-28,23:30:32","arberx","#3367","Look at your wallet","",""
+"2023-01-28,23:37:43","MarketPsychology","#1663","Yeah the transaction shows up but not the YFI","",""
+"2023-01-28,23:37:52","MarketPsychology","#1663","","","https://cdn.discordapp.com/attachments/734811808401063966/1069083934736011375/IMG_6392.png"
+"2023-01-28,23:39:52","MarketPsychology","#1663","It’s strange bc it also doesn’t show up in the “transactions” for all my coins","",""
+"2023-01-28,23:41:11","MarketPsychology","#1663","","","https://cdn.discordapp.com/attachments/734811808401063966/1069084770501410816/IMG_6393.png"
+"2023-01-29,14:08:05","MarketPsychology","#1663","Transaction : 0x1bb009dd3b2b41862d39e52fb6cb0ce65f7f6f3adf94c8364b97969e7db2b8f1","",""
+"2023-01-29,14:08:06","MarketPsychology","#1663","Looking into the transaction it looks like at the very end it got converted into WETH? I’m not sure why that would happen. Maybe I need to reach out to Coinbase?","","https://cdn.discordapp.com/attachments/734811808401063966/1069302933235171328/IMG_6405.png"
+"2023-01-29,14:09:06","MarketPsychology","#1663","Any other thoughts? Thanks","arberx#3367",""
+"2023-01-29,20:03:51","falcon_mach_v","#0085","Hi, how can I withdraw ""earned yCRV"" from LP and Staked Yearn CRV Vault?","",""
+"2023-01-29,20:23:49","Hipsterman","#5353","The vaults add your earned yCRV to your positions automatically. You can track your yCRV position as it grows on a wallet tracking site like debank","",""
+"2023-01-29,20:25:53","Hipsterman","#5353","You can withdraw your lp or st positions at any time - ideally when you’ve reached your yield goals, when gas is cheap, and the base CRV price is high 🙂","",""
+"2023-01-30,12:08:23","ONI","#6888","Transfer Not showing up","",""
+"2023-01-30,19:56:35","falcon_mach_v","#0085","OK I get it. Thanks a lot 😄","Hipsterman#5353",""
+"2023-01-31,15:10:36","leon131930","#3044","Hi <@573280701378723882> , been looking on yearn.vision and was surprised by the debt allocation of the stETH 0.3.0 vault
+(https://yearn.vision/d/apkUMx6nz/vault-overview?orgId=1&var-networks=ETH&var-exp=false&var-vaults=yvCurve-stETH%200.3.0&var-address=0xdCD90C7f6324cfa40d7169ef80b12031770B4325&var-version=v2&from=now-2y&to=now)
+Why was all debt withdrawn from StrategystETHCurve by end of May 2021, and not allocated to another strategy until June 2022?","Crolev#3404","https://cdn.discordapp.com/attachments/734811808401063966/1070043439997141083/image.png"
+"2023-02-01,08:30:36","defiglenn","#3350","Hey Leon, the chain says it was a strategy migration, probably not caught by vision. The harvest sent all the tokens back to the vault after setting the debt to zero. The old strat (0x979843B8eEa56E0bEA971445200e0eC3398cdB87) was changed for a new one (0x6C0496fC55Eb4089f1Cf91A4344a2D56fAcE51e3) in this transaction from May 27 2021 like 5 hours after the first strat was removed","leon131930#3044",""
+"2023-02-01,22:17:24","NinjaT","#7670","I'm not sure if this is the place to ask, my bribe didn't show up on yBribe this week, can someone check it out for me?","",""
+"2023-02-02,03:49:23","defiglenn","#3350","Did you look to claim before the time period? See here: https://yearn.finance/ybribe/about","NinjaT#7670",""
+"2023-02-02,06:00:20","ChaosOfOrderliness","#4904","Hi! My name is Alex, I'm business development manager at EMCD
+We are the largest mining pool in Eastern Europe, also we are an ecosystem of cryptocurrency services.
+
+Now we are launching emcd.listing project and want to make a short call (30 minutes)
+Since you have already created a token and listed on exchanges, we would like to hold a custdev so you can share your expert opinion and based on your words we can create a product
+
+Of course, in return, we will offer great conditions of using our current services, and of course - the best conditions for listing (if you will be interested in it)
+
+I would be grateful for feedback!","",""
+"2023-02-02,06:10:23","defiglenn","#3350","Hi, I'm not sure I understand your offering and how this benefits Yearn. Please DM me this and I can see if we can help. Please note though, we aren't funding much marketing / brand work right now due to bear market","ChaosOfOrderliness#4904",""
+"2023-02-02,06:35:40","j.","#6352","<a:aYGwhat:959567122407784510>","",""
+"2023-02-02,12:52:13","ONI","#6888","For those interested I updated the harvest section of the factory vault docs to make what is happening more clear https://docs.yearn.finance/getting-started/products/yvaults/vault-factory","",""
+"2023-02-02,12:53:59","ONI","#6888","This is because there is an issue (missing data) with the exporter database we are currently fixing. It might not show all the ETH network data at yearn.vision till its fixed which shouldnt take too long","leon131930#3044",""
+"2023-02-02,13:07:36","dudeman9001","#2830","```oohh, i was using the keeper wrapper from the docs and not the one shown in yearn.watch
+0x0D26E894C2371AB6D20d99A65E991775e3b5CAd7 estimates it correctly```
+the docs don't point to the correct keeper for all factory vaults","ONI#6888",""
+"2023-02-02,13:08:32","dudeman9001","#2830","i'm also unable to see rewards here 0xf147b8125d2ef93fb6965db97d6746952a133934","",""
+"2023-02-02,13:09:14","dudeman9001","#2830","but they show up when viewing 0x04c8bfe2eb09a1e2e9fa97a2fd970e06d87b43de on curves dashboard.... with no gear rewards shown","",""
+"2023-02-02,13:09:27","dudeman9001","#2830","","","https://cdn.discordapp.com/attachments/734811808401063966/1070737726468530267/image.png"
+"2023-02-02,13:09:49","dudeman9001","#2830","is this expected behavior?","",""
+"2023-02-02,13:14:05","ONI","#6888","hey sorry we updated the address pointing to the ens so its a newer version. I fixed the docs with my update","dudeman9001#2830",""
+"2023-02-02,13:18:23","dudeman9001","#2830","any idea where those gear tokens are sitting?","",""
+"2023-02-02,13:18:35","ONI","#6888","ill look into it","",""
+"2023-02-02,13:18:40","dudeman9001","#2830","ty","",""
+"2023-02-02,14:40:52","dudeman9001","#2830","","","https://cdn.discordapp.com/attachments/734811808401063966/1070760734478323722/image.png"
+"2023-02-02,14:41:07","dudeman9001","#2830","i'm not seeing tokenIn=GEAR","",""
+"2023-02-02,14:41:35","dudeman9001","#2830","where, for example, this steth pool with LDO rewards shows tokenIn=LDO","","https://cdn.discordapp.com/attachments/734811808401063966/1070760910962036736/image.png"
+"2023-02-02,14:43:18","ONI","#6888","I believe harvest needs to be called to allocate funds to the strategy in the gear vault","",""
+"2023-02-02,14:44:07","dudeman9001","#2830","the vault needs to be harvested to stake in the gauge?","",""
+"2023-02-02,14:44:26","ONI","#6888","yes harvest allocates debt to strategies","dudeman9001#2830",""
+"2023-02-02,14:44:56","dudeman9001","#2830","so the first harvest is only based on cvx/trade fees?","",""
+"2023-02-02,14:45:11","dudeman9001","#2830","and the apy displayed doesn't take this into account?","",""
+"2023-02-02,14:45:12","ONI","#6888","No.. did you read the updated docs?","",""
+"2023-02-02,14:46:48","dudeman9001","#2830","yes, and i'm not sure what you think i missed","",""
+"2023-02-02,14:47:08","dudeman9001","#2830","if the lp isn't staked in the gauge then it isn't earning GEAR and the APY is wrong","",""
+"2023-02-02,14:47:55","ONI","#6888","the APY is correct if funds were allocated, they will be allocated when someone calls harvest on the vault. We are still working on optimizing keepers for factory vaults but the strategists should call it soon","",""
+"2023-02-02,14:50:40","dudeman9001","#2830","it just blows my mind that yearn is claiming 75%+apy for weeks on a vault that isn't even staked in the gauge yet","",""
+"2023-02-02,14:51:02","dudeman9001","#2830","so when it finally does stake i'll have missed about a month of rewards","",""
+"2023-02-02,14:51:41","dudeman9001","#2830","if it ever does considering the apr of trade/crv rewards and the size of the position","",""
+"2023-02-02,14:54:02","Peanuckle","#5973","wait, what?","",""
+"2023-02-02,14:54:57","Peanuckle","#5973","i've been pushing this vault on the gear discord :/","",""
+"2023-02-02,14:56:16","ONI","#6888","This is specific to the gear vault with lower tvl vaults they can take longer to start up. If you would like to allocate the funds to the strategy you're free to call harvest","",""
+"2023-02-02,14:57:09","Peanuckle","#5973","harvest would change the contract for the trade handler, too?","",""
+"2023-02-02,14:57:22","ONI","#6888","what do you mean? no","Peanuckle#5973",""
+"2023-02-02,14:57:36","Peanuckle","#5973","he linked these","dudeman9001#2830",""
+"2023-02-02,14:58:04","ONI","#6888","no its not related rewards arent showing up because there are no funds in the strategy, there are no funds in the strategy because harvest wasnt yet called on this permisionless vault.","Peanuckle#5973",""
+"2023-02-02,14:58:22","dudeman9001","#2830","it looks like the gear token isn't even considered in the deployed contract","",""
+"2023-02-02,15:00:11","ONI","#6888","The vaults will farm and sell all reward tokens accumulated","",""
+"2023-02-02,15:01:58","dudeman9001","#2830","that's my point with the images of the two different factory vaults that have another token emission","",""
+"2023-02-02,15:02:13","dudeman9001","#2830","why does LDO show for steth but GEAR doesn't for gear vault","",""
+"2023-02-02,15:04:41","dudeman9001","#2830","yearn watch claims it's allocated","","https://cdn.discordapp.com/attachments/734811808401063966/1070766725739593880/image.png"
+"2023-02-02,15:05:00","ONI","#6888","If that is from events its probably because a harvest wasnt called on gear-eth yet is my guess","",""
+"2023-02-02,15:05:17","ONI","#6888","see totalDebt=0","dudeman9001#2830",""
+"2023-02-02,15:06:04","ONI","#6888","debtRatio means this strategy should take 100% of all funds in the vault","",""
+"2023-02-02,19:05:31","siratoin","#3297","gm, I see this on deBank so it seems I have some YFI locked in a governance pool, but I don't see it in the dashboard","","https://cdn.discordapp.com/attachments/734811808401063966/1070827336137719901/image.png"
+"2023-02-02,19:05:35","siratoin","#3297","","","https://cdn.discordapp.com/attachments/734811808401063966/1070827352227074129/image.png"
+"2023-02-02,19:06:17","siratoin","#3297","is it a mistake from debank?","",""
+"2023-02-02,19:19:55","ONI","#6888","Check out this tweet thread https://twitter.com/dudesahn/status/1413567068583104512","",""
+"2023-02-02,19:52:17","siratoin","#3297","thanks, that worked ✅","",""
+"2023-02-03,10:26:41","szsemla","#3508","In yearn.finance will I find somewhere the address of the pool on curve.fi where I need to add liquidity to deposit in yearn.finance","",""
+"2023-02-03,10:48:26","Crolev","#3404","On the vault page you see the same name of the pool that you can find on curve.fi
+For example yvCurve-3pool is 3pool.
+
+Alternatively, if you want to see the token address of the pool token, then you can click on the etherscan link on the vault page and check the base token on the vault contract address.
+
+If you'd like to avoid doing two transactions on Ethereum (first deposit on Curve, then on Yearn) then you can consider using either something like transaction builder in Gnosis safe so you can bundle the transaction yourself or zap provider such as portals.fi that will do it for you for a small fee.","szsemla#3508",""
+"2023-02-03,10:56:50","ONI","#6888","Answered in general but try cowswap","szsemla#3508",""
+"2023-02-03,11:01:42","szsemla","#3508","Super, tkanki you!","Crolev#3404",""
+"2023-02-03,11:01:57","szsemla","#3508","Thank you!","",""
+"2023-02-03,11:52:50","ONI","#6888","did that work for you?","szsemla#3508",""
+"2023-02-03,12:07:23","szsemla","#3508","Yes a found","",""
+"2023-02-03,12:08:01","szsemla","#3508","Yes i found it. Thank you","",""
+"2023-02-03,16:20:17","Shiznit","#1750","Hello I have a problem related to DAI on yearn on the aztec blockchain, can I address here?","",""
+"2023-02-03,22:42:11","TorJado","#3802","aztec blockchain?","",""
+"2023-02-04,11:24:38","ONI","#6888","What's the problem","Shiznit#1750",""

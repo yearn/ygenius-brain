@@ -1,0 +1,26 @@
+- # [[Team Charter]]
+    - ## Team Identity
+        - [[wavey]] [[micky]] [[Corn]] [[Gary]] [[Bull]] [[Charles]] [[facu]] [[0xJiji]] [[banteg]] [[Hattip]]
+    - ## [[yTeam]]
+        - Yes
+    - ## Responsibility and Accountability
+        - ## What do we need to know?
+            - Inner workings of the vault and how changing fees would affect vault operations
+    - ## Responsibilities
+        - Make sure the fees follow the mandate of Yearn's users should never make less than is sent to the Yearn Treasury/dao
+        - Monitoring vault fees
+    - ## What are we not responsible for?
+        - Creating Vaults and Strategies
+        - 
+    - ## What are we stakeholders of?
+        - Yearn Vault's Fee Setting
+- [[Signers]]
+    - Consensus: 4/5 social
+    - Initial Home Group: New YFI yRates
+    - Objective: Set Fees on yVaults
+    - Signers: #wavey #micky #Corn #Bull #Gary
+- Overview
+    - yRates currently has 1 power
+        - **Set Fees**: Has the Set Fees power for yVaults. With conditions: Yearn fees must never exceed the yield paid out to its vault depositors & the published quarterly financial reports by [[Treasury]] should include an update prepared by [[yRates]]
+- Membership Pool
+    - YFI Ops

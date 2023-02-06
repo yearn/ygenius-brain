@@ -1,0 +1,26 @@
+- [[Team Charter]]
+    - ## Team Identity
+        - [[banteg]] [[storm]] 
+    - ## [[yTeam]]
+        - Yes
+    - ## Responsibility and Accountability
+        - ## What do we need to know?
+            - 
+    - ## Responsibilities
+        - 
+    - ## What are we not responsible for?
+        - 
+    - ## What are we stakeholders of?
+        - 
+- [[Signers]]
+    - Consensus: 3/5 social
+    - Initial Home Group: YFI Protocol Dev
+    - Objective: Manage the protocol
+    - Signers: 
+- **Overview**
+    - yDev currently has 3 powers
+        - - **Define Yearn Protocol**: Decide what code is considered part of yearn and what isn’t
+        - - **Manage Protocol**: Maintain and improve the Yearn Protocol
+        - - **Add Strategies**: Add new strategies to vaults
+- **Role**
+    - Objective: __Manage the protocol__

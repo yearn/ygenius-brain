@@ -1,0 +1,17 @@
+- # [[Team Charter]]
+    - ## Team Identity
+    - ## [[workgroup]]
+        - Yes
+    - ## Responsibility and Accountability
+        - Maintain and improve Yearn infrastructure
+        - 
+    - ## What do we need to know?
+    - ## Responsibilities
+        - Maintain and improve: Archive nodes, API, SDK
+        - Set up alerts for infra
+    - ## What are we not responsible for?
+    - ## What are we stakeholders of?
+        - Full / Archive Nodes
+        - Yearn Exporter
+        - Yearn Vision
+        - APIs

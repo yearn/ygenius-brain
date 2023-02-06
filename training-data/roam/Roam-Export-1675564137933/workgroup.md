@@ -1,0 +1,1 @@
+- Workgroups are groups of contributors working for a shared goal. Unlike [[yTeam]]'s they dont formally have a power delegated to them from YFI holders. They might or might not have a multisig to distribute funds for their contributors on the workgroup. 

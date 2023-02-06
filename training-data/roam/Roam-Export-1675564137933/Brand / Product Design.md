@@ -1,0 +1,10 @@
+- # [[Team Charter]]
+    - ## Team Identity
+        - #alphanumeric #draper #banteg #pentacle
+    - ## [[workgroup]]
+        - Yes
+    - ## Responsibility and Accountability
+        - ## What do we need to know?
+    - ## Responsibilities
+    - ## What are we not responsible for?
+    - ## What are we stakeholders of?

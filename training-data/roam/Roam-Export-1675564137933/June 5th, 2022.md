@@ -1,0 +1,2 @@
+- llamapay streams deployed for both grants and poorcomp
+    - https://gnosis-safe.io/app/eth:0xFEB4acf3df3cDEA7399794D0869ef76A6EfAff52/apps?appUrl=https://gnosis-safe.llamapay.io/

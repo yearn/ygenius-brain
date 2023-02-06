@@ -1,0 +1,41 @@
+- # [[Team Charter]]
+    - ## Team Identity
+        - [[Bull]] [[bob]] [[milkyklim]] [[banteg]] [[Hattip]] [[0xJiji]] [[micky]]
+    - ## [[yTeam]]
+        - Yes
+    - ## Responsibility and Accountability
+        - ### What do we need to know?
+            - Treasury oversees monthly internal financial reporting, including a comprehensive income statement, balance sheet, and cash flow analysis. Quarterly financial reports are also created by Treasury and published for the wider Yearn Finance community.
+        - ### What do we want other people to figure out for us? 
+            - Data analysis for various financial and operational metrics (such as TVL, unique users count for products, etc.) is very useful to help Treasury analyze and create reports to be used to make financial and operational decisions for the benefit of Yearn.
+        - ### Responsibilities
+            - Financial reporting
+            - Operational and financial recommendations
+            - Cash flow analysis
+            - Short term and long term financial plans
+            - Advisory on capital expenditures, particularly large ones
+            - Oversee Treasury assets for the long-term benefit of Yearn
+        - ### What are we not responsible for?
+            - Product development
+            - Maintenance of existing products
+            - Developer oversight/onboarding
+            - Multsig transaction creation and signing
+            - Human resources
+            - Marketing
+            - Community outreach
+        - ### What are we stakeholders of?
+            - Treasury buybacks
+            - Expenditures
+            - New hires
+            - Treasury asset management (farming/lending)
+- [[Signers]]
+    - Consensus: 3/5 social
+    - Initial Home Group: YFI Finance v2
+    - Objective: Spend money well
+    - Signers: Santiago, [[Hattip]], [[milkyklim]], [[0xJiji]], [[Bull]]
+- Overview
+    - yBudget currently has 1 power
+        - **Spend money well**
+        - **Set Budgets**: Create budgets for coordinape, grants, hiring, operations, or other workstreams
+- Membership Pool
+    - YFI Finances, YFI Advisors

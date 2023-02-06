@@ -1,0 +1,8 @@
+- exploring Gelato for yearn harvests https://github.com/pata-eth/yearn-harvest
+- yearn risk scores docs https://docs.yearn.finance/security/risk-score
+- budget request template https://github.com/yearn/budget/blob/master/.github/ISSUE_TEMPLATE/budget-request.yml
+- [[flashfish]] presented yearn's inferno
+- [[Interesting Links]]
+    - ape academy is out, watch [[ape]] and [[vyper]] tutorials https://academy.apeworx.io
+    - new [[vyper]] discord https://discord.com/invite/6tw7PTM7C2
+- [[Dark Ghosty]] update strategy descriptions in [[Yearn Meta]]

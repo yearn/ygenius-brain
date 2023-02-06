@@ -1,0 +1,47 @@
+- The following is the list of current yTeams. Each yTeam has a page, additional details, and notes for each team can be found there.
+- [[yBrain]]
+- [[yChad]]
+- [[yBrain]]
+- [[yDev]]
+- [[yFarm]]
+- [[yGuard]]
+- [[yTx]]
+- [[yPeople]]
+- [[yBudget]]
+- [[yRates]]
+- [[yOps]]
+- **What is the Difference Between a yTeam and a Normal Workgroup?**
+    - As per [YIP-61](https://gov.yearn.finance/t/yip-61-governance-2-0) there were initially 9 yTeams (if we include the multisig, yChad). The difference between any workgroup and a yTeam is that **a yTeam is empowered to wield granular decision-making powers** and act independently in the best interest of yearn within their constrained domain of action.
+- **What Does Being a "Signer" Mean?**
+    - Being a signer on a yTeam means ********you are responsible for making decisions.******** Since each yTeam may have different consensus mechanisms and these will change as new technologies become available *__signing__* may mean anything from just writing "yes" or "no" in a telegram group (what we're calling *__social consensus)__* to signing a [[Gnosis safe]] transaction, or something else in the future.
+    - Being a signer does not mean you have to be the world expert in your domain. You certainly have to understand it, but it is more important that you share Yearn's values, are a great collaborator, can make sense of information and resolve differing viewpoints, and most importantly that you can make good decisions. Each yTeam is a little village and will have tons of support. For instance on the yFarm team, it's more important that the signers have high integrity and are properly aligned with yearn's values than the most galaxy-sized farm brains. They can add top farmers to their telegram group and discuss opportunities together, get proposals, and then make decisions.
+- **How Are Signers Determined?**
+    - From YIP-61:
+    - > __Each yTeam will be organized around a group of signers. The signers for each yTeam should be nominated by rough social consensus of that yTeam and be reasonably acceptable to the Ops yTeam (‘yOps’). yTeam signers are empowered to choose their own consensus mechanism for decision-making and curate their own discussion and feedback groups on telegram. Decisions issued by yTeams will be executed on-chain by the Multisig until a more decentralized system is approved for implementation.__
+- **How Will yTeams Function Day to Day?**
+    - - Home Groups
+        - - Each yTeam has a home: a telegram group
+        - - The signers of the yTeam are the admins of their home group and they curate the group, adding and removing contributors at their discretion
+        - - All decisions made by the yTeam should be discussed in their home group
+    - - Lead, Partner, Follow
+        - - Within a yTeam home group there are three kinds of contributors: **Leads**(the signers), **Partners** (active contributors doing work), and **Follows** (contributors that don't do a lot of work in the group but want to stay informed)
+        - - Non-signers in the group (the partners and follows) can weigh in, do work, or make proposals, but only the signers decide on taking any action. The difference between partner and follow can be fluid.
+        - - Signers are doers and need to be deeply involved in every decision they make, but they do not need to know everything about their domain. Each yTeam is a community and signers can lean on the other contributors in their home groups or other groups for expertise, advice, and support.
+    - - Consensus Processes
+        - - In general, signers on each yTeam will decide how they make decisions. For yTeams that make on-chain decisions (yChad, yGuard, yBrain) the consensus process is determined by YFI holders (yChad) or through rough consensus of Doers (yGuard, yBrain).
+        - - Suggested consensus parameters (ie, m of n parameters) are listed below for each yTeam.
+        - - *__Social consensus__* means that signers will decide through some off-chain process within their home groups.
+    - - Proposals, Decisions, and Execution
+        - - For on-chain yTeams this follows the normal pattern. For off-chain yTeams each can decide this flow.
+        - - A simple off-chain flow:
+            -  - **Proposal**: anyone in the yTeam home group suggests an action by labelling it *__Proposal__*
+            - - **Decision**: after suitable discussion, each signer replies to the proposal with __*____yes____*__ or __*____no____*__
+            -  - **Execution**: if the m of n threshold is reached, then the proposal has passed, and a designated signer forwards the proposal to yTx who makes the on-chain tx for yChad to sign and execute.
+        - - Possible additions or improvements
+            -  - Proposals could be more formal, for instance a templated notion page or a doc via IPFS link to ensure the exact proposal decided on is what goes to yTx
+            - - Need some system of archiving all decisions and making them publicly visible
+            - - The hand-off from yTeam to yTx could have more security or process control
+    - - Changing Signers
+        - - For now yOps has the 'Change yTeam Signers' power and yChad has the 'Change Multisig Signers' power which refers only to yChad.
+        - - Ideally, I think each yTeam should have the power to change its own signers, with YFI holders having the power to override and yChad having the power to veto
+        - - Signers should not get too attached to their roles. As each yTeam works in its home group, some partners will demonstrate great integrity and wisdom — they should rotate in to replace older signers where appropriate to keep yearn fresh and vibrant.

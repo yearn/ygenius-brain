@@ -1,0 +1,1 @@
+- [[Coinbase Wallet]] zero-click connect https://github.com/yearn/yearn-finance-v3/pull/708

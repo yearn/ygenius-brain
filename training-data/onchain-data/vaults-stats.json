@@ -1,0 +1,1609 @@
+{
+  "sourceGraphName": "Yearn Vaults V2 Subgraph",
+  "sourceGraphLink": "https://gateway.thegraph.com/api/[api-key]/subgraphs/id/5xMSe3wTNLgFQqsAc5SCVVwT4MiRb5AogJCuSN9PjzXF",
+  "request": "vaults(first: 1000) { token { symbol  decimals } balanceTokens }",
+  "data": {
+    "vaults": [
+      {
+        "id": "0x015d78c7ad1289f5aa1dec25bd6b67ba31fac1cf",
+        "token": {
+          "symbol": "crvTETH",
+          "decimals": 18
+        },
+        "balanceTokens": "0"
+      },
+      {
+        "id": "0x03c31f3444357087d5f568d24ae17f9177c8aa84",
+        "token": {
+          "symbol": "LINK",
+          "decimals": 18
+        },
+        "balanceTokens": "0"
+      },
+      {
+        "id": "0x04d73c87b20d372cb3240c72eefb9d79ba5e4959",
+        "token": {
+          "symbol": "UST_whv23CRV-f",
+          "decimals": 18
+        },
+        "balanceTokens": "0"
+      },
+      {
+        "id": "0x054af22e1519b020516d72d749221c24756385c9",
+        "token": {
+          "symbol": "husd3CRV",
+          "decimals": 18
+        },
+        "balanceTokens": "8450105285940590193384"
+      },
+      {
+        "id": "0x090c9d94817e78cd975034b1be596bf432e1f6c6",
+        "token": {
+          "symbol": "LINK",
+          "decimals": 18
+        },
+        "balanceTokens": "0"
+      },
+      {
+        "id": "0x0d4ea8536f9a13e4fba16042a46c30f092b06aa5",
+        "token": {
+          "symbol": "EURT-f",
+          "decimals": 18
+        },
+        "balanceTokens": "6869117836455681020847"
+      },
+      {
+        "id": "0x0e880118c29f095143dda28e64d95333a9e75a47",
+        "token": {
+          "symbol": "eCRV",
+          "decimals": 18
+        },
+        "balanceTokens": "329653378078357079"
+      },
+      {
+        "id": "0x0e8a7717a4fd7694682e7005957dd5d7598bf14a",
+        "token": {
+          "symbol": "WBTC",
+          "decimals": 8
+        },
+        "balanceTokens": "6531207"
+      },
+      {
+        "id": "0x0f6121fb28c7c42916d663171063c62684598f9f",
+        "token": {
+          "symbol": "HBTC",
+          "decimals": 18
+        },
+        "balanceTokens": "0"
+      },
+      {
+        "id": "0x0ff3773a6984ad900f7fb23a9acbf07ac3adfb06",
+        "token": {
+          "symbol": "yDAI+yUSDC+yUSDT+yTUSD",
+          "decimals": 18
+        },
+        "balanceTokens": "0"
+      },
+      {
+        "id": "0x1025b1641d1f23c289412dd5e5701e9810103a93",
+        "token": {
+          "symbol": "ibAUDUSDC-f",
+          "decimals": 18
+        },
+        "balanceTokens": "314217282904194325546"
+      },
+      {
+        "id": "0x1133b2e2f51beccf25b2f8d0ca48c1d93dd5ab12",
+        "token": {
+          "symbol": "OCEAN",
+          "decimals": 18
+        },
+        "balanceTokens": "25727813891917962826"
+      },
+      {
+        "id": "0x132d8d2c76db3812403431facb00f3453fc42125",
+        "token": {
+          "symbol": "ankrCRV",
+          "decimals": 18
+        },
+        "balanceTokens": "65067039945337653956"
+      },
+      {
+        "id": "0x1635b506a88fbf428465ad65d00e8d6b6e5846c3",
+        "token": {
+          "symbol": "crvCVXETH",
+          "decimals": 18
+        },
+        "balanceTokens": "2569330825616915697079"
+      },
+      {
+        "id": "0x16825039dfe2a5b01f3e1e6a2bbf9a576c6f95c4",
+        "token": {
+          "symbol": "D3-f",
+          "decimals": 18
+        },
+        "balanceTokens": "3515436657158927729465"
+      },
+      {
+        "id": "0x19b8bc5ccf9700e16f2780bea152f01c449f45d0",
+        "token": {
+          "symbol": "ALCX",
+          "decimals": 18
+        },
+        "balanceTokens": "0"
+      },
+      {
+        "id": "0x19d3364a399d251e894ac732651be8b0e4e85001",
+        "token": {
+          "symbol": "DAI",
+          "decimals": 18
+        },
+        "balanceTokens": "1549929654602045712172102"
+      },
+      {
+        "id": "0x1ae8ccd120a05080d9a01c3b4f627f865685d091",
+        "token": {
+          "symbol": "WBTC",
+          "decimals": 8
+        },
+        "balanceTokens": "1907728"
+      },
+      {
+        "id": "0x1b905331f7de2748f4d6a0678e1521e20347643f",
+        "token": {
+          "symbol": "ibAUD+sAUD-f",
+          "decimals": 18
+        },
+        "balanceTokens": "2219486169938870252405"
+      },
+      {
+        "id": "0x1c6a9783f812b3af3abbf7de64c3cd7cc7d1af44",
+        "token": {
+          "symbol": "ust3CRV",
+          "decimals": 18
+        },
+        "balanceTokens": "53036216400684344009194"
+      },
+      {
+        "id": "0x1e6462678462c95e1f8afe2558d7ff8692affbd0",
+        "token": {
+          "symbol": "FEI3CRV3CRV-f",
+          "decimals": 18
+        },
+        "balanceTokens": "0"
+      },
+      {
+        "id": "0x1f6bdffbadd98e410f83c66d1278241375f5199f",
+        "token": {
+          "symbol": "WBTC",
+          "decimals": 8
+        },
+        "balanceTokens": "0"
+      },
+      {
+        "id": "0x1f8ad2cec4a2595ff3cda9e8a39c0b1be1a02014",
+        "token": {
+          "symbol": "DAI",
+          "decimals": 18
+        },
+        "balanceTokens": "379546036288609385625"
+      },
+      {
+        "id": "0x2147935d9739da4e691b8ae2e1437492a394ebf5",
+        "token": {
+          "symbol": "WETH",
+          "decimals": 18
+        },
+        "balanceTokens": "14469950931670721606"
+      },
+      {
+        "id": "0x23d3d0f1c697247d5e0a9efb37d8b0ed0c464f7f",
+        "token": {
+          "symbol": "tbtc/sbtcCrv",
+          "decimals": 18
+        },
+        "balanceTokens": "52244899602198178"
+      },
+      {
+        "id": "0x25212df29073fffa7a67399acefc2dd75a831a1a",
+        "token": {
+          "symbol": "eursCRV",
+          "decimals": 18
+        },
+        "balanceTokens": "1040928530465376037189875"
+      },
+      {
+        "id": "0x27b5739e22ad9033bcbf192059122d163b60349d",
+        "token": {
+          "symbol": "yCRV",
+          "decimals": 18
+        },
+        "balanceTokens": "24324716277552809402591926"
+      },
+      {
+        "id": "0x27b7b1ad7288079a66d12350c828d3c00a6f07d7",
+        "token": {
+          "symbol": "ib3CRV",
+          "decimals": 18
+        },
+        "balanceTokens": "2501323649819995099656018"
+      },
+      {
+        "id": "0x2807387f1212cb2852ab97cdaa3627daca5e4661",
+        "token": {
+          "symbol": "MIM",
+          "decimals": 18
+        },
+        "balanceTokens": "0"
+      },
+      {
+        "id": "0x28a5b95c101df3ded0c0d9074db80c438774b6a9",
+        "token": {
+          "symbol": "cDAI+cUSDC+USDT",
+          "decimals": 18
+        },
+        "balanceTokens": "0"
+      },
+      {
+        "id": "0x2a38b9b0201ca39b17b460ed2f11e4929559071e",
+        "token": {
+          "symbol": "gusd3CRV",
+          "decimals": 18
+        },
+        "balanceTokens": "155926420145006066660388"
+      },
+      {
+        "id": "0x2d5d4869381c4fce34789bc1d38acce747e295ae",
+        "token": {
+          "symbol": "RAI3CRV",
+          "decimals": 18
+        },
+        "balanceTokens": "305323561090626761099154"
+      },
+      {
+        "id": "0x2dfb14e32e2f8156ec15a2c21c3a6c053af52be8",
+        "token": {
+          "symbol": "MIM-3LP3CRV-f",
+          "decimals": 18
+        },
+        "balanceTokens": "475597461332352496004902"
+      },
+      {
+        "id": "0x2e5c7e9b1da0d9cb2832ebb06241d18552a85400",
+        "token": {
+          "symbol": "ibCHFUSDC-f",
+          "decimals": 18
+        },
+        "balanceTokens": "245288762644316059994"
+      },
+      {
+        "id": "0x2e919d27d515868f3d5bc9110fa738f9449fc6ad",
+        "token": {
+          "symbol": "yvecrv-f",
+          "decimals": 18
+        },
+        "balanceTokens": "0"
+      },
+      {
+        "id": "0x2f194da57aa855caa02ea3ab991fa5d38178b9e6",
+        "token": {
+          "symbol": "UNI",
+          "decimals": 18
+        },
+        "balanceTokens": "2538507804906040200"
+      },
+      {
+        "id": "0x30fcf7c6cdfc46ec237783d94fc78553e79d4e9c",
+        "token": {
+          "symbol": "dusd3CRV",
+          "decimals": 18
+        },
+        "balanceTokens": "63516441813022486184984"
+      },
+      {
+        "id": "0x3149950258fbbce1638d6c23ac93a692604ef864",
+        "token": {
+          "symbol": "crvRenWBTC",
+          "decimals": 18
+        },
+        "balanceTokens": "0"
+      },
+      {
+        "id": "0x32413274504908460f0c373c7f20f429fb80ed3a",
+        "token": {
+          "symbol": "saCRV",
+          "decimals": 18
+        },
+        "balanceTokens": "0"
+      },
+      {
+        "id": "0x32651dd149a6ec22734882f790cbeb21402663f9",
+        "token": {
+          "symbol": "USDT",
+          "decimals": 6
+        },
+        "balanceTokens": "0"
+      },
+      {
+        "id": "0x3408324dbb537886cadc180f6ffcf674ee215f67",
+        "token": {
+          "symbol": "renBTC",
+          "decimals": 8
+        },
+        "balanceTokens": "0"
+      },
+      {
+        "id": "0x341bb10d8f5947f3066502dc8125d9b8949fd3d6",
+        "token": {
+          "symbol": "STGUSDC-f",
+          "decimals": 18
+        },
+        "balanceTokens": "1015879783657762913679503"
+      },
+      {
+        "id": "0x3466c90017f82dda939b01e8dbd9b0f97aef8dfc",
+        "token": {
+          "symbol": "sUSD",
+          "decimals": 18
+        },
+        "balanceTokens": "26147073174677997127"
+      },
+      {
+        "id": "0x34fe2a45d8df28459d7705f37ed13d7ae4382009",
+        "token": {
+          "symbol": "WBTC",
+          "decimals": 8
+        },
+        "balanceTokens": "0"
+      },
+      {
+        "id": "0x378cb52b00f9d0921cb46dfc099cff73b42419dc",
+        "token": {
+          "symbol": "LUSD",
+          "decimals": 18
+        },
+        "balanceTokens": "336379770644889453819709"
+      },
+      {
+        "id": "0x39caf13a104ff567f71fd2a4c68c026fdb6e740b",
+        "token": {
+          "symbol": "a3CRV",
+          "decimals": 18
+        },
+        "balanceTokens": "383791722225983479947702"
+      },
+      {
+        "id": "0x3b27f92c0e212c671ea351827edf93db27cc0c65",
+        "token": {
+          "symbol": "USDT",
+          "decimals": 6
+        },
+        "balanceTokens": "14668751771400"
+      },
+      {
+        "id": "0x3b96d491f067912d18563d56858ba7d6ec67a6fa",
+        "token": {
+          "symbol": "usdn3CRV",
+          "decimals": 18
+        },
+        "balanceTokens": "837125863498721542452606"
+      },
+      {
+        "id": "0x3c26de7e22613a31b77e93f011d804d8a7821581",
+        "token": {
+          "symbol": "LOOKS",
+          "decimals": 18
+        },
+        "balanceTokens": "0"
+      },
+      {
+        "id": "0x3c5df3077bcf800640b5dae8c91106575a4826e6",
+        "token": {
+          "symbol": "pBTC/sbtcCRV",
+          "decimals": 18
+        },
+        "balanceTokens": "5481980822540216674"
+      },
+      {
+        "id": "0x3c90033684f2504d55eeb652720785f70fa692d4",
+        "token": {
+          "symbol": "cDAI+cUSDC",
+          "decimals": 18
+        },
+        "balanceTokens": "0"
+      },
+      {
+        "id": "0x3d27705c64213a5dcd9d26880c1bcfa72d5b6b0e",
+        "token": {
+          "symbol": "usdk3CRV",
+          "decimals": 18
+        },
+        "balanceTokens": "0"
+      },
+      {
+        "id": "0x3d980e50508cfd41a13837a60149927a11c03731",
+        "token": {
+          "symbol": "crvTricrypto",
+          "decimals": 18
+        },
+        "balanceTokens": "121014577033809163400"
+      },
+      {
+        "id": "0x416ebadc07cc7efa94d9110a5b932089bbd49931",
+        "token": {
+          "symbol": "LINK",
+          "decimals": 18
+        },
+        "balanceTokens": "706279063107420"
+      },
+      {
+        "id": "0x4213458c69c19e6792510e1153cb0c5834665fdc",
+        "token": {
+          "symbol": "bb-a-USD",
+          "decimals": 18
+        },
+        "balanceTokens": "4932368166249857201"
+      },
+      {
+        "id": "0x4560b99c904aad03027b5178cca81584744ac01f",
+        "token": {
+          "symbol": "cvxcrv-f",
+          "decimals": 18
+        },
+        "balanceTokens": "71401193840888068145626"
+      },
+      {
+        "id": "0x477faf103dadc5fe5baa40951cf7512dcbc18126",
+        "token": {
+          "symbol": "USDC",
+          "decimals": 6
+        },
+        "balanceTokens": "282161268"
+      },
+      {
+        "id": "0x4856a7efbbfcae92ab13c5e2e322fc77647bb856",
+        "token": {
+          "symbol": "RAI",
+          "decimals": 18
+        },
+        "balanceTokens": "899976351886815786927"
+      },
+      {
+        "id": "0x490bd0886f221a5f79713d3e84404355a9293c50",
+        "token": {
+          "symbol": "ibCHF+sCHF-f",
+          "decimals": 18
+        },
+        "balanceTokens": "125628190862394468719055"
+      },
+      {
+        "id": "0x4962b6c40b5e9433e029c5c423f6b1ce7ff28b0f",
+        "token": {
+          "symbol": "sUSD",
+          "decimals": 18
+        },
+        "balanceTokens": "1888497386495737222546"
+      },
+      {
+        "id": "0x497590d2d57f05cf8b42a36062fa53ebae283498",
+        "token": {
+          "symbol": "SUSHI",
+          "decimals": 18
+        },
+        "balanceTokens": "701360350097428702"
+      },
+      {
+        "id": "0x49b3e44e54b6220af892dba48ae45f1ea6bc4ae9",
+        "token": {
+          "symbol": "TUSD",
+          "decimals": 18
+        },
+        "balanceTokens": "0"
+      },
+      {
+        "id": "0x4a3fe75762017db0ed73a71c9a06db7768db5e66",
+        "token": {
+          "symbol": "COMP",
+          "decimals": 18
+        },
+        "balanceTokens": "332049629711418382708"
+      },
+      {
+        "id": "0x4b5bfd52124784745c1071dcb244c6688d2533d3",
+        "token": {
+          "symbol": "yDAI+yUSDC+yUSDT+yTUSD",
+          "decimals": 18
+        },
+        "balanceTokens": "1545364894670209421141648"
+      },
+      {
+        "id": "0x4c4a6a22bce915c724a66b82128577f1b24831ed",
+        "token": {
+          "symbol": "EURT-f",
+          "decimals": 18
+        },
+        "balanceTokens": "0"
+      },
+      {
+        "id": "0x4fdd1b06ef986238446be0f3ea163c1b6fe28cc1",
+        "token": {
+          "symbol": "GUSD",
+          "decimals": 2
+        },
+        "balanceTokens": "0"
+      },
+      {
+        "id": "0x5120feabd5c21883a4696dbcc5d123d6270637e9",
+        "token": {
+          "symbol": "WETH",
+          "decimals": 18
+        },
+        "balanceTokens": "851795468147526399"
+      },
+      {
+        "id": "0x528d50dc9a333f01544177a924893fa1f5b9f748",
+        "token": {
+          "symbol": "ibKRW+sKRW-f",
+          "decimals": 18
+        },
+        "balanceTokens": "447691624435236674858608578"
+      },
+      {
+        "id": "0x56a5fd5104a4956898753dfb060ff32882ae0eb4",
+        "token": {
+          "symbol": "ALCX",
+          "decimals": 18
+        },
+        "balanceTokens": "134109094908602459648"
+      },
+      {
+        "id": "0x5737022626c282a89d105fd2e89ed6928ebdae93",
+        "token": {
+          "symbol": "eCRV",
+          "decimals": 18
+        },
+        "balanceTokens": "0"
+      },
+      {
+        "id": "0x59518884eebfb03e90a18adbaaab770d4666471e",
+        "token": {
+          "symbol": "ibJPY+sJPY-f",
+          "decimals": 18
+        },
+        "balanceTokens": "300689177894934912441975"
+      },
+      {
+        "id": "0x595a68a8c9d5c230001848b69b1947ee2a607164",
+        "token": {
+          "symbol": "ibGBP+sGBP-f",
+          "decimals": 18
+        },
+        "balanceTokens": "112825858813589577788973"
+      },
+      {
+        "id": "0x5a770dbd3ee6baf2802d29a901ef11501c44797a",
+        "token": {
+          "symbol": "crvPlain3andSUSD",
+          "decimals": 18
+        },
+        "balanceTokens": "502856742435086286985844"
+      },
+      {
+        "id": "0x5ab64c599fcc59f0f2726a300b03166a395578da",
+        "token": {
+          "symbol": "3EURpool-f",
+          "decimals": 18
+        },
+        "balanceTokens": "640256594532750054961199"
+      },
+      {
+        "id": "0x5b189d92983e941273b26e3b46e5a16206c08827",
+        "token": {
+          "symbol": "eCRV",
+          "decimals": 18
+        },
+        "balanceTokens": "0"
+      },
+      {
+        "id": "0x5b707472eef1553646740a7e5becfd41b9b4ef4c",
+        "token": {
+          "symbol": "COMP",
+          "decimals": 18
+        },
+        "balanceTokens": "0"
+      },
+      {
+        "id": "0x5c0a86a32c129538d62c106eb8115a8b02358d57",
+        "token": {
+          "symbol": "rETHwstETH-f",
+          "decimals": 18
+        },
+        "balanceTokens": "194394875628260520547"
+      },
+      {
+        "id": "0x5e69e8b51b71c8596817fd442849bd44219bb095",
+        "token": {
+          "symbol": "ibbtc/sbtcCRV-f",
+          "decimals": 18
+        },
+        "balanceTokens": "496193235167491"
+      },
+      {
+        "id": "0x5f18c75abdae578b483e5f43f12a39cf75b973a9",
+        "token": {
+          "symbol": "USDC",
+          "decimals": 6
+        },
+        "balanceTokens": "7131247349326"
+      },
+      {
+        "id": "0x5fa5b62c8af877cb37031e0a3b2f34a78e3c56a6",
+        "token": {
+          "symbol": "LUSD3CRV-f",
+          "decimals": 18
+        },
+        "balanceTokens": "2940910930352285352458615"
+      },
+      {
+        "id": "0x5faf6a2d186448dfa667c51cb3d695c7a6e52d8e",
+        "token": {
+          "symbol": "STETHETH_C-f",
+          "decimals": 18
+        },
+        "balanceTokens": "487634708931215788340"
+      },
+      {
+        "id": "0x61f46c65e403429266e8b569f23f70dd75d9bee7",
+        "token": {
+          "symbol": "yCRV-f",
+          "decimals": 18
+        },
+        "balanceTokens": "0"
+      },
+      {
+        "id": "0x625b7df2fa8abe21b0a976736cda4775523aed1e",
+        "token": {
+          "symbol": "hCRV",
+          "decimals": 18
+        },
+        "balanceTokens": "21508788710658905114"
+      },
+      {
+        "id": "0x63739d137eefab1001245a8bd1f3895ef3e186e7",
+        "token": {
+          "symbol": "DAI",
+          "decimals": 18
+        },
+        "balanceTokens": "35563736436753746942"
+      },
+      {
+        "id": "0x63859212aa05d60295a2f18a9e0c707040605bad",
+        "token": {
+          "symbol": "yvDAI",
+          "decimals": 18
+        },
+        "balanceTokens": "0"
+      },
+      {
+        "id": "0x6601526470e7bad2760fb63507bf6965a0d4360b",
+        "token": {
+          "symbol": "yveCRV-DAO",
+          "decimals": 18
+        },
+        "balanceTokens": "0"
+      },
+      {
+        "id": "0x662fbf2c1e4b04342eeba6371ec1c7420042b86f",
+        "token": {
+          "symbol": "",
+          "decimals": 18
+        },
+        "balanceTokens": "0"
+      },
+      {
+        "id": "0x671a912c10bba0cfa74cfc2d6fba9ba1ed9530b2",
+        "token": {
+          "symbol": "LINK",
+          "decimals": 18
+        },
+        "balanceTokens": "411518856752365075206064"
+      },
+      {
+        "id": "0x67b9f46bcba2df84ecd41cc6511ca33507c9f4e9",
+        "token": {
+          "symbol": "DOLA3POOL3CRV-f",
+          "decimals": 18
+        },
+        "balanceTokens": "4"
+      },
+      {
+        "id": "0x67e019bfbd5a67207755d04467d6a70c0b75bf60",
+        "token": {
+          "symbol": "ibEUR+sEUR-f",
+          "decimals": 18
+        },
+        "balanceTokens": "851715066268058968717417"
+      },
+      {
+        "id": "0x6a5468752f8db94134b6508dabac54d3b45efce6",
+        "token": {
+          "symbol": "crvCRVETH",
+          "decimals": 18
+        },
+        "balanceTokens": "4328278039347722004207"
+      },
+      {
+        "id": "0x6aefd381c0aef49baaff58ebc70534b3941c61bf",
+        "token": {
+          "symbol": "YFIETH-f",
+          "decimals": 18
+        },
+        "balanceTokens": "0"
+      },
+      {
+        "id": "0x6b5ce31af687a671a804d8070ddda99cab926dfe",
+        "token": {
+          "symbol": "ibGBPUSDC-f",
+          "decimals": 18
+        },
+        "balanceTokens": "250144328299414721031"
+      },
+      {
+        "id": "0x6d2f347dcfc55c6ac80e515a58344acd7fef0b84",
+        "token": {
+          "symbol": "yDAI+yUSDC+yUSDT+yBUSD",
+          "decimals": 18
+        },
+        "balanceTokens": "0"
+      },
+      {
+        "id": "0x6d765cbe5bc922694afe112c140b8878b9fb0390",
+        "token": {
+          "symbol": "SUSHI",
+          "decimals": 18
+        },
+        "balanceTokens": "151533452729276324340436"
+      },
+      {
+        "id": "0x6ede7f19df5df6ef23bd5b9cedb651580bdf56ca",
+        "token": {
+          "symbol": "BUSD3CRV-f",
+          "decimals": 18
+        },
+        "balanceTokens": "230274138941331659665757"
+      },
+      {
+        "id": "0x6fafca7f49b4fd9dc38117469cd31a1e5aec91f5",
+        "token": {
+          "symbol": "USDM3CRV-f",
+          "decimals": 18
+        },
+        "balanceTokens": "3"
+      },
+      {
+        "id": "0x7047f90229a057c13bf847c0744d646cfb6c9e1a",
+        "token": {
+          "symbol": "crvRenWBTC",
+          "decimals": 18
+        },
+        "balanceTokens": "63019464226138059"
+      },
+      {
+        "id": "0x7158c1bee7a0fa5bd6affc77b2309991d7adcdd4",
+        "token": {
+          "symbol": "USDC",
+          "decimals": 6
+        },
+        "balanceTokens": "3382001478"
+      },
+      {
+        "id": "0x718abe90777f5b778b52d553a5abaa148dd0dc5d",
+        "token": {
+          "symbol": "alETH+ETH-f",
+          "decimals": 18
+        },
+        "balanceTokens": "1501377730136286700"
+      },
+      {
+        "id": "0x71955515adf20cbdc699b8bc556fc7fd726b31b0",
+        "token": {
+          "symbol": "USDC",
+          "decimals": 6
+        },
+        "balanceTokens": "97042111"
+      },
+      {
+        "id": "0x722f76f34cb5c3b008a50e0664e55a53f4f461ab",
+        "token": {
+          "symbol": "yvUSDT",
+          "decimals": 6
+        },
+        "balanceTokens": "0"
+      },
+      {
+        "id": "0x7356f09c294cb9c6428ac7327b24b0f29419c181",
+        "token": {
+          "symbol": "SNX",
+          "decimals": 18
+        },
+        "balanceTokens": "351447095030585226"
+      },
+      {
+        "id": "0x75a3f32ba5e60a094729257ee44841f9552bafb9",
+        "token": {
+          "symbol": "AAVE",
+          "decimals": 18
+        },
+        "balanceTokens": "0"
+      },
+      {
+        "id": "0x790a60024bc3aea28385b60480f15a0771f26d09",
+        "token": {
+          "symbol": "YFIETH-f",
+          "decimals": 18
+        },
+        "balanceTokens": "251858391545987482419"
+      },
+      {
+        "id": "0x79ff6c5a23b492619661f7c5b73a961114a4c940",
+        "token": {
+          "symbol": "AAVE",
+          "decimals": 18
+        },
+        "balanceTokens": "0"
+      },
+      {
+        "id": "0x7ab4a7be740131bde216521b54adddd672f44a05",
+        "token": {
+          "symbol": "agEUREUROC-f",
+          "decimals": 18
+        },
+        "balanceTokens": "0"
+      },
+      {
+        "id": "0x7da96a3891add058ada2e826306d812c638d87a7",
+        "token": {
+          "symbol": "USDT",
+          "decimals": 6
+        },
+        "balanceTokens": "8264859530324"
+      },
+      {
+        "id": "0x7f7df0e9a040dda05fc609143cc8da7cc6c59587",
+        "token": {
+          "symbol": "sUSD",
+          "decimals": 18
+        },
+        "balanceTokens": "0"
+      },
+      {
+        "id": "0x801ab06154bf539dea4385a39f5fa8534fb53073",
+        "token": {
+          "symbol": "crvEURSUSDC",
+          "decimals": 18
+        },
+        "balanceTokens": "21315231937851887579912"
+      },
+      {
+        "id": "0x80bbee2fa460da291e796b9045e93d19ef948c6a",
+        "token": {
+          "symbol": "ypaxCrv",
+          "decimals": 18
+        },
+        "balanceTokens": "0"
+      },
+      {
+        "id": "0x8414db07a7f743debafb402070ab01a4e0d2e45e",
+        "token": {
+          "symbol": "crvRenWSBTC",
+          "decimals": 18
+        },
+        "balanceTokens": "2950428623413925966"
+      },
+      {
+        "id": "0x8472e9914c0813c4b465927f82e213ea34839173",
+        "token": {
+          "symbol": "sBTC",
+          "decimals": 18
+        },
+        "balanceTokens": "186900094480413812"
+      },
+      {
+        "id": "0x84ca3bf4822a342e9c1ad27bd5fbcf5fc5e37128",
+        "token": {
+          "symbol": "yveCRV-DAO",
+          "decimals": 18
+        },
+        "balanceTokens": "11668728954700754113"
+      },
+      {
+        "id": "0x84e13785b5a27879921d6f685f041421c7f482da",
+        "token": {
+          "symbol": "3Crv",
+          "decimals": 18
+        },
+        "balanceTokens": "1521781636215776431231384"
+      },
+      {
+        "id": "0x873fb544277fd7b977b196a826459a69e27ea4ea",
+        "token": {
+          "symbol": "RAI",
+          "decimals": 18
+        },
+        "balanceTokens": "2305029849953107027053"
+      },
+      {
+        "id": "0x8a0889d47f9aa0fac1cc718ba34e26b867437880",
+        "token": {
+          "symbol": "yCRV",
+          "decimals": 18
+        },
+        "balanceTokens": "207599893043316296483"
+      },
+      {
+        "id": "0x8b58aa42a4aa222b684078459ce03dd0a43342b1",
+        "token": {
+          "symbol": "USDP",
+          "decimals": 18
+        },
+        "balanceTokens": "0"
+      },
+      {
+        "id": "0x8b9c0c24307344b6d7941ab654b2aeee25347473",
+        "token": {
+          "symbol": "EURN/EURT-f",
+          "decimals": 18
+        },
+        "balanceTokens": "191452859542705347475"
+      },
+      {
+        "id": "0x8cc94ccd0f3841a468184aca3cc478d2148e1757",
+        "token": {
+          "symbol": "musd3CRV",
+          "decimals": 18
+        },
+        "balanceTokens": "148975006094725913952238"
+      },
+      {
+        "id": "0x8ee57c05741aa9db947a744e713c15d4d19d8822",
+        "token": {
+          "symbol": "yDAI+yUSDC+yUSDT+yBUSD",
+          "decimals": 18
+        },
+        "balanceTokens": "70682329139093235830509"
+      },
+      {
+        "id": "0x8fa3a9ecd9efb07a8ce90a6eb014cf3c0e3b32ef",
+        "token": {
+          "symbol": "bBTC/sbtcCRV",
+          "decimals": 18
+        },
+        "balanceTokens": "5289402789789305832"
+      },
+      {
+        "id": "0x902cf5373317bb3e42660e9f4e85aa21532c0e44",
+        "token": {
+          "symbol": "USDC",
+          "decimals": 6
+        },
+        "balanceTokens": "604814"
+      },
+      {
+        "id": "0x986b4aff588a109c09b50a03f42e4110e29d353f",
+        "token": {
+          "symbol": "eCRV",
+          "decimals": 18
+        },
+        "balanceTokens": "346560630073722041547"
+      },
+      {
+        "id": "0x9a39f31dd5edf5919a5c0c2433ce053fad2e0336",
+        "token": {
+          "symbol": "ibJPYUSDC-f",
+          "decimals": 18
+        },
+        "balanceTokens": "4068317048285684288776"
+      },
+      {
+        "id": "0x9c13e225ae007731caa49fd17a41379ab1a489f4",
+        "token": {
+          "symbol": "",
+          "decimals": 18
+        },
+        "balanceTokens": "0"
+      },
+      {
+        "id": "0x9d409a0a012cfba9b15f6d4b36ac57a46966ab9a",
+        "token": {
+          "symbol": "yveCRV-DAO",
+          "decimals": 18
+        },
+        "balanceTokens": "3372447011576145655915410"
+      },
+      {
+        "id": "0xa258c4606ca8206d8aa700ce2143d7db854d168c",
+        "token": {
+          "symbol": "WETH",
+          "decimals": 18
+        },
+        "balanceTokens": "70744697703852122101097"
+      },
+      {
+        "id": "0xa2619fdfb99abeb533a1147461f3f1109c5ade75",
+        "token": {
+          "symbol": "WETH",
+          "decimals": 18
+        },
+        "balanceTokens": "18028767189337642"
+      },
+      {
+        "id": "0xa354f35829ae975e850e23e9615b11da1b3dc4de",
+        "token": {
+          "symbol": "USDC",
+          "decimals": 6
+        },
+        "balanceTokens": "34262973430328"
+      },
+      {
+        "id": "0xa442beb83babc33d93c8bec471070ce59b88fb7d",
+        "token": {
+          "symbol": "WETH",
+          "decimals": 18
+        },
+        "balanceTokens": "0"
+      },
+      {
+        "id": "0xa5ca62d95d24a4a350983d5b8ac4eb8638887396",
+        "token": {
+          "symbol": "sUSD",
+          "decimals": 18
+        },
+        "balanceTokens": "9221028420716047010133"
+      },
+      {
+        "id": "0xa696a63cc78dffa1a63e9e50587c197387ff6c7e",
+        "token": {
+          "symbol": "WBTC",
+          "decimals": 8
+        },
+        "balanceTokens": "11079893073"
+      },
+      {
+        "id": "0xa74d4b67b3368e83797a35382afb776baae4f5c8",
+        "token": {
+          "symbol": "alUSD3CRV-f",
+          "decimals": 18
+        },
+        "balanceTokens": "691484803632146034411497"
+      },
+      {
+        "id": "0xa9412ffd7e0866755ae0dda3318470a61f62abe8",
+        "token": {
+          "symbol": "FUD",
+          "decimals": 18
+        },
+        "balanceTokens": "236079975795895552430862"
+      },
+      {
+        "id": "0xa9fe4601811213c340e850ea305481aff02f5b28",
+        "token": {
+          "symbol": "WETH",
+          "decimals": 18
+        },
+        "balanceTokens": "375936169290216687114"
+      },
+      {
+        "id": "0xaaaee277f21bb7d2bf49e6b36d0d94dc229b0b25",
+        "token": {
+          "symbol": "LUSD",
+          "decimals": 18
+        },
+        "balanceTokens": "0"
+      },
+      {
+        "id": "0xac1c90b9c76d56ba2e24f3995f7671c745f8f308",
+        "token": {
+          "symbol": "AAVE",
+          "decimals": 18
+        },
+        "balanceTokens": "554777201745558832"
+      },
+      {
+        "id": "0xac333895ce1a73875cf7b4ecdc5a743c12f3d82b",
+        "token": {
+          "symbol": "WETH",
+          "decimals": 18
+        },
+        "balanceTokens": "92433929080331931"
+      },
+      {
+        "id": "0xaf322a2edf31490250fdeb0d712621484b09abb6",
+        "token": {
+          "symbol": "USDT",
+          "decimals": 6
+        },
+        "balanceTokens": "189179438"
+      },
+      {
+        "id": "0xb09f2a67a731466182518fae980feae96479d80b",
+        "token": {
+          "symbol": "KP3RETH-f",
+          "decimals": 18
+        },
+        "balanceTokens": "142625201357532938"
+      },
+      {
+        "id": "0xb0d6d7c0ed4b9c2b8186a3ac3acad88683586e35",
+        "token": {
+          "symbol": "USDC",
+          "decimals": 6
+        },
+        "balanceTokens": "1332986687"
+      },
+      {
+        "id": "0xb32747b4045479b77a8b8eb44029ba12580214f8",
+        "token": {
+          "symbol": "SUSHI",
+          "decimals": 18
+        },
+        "balanceTokens": "61688264549261077014"
+      },
+      {
+        "id": "0xb364d19c3ff37e0fa4b94bf4cf626729533c1c26",
+        "token": {
+          "symbol": "FRAX",
+          "decimals": 18
+        },
+        "balanceTokens": "600000000000000000000"
+      },
+      {
+        "id": "0xb4ada607b9d6b2c9ee07a275e9616b84ac560139",
+        "token": {
+          "symbol": "FRAX3CRV-f",
+          "decimals": 18
+        },
+        "balanceTokens": "1118515439896955526936654"
+      },
+      {
+        "id": "0xb4d1be44bff40ad6e506edf43156577a3f8672ec",
+        "token": {
+          "symbol": "saCRV",
+          "decimals": 18
+        },
+        "balanceTokens": "390251472478344117385025"
+      },
+      {
+        "id": "0xb8c3b7a2a618c552c23b1e4701109a9e756bab67",
+        "token": {
+          "symbol": "1INCH",
+          "decimals": 18
+        },
+        "balanceTokens": "147729087213700405058268"
+      },
+      {
+        "id": "0xb98df7163e61bf053564bde010985f67279bbcec",
+        "token": {
+          "symbol": "DAI",
+          "decimals": 18
+        },
+        "balanceTokens": "5161550505925987260"
+      },
+      {
+        "id": "0xbb1988ab99d4839af8b6c94853b890307770e48b",
+        "token": {
+          "symbol": "",
+          "decimals": 18
+        },
+        "balanceTokens": "0"
+      },
+      {
+        "id": "0xbcbb5b54fa51e7b7dc920340043b203447842a6b",
+        "token": {
+          "symbol": "crvEURTUSD",
+          "decimals": 18
+        },
+        "balanceTokens": "56919142207399881701909"
+      },
+      {
+        "id": "0xbd65955f752b2ef093b34b05e5ffb439ae8e5049",
+        "token": {
+          "symbol": "COMP",
+          "decimals": 18
+        },
+        "balanceTokens": "0"
+      },
+      {
+        "id": "0xbda3a6cb2aaef41805f6317841d7b8654ec8b124",
+        "token": {
+          "symbol": "crvRenWBTC",
+          "decimals": 18
+        },
+        "balanceTokens": "0"
+      },
+      {
+        "id": "0xbf7aa989192b020a8d3e1c65a558e123834325ca",
+        "token": {
+          "symbol": "HBTC",
+          "decimals": 18
+        },
+        "balanceTokens": "22284855247999467971"
+      },
+      {
+        "id": "0xbfa4d8aa6d8a379abfe7793399d3ddacc5bbecbb",
+        "token": {
+          "symbol": "DAI",
+          "decimals": 18
+        },
+        "balanceTokens": "209874751"
+      },
+      {
+        "id": "0xbfedbcbe27171c418cdabc2477042554b1904857",
+        "token": {
+          "symbol": "rCRV",
+          "decimals": 18
+        },
+        "balanceTokens": "442933717486816111344"
+      },
+      {
+        "id": "0xc116df49c02c5fd147de25baa105322ebf26bd97",
+        "token": {
+          "symbol": "rsv3CRV",
+          "decimals": 18
+        },
+        "balanceTokens": "4468878172125159082541"
+      },
+      {
+        "id": "0xc4daf3b5e2a9e93861c3fbdd25f1e943b8d87417",
+        "token": {
+          "symbol": "usdp3CRV",
+          "decimals": 18
+        },
+        "balanceTokens": "1126851954223826051546751"
+      },
+      {
+        "id": "0xc5f3d11580c41cd07104e9af154fc6428bb93c73",
+        "token": {
+          "symbol": "bb-a-USD",
+          "decimals": 18
+        },
+        "balanceTokens": "200709959003505785519086"
+      },
+      {
+        "id": "0xc97232527b62efb0d8ed38cf3ea103a6cca4037e",
+        "token": {
+          "symbol": "yCRV-f",
+          "decimals": 18
+        },
+        "balanceTokens": "1098118509364226001091668"
+      },
+      {
+        "id": "0xc97511a1ddb162c8742d39ff320cfdcd13fbcf7e",
+        "token": {
+          "symbol": "pax-usdp3CRV-f",
+          "decimals": 18
+        },
+        "balanceTokens": "2004876034411202858236"
+      },
+      {
+        "id": "0xcae0347e9fafc1e08880c79c8331f15c786083e0",
+        "token": {
+          "symbol": "USDC",
+          "decimals": 6
+        },
+        "balanceTokens": "345337417"
+      },
+      {
+        "id": "0xcb550a6d4c8e3517a939bc79d0c7093eb7cf56b5",
+        "token": {
+          "symbol": "WBTC",
+          "decimals": 8
+        },
+        "balanceTokens": "1641860"
+      },
+      {
+        "id": "0xce0f1ef5aaab82547acc699d3ab93c069bb6e547",
+        "token": {
+          "symbol": "sUSD",
+          "decimals": 18
+        },
+        "balanceTokens": "623412913796016966500971"
+      },
+      {
+        "id": "0xd070f6216ef1f2609dfae2ae7e3d7208b1e993d5",
+        "token": {
+          "symbol": "AAVE",
+          "decimals": 18
+        },
+        "balanceTokens": "2301626331072716671"
+      },
+      {
+        "id": "0xd1a075c806e40d79e32ea09553e7080d5d9d4b29",
+        "token": {
+          "symbol": "SUSHI",
+          "decimals": 18
+        },
+        "balanceTokens": "825399972585680728"
+      },
+      {
+        "id": "0xd2c65e20c3fde3f18097e7414e65596e0c83b1a9",
+        "token": {
+          "symbol": "ICE",
+          "decimals": 18
+        },
+        "balanceTokens": "52012881867594556584"
+      },
+      {
+        "id": "0xd395dec4f1733ff09b750d869eefa7e0d37c3ee6",
+        "token": {
+          "symbol": "DOLAFRAXBP3CRV-f",
+          "decimals": 18
+        },
+        "balanceTokens": "129981325086166037625"
+      },
+      {
+        "id": "0xd4108bb1185a5c30ea3f4264fd7783473018ce17",
+        "token": {
+          "symbol": "DOLA",
+          "decimals": 18
+        },
+        "balanceTokens": "3497756885314916931933"
+      },
+      {
+        "id": "0xd631734272c437e1730de3cd2193c060e8dfb39e",
+        "token": {
+          "symbol": "crvSPELLETH",
+          "decimals": 18
+        },
+        "balanceTokens": "0"
+      },
+      {
+        "id": "0xd6ea40597be05c201845c0bfd2e96a60bacde267",
+        "token": {
+          "symbol": "cDAI+cUSDC",
+          "decimals": 18
+        },
+        "balanceTokens": "376028119185195870359884"
+      },
+      {
+        "id": "0xd88dbba3f9c4391ee46f5ff548f289054db6e51c",
+        "token": {
+          "symbol": "DOLA3POOL3CRV-f",
+          "decimals": 18
+        },
+        "balanceTokens": "54276554427078948842685"
+      },
+      {
+        "id": "0xd8c620991b8e626c099eaab29b1e3eea279763bb",
+        "token": {
+          "symbol": "MIM-UST-f",
+          "decimals": 18
+        },
+        "balanceTokens": "62236240035365804860795"
+      },
+      {
+        "id": "0xd9788f3931ede4d5018184e198699dc6d66c1915",
+        "token": {
+          "symbol": "AAVE",
+          "decimals": 18
+        },
+        "balanceTokens": "11777132162621869321383"
+      },
+      {
+        "id": "0xda816459f1ab5631232fe5e97a05bbbb94970c95",
+        "token": {
+          "symbol": "DAI",
+          "decimals": 18
+        },
+        "balanceTokens": "54962456711851428585342030"
+      },
+      {
+        "id": "0xdb25ca703181e7484a155dd612b06f57e12be5f0",
+        "token": {
+          "symbol": "YFI",
+          "decimals": 18
+        },
+        "balanceTokens": "853014050913505233653"
+      },
+      {
+        "id": "0xdcd90c7f6324cfa40d7169ef80b12031770b4325",
+        "token": {
+          "symbol": "steCRV",
+          "decimals": 18
+        },
+        "balanceTokens": "34901808287463465480635"
+      },
+      {
+        "id": "0xddb166c6cb38cede52d12c405b6e906c1fb6f9d7",
+        "token": {
+          "symbol": "crvRenWSBTC",
+          "decimals": 18
+        },
+        "balanceTokens": "0"
+      },
+      {
+        "id": "0xdf5110ef6bc751cbaf76d35b8a3f312b581b5173",
+        "token": {
+          "symbol": "DAI",
+          "decimals": 18
+        },
+        "balanceTokens": "475053642216055803559"
+      },
+      {
+        "id": "0xe11ba472f74869176652c35d30db89854b5ae84d",
+        "token": {
+          "symbol": "HEGIC",
+          "decimals": 18
+        },
+        "balanceTokens": "392711053241553614247328"
+      },
+      {
+        "id": "0xe14d13d8b3b85af791b2aadd661cdbd5e6097db1",
+        "token": {
+          "symbol": "YFI",
+          "decimals": 18
+        },
+        "balanceTokens": "110782934139108374723"
+      },
+      {
+        "id": "0xe22ef63f2bd31eb69bf5917589a5dae3445c27b2",
+        "token": {
+          "symbol": "bb-a-USD",
+          "decimals": 18
+        },
+        "balanceTokens": "0"
+      },
+      {
+        "id": "0xe2f6b9773bf3a015e2aa70741bde1498bdb9425b",
+        "token": {
+          "symbol": "USDC",
+          "decimals": 6
+        },
+        "balanceTokens": "28048948"
+      },
+      {
+        "id": "0xe537b5cc158eb71037d4125bdd7538421981e6aa",
+        "token": {
+          "symbol": "crv3crypto",
+          "decimals": 18
+        },
+        "balanceTokens": "1629809117802566462985"
+      },
+      {
+        "id": "0xe5edce53e39cbc6d819e2c340bcf295e0084ff7c",
+        "token": {
+          "symbol": "ibEURUSDC-f",
+          "decimals": 18
+        },
+        "balanceTokens": "242335425052086373262"
+      },
+      {
+        "id": "0xe7bf2905371cfeaeefe2d4c2c386b6b2a7e4270a",
+        "token": {
+          "symbol": "HBTC",
+          "decimals": 18
+        },
+        "balanceTokens": "0"
+      },
+      {
+        "id": "0xe92ae2cf5b373c1713eb5855d4d3af81d8a8acae",
+        "token": {
+          "symbol": "xFraxTplLP-f",
+          "decimals": 18
+        },
+        "balanceTokens": "2768544749217205158237923"
+      },
+      {
+        "id": "0xe9dc63083c464d6edccff23444ff3cfc6886f6fb",
+        "token": {
+          "symbol": "oBTC/sbtcCRV",
+          "decimals": 18
+        },
+        "balanceTokens": "1299802469717327786"
+      },
+      {
+        "id": "0xed0244b688cf059f32f45e38a6ac6e479d6755f6",
+        "token": {
+          "symbol": "WETH",
+          "decimals": 18
+        },
+        "balanceTokens": "32308093914850952"
+      },
+      {
+        "id": "0xf11b141be4d1985e41c3aea99417e27603f67c4c",
+        "token": {
+          "symbol": "WBTC",
+          "decimals": 8
+        },
+        "balanceTokens": "37966"
+      },
+      {
+        "id": "0xf29ae508698bdef169b89834f76704c3b205aedf",
+        "token": {
+          "symbol": "SNX",
+          "decimals": 18
+        },
+        "balanceTokens": "648649494529108370675078"
+      },
+      {
+        "id": "0xf2db9a7c0acd427a680d640f02d90f6186e71725",
+        "token": {
+          "symbol": "linkCRV",
+          "decimals": 18
+        },
+        "balanceTokens": "49455615546246212478808"
+      },
+      {
+        "id": "0xf4fdbc7c66dc9832d672ffe6242b6a386cead5de",
+        "token": {
+          "symbol": "sUSD",
+          "decimals": 18
+        },
+        "balanceTokens": "0"
+      },
+      {
+        "id": "0xf59d66c1d593fb10e2f8c2a6fd2c958792434b9c",
+        "token": {
+          "symbol": "OUSD3CRV-f",
+          "decimals": 18
+        },
+        "balanceTokens": "33395454690251795806722"
+      },
+      {
+        "id": "0xf6b9dfe6bc42ed2eab44d6b829017f7b78b29f88",
+        "token": {
+          "symbol": "ibKRWUSDC-f",
+          "decimals": 18
+        },
+        "balanceTokens": "11931792276104930464220"
+      },
+      {
+        "id": "0xf8768814b88281de4f532a3beefa5b85b69b9324",
+        "token": {
+          "symbol": "TUSD3CRV-f",
+          "decimals": 18
+        },
+        "balanceTokens": "7062699428348472703682"
+      },
+      {
+        "id": "0xf962b098ecc4352aa2ad1d4164bd2b8367fd94c3",
+        "token": {
+          "symbol": "LINK",
+          "decimals": 18
+        },
+        "balanceTokens": "534557056444741057"
+      },
+      {
+        "id": "0xfbeb78a723b8087fd2ea7ef1afec93d35e8bed42",
+        "token": {
+          "symbol": "UNI",
+          "decimals": 18
+        },
+        "balanceTokens": "157365050212896229540240"
+      },
+      {
+        "id": "0xfd0877d9095789caf24c98f7cce092fa8e120775",
+        "token": {
+          "symbol": "TUSD",
+          "decimals": 18
+        },
+        "balanceTokens": "7129436542503035199461"
+      },
+      {
+        "id": "0xfe8a3837cff919c800bdc5d1ac6136f84497d679",
+        "token": {
+          "symbol": "UNI",
+          "decimals": 18
+        },
+        "balanceTokens": "0"
+      },
+      {
+        "id": "0xff8f8a38c80b9899a928152d58f219fdccd4306c",
+        "token": {
+          "symbol": "WETH",
+          "decimals": 18
+        },
+        "balanceTokens": "5308899356301521"
+      }
+    ]
+  }
+}
