@@ -1,0 +1,64 @@
+# pip install gpt_index
+# pip install langchain
+# pip install sentencepiece
+
+from gpt_index import SimpleDirectoryReader, GPTListIndex, readers, GPTSimpleVectorIndex, LLMPredictor, PromptHelper, GPTListIndex
+from langchain import OpenAI
+import sys
+import os
+import flask
+from flask import request, jsonify
+from flask_cors import CORS
+
+
+os.environ["OPENAI_API_KEY"] = ''
+
+def construct_index(directory_path, index_name):
+  max_input_size = 4096
+  num_outputs = 800
+  max_chunk_overlap = 20
+  chunk_size_limit = 600
+
+  llm_predictor = LLMPredictor(llm=OpenAI(temperature=0, model_name="text-davinci-003", max_tokens=num_outputs))
+  prompt_helper = PromptHelper(max_input_size, num_outputs, max_chunk_overlap, chunk_size_limit=chunk_size_limit)
+
+  documents = SimpleDirectoryReader(directory_path, recursive=True).load_data()
+
+  # use vector for cheaper search parts of the index to do operation, use list for expensive refinement operation with entire index
+
+  index = GPTSimpleVectorIndex(
+  # index = GPTListIndex(
+      documents,  llm_predictor=llm_predictor, prompt_helper=prompt_helper, verbose=True
+  )
+
+  index.save_to_disk(index_name)
+
+  return index
+
+app = flask.Flask(__name__)
+CORS(app)
+
+
+@app.route('/ask', methods=['GET'])
+def ask():
+    history = request.args.get('history')
+
+    prefix = '######## Chat history with anon for context \n\n' + history + ' ######## Instructions:\n\n' + 'You are a Q/A assistant AI model that will be provided indexed Yearn Finance context to help answer an user (anon) question with a concise and correct answer. Don\'t invent links that don\'t exist outside the information provided. NEVER MENTION NAMES OF OTHER PEOPLE. If you can\'t answer then refer anon to use the Discord support channel (https://discord.gg/yearn)'
+    query = prefix + '\n\nQuestion:\n' + request.args.get('query') + '\n\nAnswer:\n'
+
+    index = GPTSimpleVectorIndex.load_from_disk('index.json')
+    # index = GPTListIndex.load_from_disk('index.json')
+
+    print(query)
+
+    response = index.query(query, response_mode="default") #, verbose=True)
+    
+    print(response.response.strip())
+
+    return jsonify(response.response.strip())
+
+# construct_index('./training-data', 'index.json')
+
+app.run()
+
+# ask('', 'index.json')
