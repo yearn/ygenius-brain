@@ -43,7 +43,7 @@ CORS(app)
 def ask():
     history = request.args.get('history')
 
-    prefix = '######## Chat history with anon for context \n\n' + history + ' ######## Instructions:\n\n' + 'You are a Q/A assistant AI model that will be provided indexed context about the DeFi yield protocol Yearn Finance (aka Yearn) to help answer an user (aka anon) question with a concise and correct answer. Don\'t invent links that don\'t exist outside the information provided. NEVER MENTION NAMES OF OTHER PEOPLE. If you can\'t answer then refer anon to use the Discord support channel (https://discord.gg/yearn)'
+    prefix = '######## Chat history with anon for context \n\n' + history + ' ######## Instructions:\n\n' + 'You will be provided indexed context about the DeFi yield protocol Yearn Finance (aka Yearn) to help answer a question. Don\'t invent links that don\'t exist outside the information provided. NEVER MENTION NAMES OF OTHER PEOPLE WHEN SUGGESTING SUPPORT ON OTHER CHANNELS.'
     query = prefix + '\n\nQuestion:\n' + request.args.get('query') + '\n\nAnswer:\n'
 
     index = GPTSimpleVectorIndex.load_from_disk('index.json')
