@@ -9,6 +9,28 @@ from langchain import OpenAI
 app = flask.Flask(__name__)
 CORS(app)
 
+@app.route("/")
+def home():
+    return "<h1>dis is working ser!</h1>"
+
+@app.route('/ask', methods=['GET'])
+def ask():
+    history = request.args.get('history')
+
+    prefix = '######## Chat history with anon for context \n\n' + history + ' ######## Instructions:\n\n' + 'You will be provided indexed context about the DeFi yield protocol Yearn Finance (aka Yearn) to help answer a question. Don\'t invent links that don\'t exist outside the information provided. NEVER MENTION NAMES OF OTHER PEOPLE WHEN SUGGESTING SUPPORT ON OTHER CHANNELS.'
+    query = prefix + '\n\nQuestion:\n' + request.args.get('query') + '\n\nAnswer:\n'
+
+    index = GPTSimpleVectorIndex.load_from_disk('index-full.json')
+    # index = GPTListIndex.load_from_disk('index.json')
+
+    print(query)
+
+    response = index.query(query, response_mode="default") #, verbose=True)
+    
+    print(response.response.strip())
+
+    return jsonify(response.response.strip())
+
 def construct_index(directory_path, index_name):
   max_input_size = 4096
   num_outputs = 800
@@ -31,24 +53,8 @@ def construct_index(directory_path, index_name):
 
   return index
 
-@app.route('/ask', methods=['GET'])
-def ask():
-    history = request.args.get('history')
-
-    prefix = '######## Chat history with anon for context \n\n' + history + ' ######## Instructions:\n\n' + 'You will be provided indexed context about the DeFi yield protocol Yearn Finance (aka Yearn) to help answer a question. Don\'t invent links that don\'t exist outside the information provided. NEVER MENTION NAMES OF OTHER PEOPLE WHEN SUGGESTING SUPPORT ON OTHER CHANNELS.'
-    query = prefix + '\n\nQuestion:\n' + request.args.get('query') + '\n\nAnswer:\n'
-
-    index = GPTSimpleVectorIndex.load_from_disk('index-full.json')
-    # index = GPTListIndex.load_from_disk('index.json')
-
-    print(query)
-
-    response = index.query(query, response_mode="default") #, verbose=True)
-    
-    print(response.response.strip())
-
-    return jsonify(response.response.strip())
-
+if __name__ == "__main__":
+    app.run(debug=True)
 # construct_index('./training-data', 'index-full.json')
 
 # app.run()
