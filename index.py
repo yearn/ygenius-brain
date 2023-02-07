@@ -1,12 +1,9 @@
-import sys
-import os
-import flask
-from flask import request, jsonify
+from flask import Flask, request, jsonify
 from flask_cors import CORS
 from gpt_index import SimpleDirectoryReader, GPTListIndex, readers, GPTSimpleVectorIndex, LLMPredictor, PromptHelper, GPTListIndex
 from langchain import OpenAI
 
-app = flask.Flask(__name__)
+app = Flask(__name__)
 CORS(app)
 
 @app.route("/")
