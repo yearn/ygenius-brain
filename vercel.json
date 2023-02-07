@@ -11,7 +11,7 @@
             "src": "/(.*)",
             "dest": "/"
         }
-    ]
+    ],
     "functions": {
       "/index.py": {
         "excludeFiles": "/*.json"
