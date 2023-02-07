@@ -1,14 +1,4 @@
 {
-    "version": 2,
-    "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "/"
-        }
-    ],
-    "functions": {
-      "index.py": {
-        "excludeFiles": "/*.json"
-      }
-    }
-}
+  "builds": [{ "src": "index.py", "use": "@vercel/python" }],
+  "routes": [{ "src": "/(.*)", "dest": "index.py" }]
+ }
