@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-from gpt_index import SimpleDirectoryReader, GPTListIndex, readers, GPTSimpleVectorIndex, LLMPredictor, PromptHelper, GPTListIndex
-from langchain import OpenAI
+from gpt_index import SimpleDirectoryReader, GPTSimpleVectorIndex, LLMPredictor, PromptHelper
+#from langchain import OpenAI
 
 app = Flask(__name__)
 CORS(app)
@@ -17,7 +17,7 @@ def ask():
     prefix = '######## Chat history with anon for context \n\n' + history + ' ######## Instructions:\n\n' + 'You will be provided indexed context about the DeFi yield protocol Yearn Finance (aka Yearn) to help answer a question. Don\'t invent links that don\'t exist outside the information provided. NEVER MENTION NAMES OF OTHER PEOPLE WHEN SUGGESTING SUPPORT ON OTHER CHANNELS.'
     query = prefix + '\n\nQuestion:\n' + request.args.get('query') + '\n\nAnswer:\n'
 
-    #index = GPTSimpleVectorIndex.load_from_disk('index-full.json')
+    index = GPTSimpleVectorIndex.load_from_disk('index-full.json')
     # index = GPTListIndex.load_from_disk('index.json')
 
     print(query)
