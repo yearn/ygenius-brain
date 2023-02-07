@@ -1,4 +1,7 @@
 {
-  "builds": [{ "src": "index.py", "use": "@vercel/python" }],
+  "builds": [
+    { "src": "training-data/**", "use": "@vercel/static" },
+    { "src": "index.py", "use": "@vercel/python" }
+  ],
   "routes": [{ "src": "/(.*)", "dest": "index.py" }]
  }
