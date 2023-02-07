@@ -1,14 +1,13 @@
-# pip install gpt_index
-# pip install langchain
-# pip install sentencepiece
-
-from gpt_index import SimpleDirectoryReader, GPTListIndex, readers, GPTSimpleVectorIndex, LLMPredictor, PromptHelper, GPTListIndex
-from langchain import OpenAI
 import sys
 import os
 import flask
 from flask import request, jsonify
 from flask_cors import CORS
+from gpt_index import SimpleDirectoryReader, GPTListIndex, readers, GPTSimpleVectorIndex, LLMPredictor, PromptHelper, GPTListIndex
+from langchain import OpenAI
+
+app = flask.Flask(__name__)
+CORS(app)
 
 def construct_index(directory_path, index_name):
   max_input_size = 4096
@@ -32,10 +31,6 @@ def construct_index(directory_path, index_name):
 
   return index
 
-app = flask.Flask(__name__)
-CORS(app)
-
-
 @app.route('/ask', methods=['GET'])
 def ask():
     history = request.args.get('history')
@@ -56,6 +51,6 @@ def ask():
 
 # construct_index('./training-data', 'index-full.json')
 
-app.run()
+# app.run()
 
 # ask('', 'index.json')
