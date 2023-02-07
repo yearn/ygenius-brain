@@ -8,8 +8,13 @@
     ],
     "routes": [
         {
-            "src": "/index.py",
+            "src": "/(.*)",
             "dest": "/"
         }
     ]
+    "functions": {
+      "/index.py": {
+        "excludeFiles": "*.json"
+      }
+    }
 }
