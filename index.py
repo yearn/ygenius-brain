@@ -10,9 +10,6 @@ import flask
 from flask import request, jsonify
 from flask_cors import CORS
 
-
-os.environ["OPENAI_API_KEY"] = ''
-
 def construct_index(directory_path, index_name):
   max_input_size = 4096
   num_outputs = 800
