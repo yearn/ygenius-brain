@@ -46,7 +46,7 @@ def ask():
     prefix = '######## Chat history with anon for context \n\n' + history + ' ######## Instructions:\n\n' + 'You will be provided indexed context about the DeFi yield protocol Yearn Finance (aka Yearn) to help answer a question. Don\'t invent links that don\'t exist outside the information provided. NEVER MENTION NAMES OF OTHER PEOPLE WHEN SUGGESTING SUPPORT ON OTHER CHANNELS.'
     query = prefix + '\n\nQuestion:\n' + request.args.get('query') + '\n\nAnswer:\n'
 
-    index = GPTSimpleVectorIndex.load_from_disk('index.json')
+    index = GPTSimpleVectorIndex.load_from_disk('index-full.json')
     # index = GPTListIndex.load_from_disk('index.json')
 
     print(query)
@@ -57,7 +57,7 @@ def ask():
 
     return jsonify(response.response.strip())
 
-# construct_index('./training-data', 'index.json')
+# construct_index('./training-data', 'index-full.json')
 
 app.run()
 
