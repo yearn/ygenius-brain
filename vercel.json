@@ -14,7 +14,7 @@
     ]
     "functions": {
       "/index.py": {
-        "excludeFiles": "*.json"
+        "excludeFiles": "/*.json"
       }
     }
 }
