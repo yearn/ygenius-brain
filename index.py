@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from gpt_index import SimpleDirectoryReader, GPTSimpleVectorIndex, LLMPredictor, PromptHelper
-#from langchain import OpenAI
+from langchain import OpenAI
 
 app = Flask(__name__)
 CORS(app)
