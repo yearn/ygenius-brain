@@ -1,4 +1,5 @@
 gpt-index==0.3.6
 langchain==0.0.76
 sentencepiece==0.1.97
-Flask==2.2.2
+flask==2.2.2
+flask_cors==3.0.1
