@@ -163,14 +163,3 @@ Learn more about the implications of both of these methods [here](https://docs.y
 [**Video](https://www.youtube.com/watch?v=NVR3teJw0Y0): Become a mighty strategist!**
 
 [**Tweet: Getting a Strategy to Prod](https://twitter.com/flashfish0x/status/1460246273488044036?s=20&t=kxak7a6qtrmDCfcn6UrGYA)**
-
-## Who Can I Reach Out to With Questions?
-
-You can reach out to us on Discord in our sponsor channel **#sponsor-yearn.** Our team is also on-site at the hackathon.
-
-You can reach out to us by Telegram:
-
- 1. [**FarrahMay](https://t.me/farrahmay)**
-
- 2. [**SaltyFacu](https://t.me/saltyfacu)**
-> # **Learn more about building on Yearn [here](https://medium.com/iearn/hacking-with-yearn-370b804dcfe0).**
