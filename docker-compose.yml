@@ -1,0 +1,13 @@
+version: "3.7"
+
+services:
+  ygenius-brain:
+    build: .
+    image: ygenius-brain
+    ports:
+      - 127.0.0.1:5001:5001
+    environment:
+      - OPENAI_API_KEY
+    volumes:
+      - ${INDEX_DIR:-$PWD}/index.json:/app/index.json
+    restart: unless-stopped
