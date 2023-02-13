@@ -38,4 +38,6 @@ def ask():
   return jsonify(response.response.strip())
 
 # construct_index('./training-data', 'index.json')
-app.run()
+
+def create_app():
+    return app
