@@ -24,4 +24,5 @@ def ask():
   print(response.response.strip())
   return jsonify(response.response.strip())
 
-app.run()
+def create_app():
+    return app
