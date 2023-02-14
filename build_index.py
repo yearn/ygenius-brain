@@ -1,9 +1,6 @@
 from gpt_index import SimpleDirectoryReader, GPTSimpleVectorIndex, LLMPredictor, PromptHelper
 from langchain import OpenAI
 
-import os
-os.environ["OPENAI_API_KEY"] = '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'
-
 max_input_size = 3700
 num_outputs = 300
 llm_predictor = LLMPredictor(llm=OpenAI(temperature=0.5, model_name="text-davinci-003", max_tokens=num_outputs))
