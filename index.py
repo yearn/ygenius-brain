@@ -17,8 +17,8 @@ index = GPTSimpleVectorIndex.load_from_disk('index.json')
 @app.route('/ask', methods=['GET'])
 def ask():
   history = request.args.get('history')
-  prefix = '######## Chat history with anon for context \n\n' + history + '\n\n######## Current interactions with anon as yGenius (GPT-powered service fed with indexed data from Yearn Finance to help users explore Yearn ecosystem)\n\n'
-  query = prefix + '\n\nQuestion: ' + request.args.get('query') + '\n\nAnswer: '
+  prefix = '######## Below is chat history with anon (just for context) \n\n' + history + '\n\n######## Below is current interaction with anon as yGenius (GPT-powered bot that can do everything GPT does and also uses indexed data from Yearn Finance)\n\n'
+  query = prefix + '\n\nPrompt:\n' + request.args.get('query') + '\n\nResult:\n'
   print(query)
   response = index.query(query, response_mode="default", prompt_helper=prompt_helper)
   print(response.response.strip())
