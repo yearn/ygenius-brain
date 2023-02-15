@@ -1,0 +1,16 @@
+name: 🧠 Update ygenius-brain index PRODUCTION
+on:
+  workflow_dispatch:
+
+jobs:
+  deployment:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Update ygenius-brain index production
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.KEY }}
+          port: ${{ secrets.PORT }}
+          script: cd $HOME/ygenius-brain && git pull --rebase && ./update_index.sh
