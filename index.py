@@ -17,7 +17,7 @@ index = GPTSimpleVectorIndex.load_from_disk('index.json')
 @app.route('/ask', methods=['GET'])
 def ask():
   history = request.args.get('history')
-  prefix = '######## Below is chat history with anon (just for context)\n\n' + history + '\n\n######## Below is current interaction with anon as yGenius (GPT-powered bot that can do everything GPT does and also uses indexed data from Yearn Finance)\n\n'
+  prefix = '######## Below is chat history with anon (just for context)\n\n' + history + '\n\n######## Below is current interaction with anon as yGenius (GPT-powered bot that can do everything GPT does and also uses indexed data from Yearn Finance). When you have no information provided to answer a question then say "I don\'t know for sure but I think..." and proceed normally.\n\n'
   query = prefix + 'Prompt:\n' + request.args.get('query') + '\n\nResult:\n'
   print(query)
   response = index.query(query, response_mode="default", prompt_helper=prompt_helper)
