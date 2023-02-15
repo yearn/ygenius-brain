@@ -13,7 +13,8 @@ output = []
 with open(filename) as file: 
     data = json.load(file) 
     for line in data: 
-        output.append(templateString.format(**line)) 
+      line["apy"]["net_apy"] = "{0:.2f}%".format(line["apy"]["net_apy"] * 100)
+      output.append(templateString.format(**line)) 
         
 
 with open('all_vaults_and_strats.md', 'w') as file: 
