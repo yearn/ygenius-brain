@@ -2,7 +2,7 @@ import csv
 import json 
 
 filename = 'all_vaults_and_strats.json' 
-templateString = 'The {symbol} yVault version {version} at [{address}](https://yearn.watch/vault/{address}) has a currently a Total Value Locked (TVL) of {tvl[tvl]}, and an annual percentage yield (APY) of {apy[net_apy]}'
+templateString = 'The {symbol} yVault version {version} at {address} has a currently a Total Value Locked (TVL) of {tvl[tvl]}, and an annual percentage yield (APY) of {apy[net_apy]}'
 output = [] 
 
 # with open(filename) as file: 

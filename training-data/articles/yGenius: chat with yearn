@@ -1,0 +1,205 @@
+
+## yGenius: Chat with Yearn!
+
+![](https://cdn-images-1.medium.com/max/2390/0*rZFxThlAMLjVcKUZ.png)
+
+I am releasing an experimental preview and code for yGenius: a GPT-powered bot that indexes the Yearn Ecosystem knowledge so you can query it with a universal chat interface.
+
+* **Test yGenius: [https://ygenius.yearn.farm/](https://ygenius.yearn.farm/)**
+
+* Frontend Source: [https://github.com/yearn/ygenius-webui](https://github.com/yearn/ygenius-webui)
+
+* Backend Source: [https://github.com/yearn/ygenius-brain](https://github.com/yearn/ygenius-brain)
+
+In this article, I will explain how to connect your own knowledge base to GPT using the [gpt_index](https://github.com/jerryjliu/gpt_index) library and also explore the trade-offs between different indexing methods. The main reason I wanted to build this at Yearn is that we have a lot of knowledge spread around, and I believe LLMs can help provide a unified interface so we can consume and iterate on all written content in our ecosystem.
+
+![why I think an universal interface is cool to iterate on data we already have](https://cdn-images-1.medium.com/max/2000/0*MR37-bYcDnz6uX45.jpg)
+
+## GPT limitations and indexing solution
+
+GPT-3 currently supports about 16,000 characters in one request. This counts for both input and output, and if you want to ask a question that requires many documents for GPT to consume and answer, you will likely hit this limit.
+
+Luckily for us, some awesome people are working on a library called [gpt_index](https://github.com/jerryjliu/gpt_index). This powerful tool allows us to index documents, and this index can be used in conjunction with GPT to enrich queries with relevant information.
+
+So I implemented the index and fed it our knowledge:
+
+* Yearn Blog Articles
+
+* Yearn Smart Contracts Code
+
+* Yearn Official Documentation
+
+* Yearn Discord Support Channel History
+
+* All relevant Yearn data we can find (vaults TVL, APY, etc)
+
+## Creating a simple index out of all your knowledge
+
+To replicate yGenius and make a simple bot that can answer questions based on a body of documents, you need to have a basic Python setup and knowledge:
+
+ 1. Make sure you have [Python](https://www.python.org/downloads/) and [pip](https://pypi.org/project/pip/) installed. You’ll also need an OpenAI API Key [(here)](https://platform.openai.com/account/api-keys).
+
+ 2. Install [gpt_index](https://github.com/jerryjliu/gpt_index): pip install gpt-index
+
+ 3. Create a folder for your new project, such as “my-bot-app”.
+
+ 4. Create a data folder inside “my-bot-app” where you can dump all documents you have about your ecosystem; [here](https://github.com/yearn/ygenius-brain/tree/master/training-data) is ours for example.
+
+ 5. Create a main.py script inside “my-bot-app” with this code:
+
+    import os
+    os.environ["OPENAI_API_KEY"] = 'YOUR_OPENAI_API_KEY'
+    # Don't forget to replace the above API Key!!
+    # Link to generate one: https://platform.openai.com/account/api-keys
+    
+    from gpt_index import GPTSimpleVectorIndex, SimpleDirectoryReader
+    
+    # Loads the 'data' folder with all files inside it
+    documents = SimpleDirectoryReader('data', recursive=True).load_data()
+    
+    # Creates a SimpleVector Index
+    index = GPTSimpleVectorIndex(documents)
+    
+    # Queries the index with prompt
+    index.query("what is yearn?")
+    
+    # #####################################
+    
+    # You might want to save the index on the disk because
+    # it takes too long to build one from scratch!
+    
+    # Use the functions below to save/load:
+    
+    # save to disk
+    index.save_to_disk('index.json')
+    
+    # load from disk
+    index = GPTSimpleVectorIndex.load_from_disk('index.json')
+
+With 6 lines of code, your index is ready and you have made a query on it! If you are proficient with Python, you can improve the above script so that it saves the index when it is built, so you’re able to load it every time you run the app. Creating the index is slow, and for non-vector indexes, it can be costly too! OpenAI API charges per number of words, and expensive methods to build indexes will send more and larger requests.
+
+## Different types of indexes and their trade-offs
+
+For the example above, I used GPTSimpleVectorIndex, which is a “Vector Store Index”. There are many other indexes you can use, and depending on your query, it might make sense to change them. Here are the links to the official docs for each index type:
+
+* [Vector Store Index](https://gpt-index.readthedocs.io/en/latest/guides/index_guide.html#vector-store-index)
+
+* [List Index](https://gpt-index.readthedocs.io/en/latest/guides/index_guide.html#list-index)
+
+* [Keyword Table Index](https://gpt-index.readthedocs.io/en/latest/guides/index_guide.html#keyword-table-index)
+
+* [Tree Index](https://gpt-index.readthedocs.io/en/latest/guides/index_guide.html#tree-index)
+
+Let’s go deeper into Vector Stores and List Indexes:
+
+## Vector Store Index
+
+When you query a Vector Store Index:
+
+ 1. The user query is sent to OpenAI for [embedding](https://medium.com/@tonydain9_78432/word-embedding-chat-gpt-c96702f864e0).
+
+ 2. This embedding is used to search the locally stored data for which part of the vector index might have relevant information to answer the question.
+
+ 3. Then, the user query is again sent to OpenAI, but this time with the relevant pieces of information that hopefully compose a better answer instead of just asking GPT without any context.
+
+Vector Stores are cheap to use and great for making a question/answer service! This is what I use in this first yGenius release.
+
+![](https://cdn-images-1.medium.com/max/2654/0*qjqaZMomtbc2kill.png)
+
+## List Index
+
+The list index is better if you need ALL the text contained in the index to create an answer. In the vector, we only send relevant parts to OpenAI for building a result, but for a list index, we will send the whole chunk of text contained in the index to OpenAI to refine an answer.
+
+When you query a list index:
+
+ 1. Let’s say you have 1 million characters of text and GPT API can only handle 10,000 at a time (leaving 6,000 as space to build your answer). You would need 100 chunks of 10,000 characters each to be able to send everything to OpenAI.
+
+ 2. So GPT index sends the user query plus the first chunk to OpenAI for an answer.
+
+ 3. Then, it sends the user query plus the current answer plus the second chunk plus an instruction like Try to refine the current answer with this chunk of text.
+
+ 4. Then it will repeat the above for every single index chunk, refining the answer with all of them until there are no more chunks to help create an answer.
+
+List Indexes are very expensive to query, but they can achieve awesome tasks like creating a complete summary for a huge body of text, a task that Vector Stores would not be able to achieve.
+
+![](https://cdn-images-1.medium.com/max/3642/0*GhtkqZukgs7FosPB.png)
+
+## Composing indexes for smarter answers
+
+If there is a concept that has melted my mind (and wallet) it is [“Index Composability”](https://gpt-index.readthedocs.io/en/latest/how_to/composability.html). You are also able to compose indexes in a graph where you can connect any type of index as a child of another one. Also, we can give summaries for each index so when a query arrives the bot will be able to better search the composed index for the relevant pieces of an answer.
+
+When composing indexes, there is a potential increase in query cost since each index has its own cost trade-offs, but the quality of answers is likely to increase as you have structured the documents making the bot more efficient at parsing through them. At the moment, I have not found a way to use composable indexes in the first release due to costs, even when only using Vector Store Indexes.
+
+For example, here is how the gpt_index docs make a ListIndex containing many TreeIndexes and use GPT to autogenerate a summary:
+
+    # create many indexes
+    index1 = GPTTreeIndex(doc1)
+    index2 = GPTTreeIndex(doc2)
+    index3 = GPTTreeIndex(doc3)
+    
+    # set summaries for an index using GPT
+    summary = index1.query(
+        "What is a summary of this document?", mode="summarize"
+    )
+    index1.set_text(str(summary))
+    # repeat above for all other indexes you want to set summaries for
+    
+    # create parent index that contains all others
+    list_index = GPTListIndex([index1, index2, index3])
+    
+    # wrap it all into a graph so we can query them all at once
+    graph = ComposableGraph.build_from_index(list_index)
+    
+    # execute query
+    response = graph.query("Where did the author grow up?")
+
+## Making the bot have chat history context
+
+Another important part for a bot is that it should know where the current conversation state is, so it feels like chatting with something because you can reference older messages like:
+
+* Anon: what is yswaps?
+
+* yGenius: it’s […]
+
+* Anon: give me more details
+
+* yGenius: sure, yswaps […]
+
+On the second message, Anon didn’t have to tell yGenius the service he wanted more details for, since it’s aware that previously they were chatting about “yswaps”.
+
+Doing this is actually quite simple. In every user query, I send the history along with the query to the backend. Here is how I query the index.
+
+    ######## Chat history with anon for context
+    
+    CHAT_HISTORY_WITH_USER
+    
+    ######## Current interactions with anon as yGenius (GPT-powered service fed with indexed data from Yearn Finance to help users explore Yearn ecosystem)
+    
+    Question: USER_CURRENT_QUESTION
+    Answer:
+
+Change CHAT_HISTORY_WITH_USER and USER_CURRENT_QUESTION with variables that come from the frontend query. The last query in our yswaps example would look like this:
+
+    ######## Chat history with anon for context
+    
+    Question: what is yswaps?
+    Answer: it's [...]
+    
+    ######## Current interactions with anon as yGenius (GPT-powered service fed with indexed data from Yearn Finance to help users explore Yearn ecosystem)
+    
+    Question: give me more details
+    Answer:
+
+You have to take care of juggling the maximum size for history and input. At yGenius, I leave 4K characters for input and 4K characters for history.
+
+## Credits
+
+* Thanks a lot [Poma](https://twitter.com/semenov_roman_) for helping me navigate the indexing stuff!
+
+* I initially started looking for indexing stuff after this [futurekarol post](https://twitter.com/futurekarol/status/1617643720568082432).
+
+* Thanks [jerryjliu](https://github.com/jerryjliu) for building [gpt_index](https://github.com/jerryjliu/gpt_index) + all [contributors](https://github.com/jerryjliu/gpt_index/graphs/contributors) improving it!
+
+* And thanks to the awesome people of [Yearn](https://twitter.com/iearnfinance) that always helps with test, review, and overcoming technical blockers.
+
+![yGenius says: “Hey anon I noticed you reached the end of the article, thanks for reading it!”](https://cdn-images-1.medium.com/max/2560/0*oiEJMa4yDzvT1OEG.jpg)
