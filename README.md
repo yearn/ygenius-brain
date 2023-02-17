@@ -1,4 +1,7 @@
-# ygenius-brain
+# yGenius Brain
+
+What is this: https://medium.com/@marcoworms/ygenius-chat-with-yearn-efa17d3f0ec8  
+Frontend Source: https://github.com/yearn/ygenius-webui
 
 ## Configuration
 
