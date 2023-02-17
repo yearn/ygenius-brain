@@ -3,6 +3,8 @@
 What is this: https://medium.com/@marcoworms/ygenius-chat-with-yearn-efa17d3f0ec8  
 Frontend Source: https://github.com/yearn/ygenius-webui
 
+![image](https://user-images.githubusercontent.com/7863230/219803104-9612160e-8a1b-42b1-9af5-12fccf77232d.png)
+
 ## Configuration
 
 - copy `.env.sample` to `.env` and set environment variables (only `OPENAI_API_KEY` is mandatory)
