@@ -17,12 +17,11 @@ index = GPTSimpleVectorIndex.load_from_disk('index.json')
 @app.route('/ask', methods=['GET'])
 def ask():
   history = request.args.get('history')
-  prefix = 'Instructions: you are chatting with anon about Yearn Finance\n\n' + history + '\n\n'
   query = ''
   if history == 'none':
-    query = request.args.get('query') 
+    query = 'about Yearn Finance: ' + request.args.get('query') 
   else:
-    query = prefix + 'Anon:\n' + request.args.get('query') + '\n\nYou:\n'
+    query = 'Instructions: you are chatting with anon about Yearn Finance\n\n' + history + '\n\n' + 'Anon:\n' + request.args.get('query') + '\n\nYou:\n'
   print(query)
   response = index.query(query, response_mode="default", prompt_helper=prompt_helper)
   print(response.response.strip())
