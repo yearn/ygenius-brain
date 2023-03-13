@@ -19,9 +19,9 @@ def ask():
   history = request.args.get('history')
   query = ''
   if history == 'none':
-    query = 'about Yearn Finance: ' + request.args.get('query') 
+    query = request.args.get('query') 
   else:
-    query = 'Instructions: you are chatting with anon about Yearn Finance\n\n' + history + '\n\n' + 'Anon:\n' + request.args.get('query') + '\n\nYou:\n'
+    query = history + '\n\n' + 'Anon:\n' + request.args.get('query') + '\n\nYou:\n'
   print(query)
   response = index.query(query, response_mode="default", prompt_helper=prompt_helper)
   print(response.response.strip())
