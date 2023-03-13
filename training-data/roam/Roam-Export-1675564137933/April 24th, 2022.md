@@ -1,1 +1,0 @@
-- [[yOps]] - remove [[Santiago]] as a signer from [[yBudget]] making it 3/4 for approvals via social consensus 

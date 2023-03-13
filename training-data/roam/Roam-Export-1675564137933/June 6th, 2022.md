@@ -1,7 +1,0 @@
-- [[banteg]] set up [notifications](https://github.com/yearn/budget/blob/master/.github/workflows/notify-budget.yml) for budget requests
-- [[yBudget]] - [[BR1]] ([[budget request]] 1) from [[DeFi Wonderland]] for [[Keep3r Jobs]] - [link](https://github.com/yearn/budget/issues/64)
-    - 1 year maintenance 
-    - migrate keeper from v1 to v2 
-- [[yBudget]] - Move community grants from [[Coordinape]] to Github [budget repo](https://github.com/yearn/budget/issues)
-    - Requests posted as issues: labels show approved / rejected requests
-    - [[Github Project]] can be found here https://github.com/orgs/yearn/projects/22

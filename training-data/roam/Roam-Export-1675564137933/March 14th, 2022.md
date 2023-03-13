@@ -1,3 +1,0 @@
-- [[Yearn Improvement Proposal]] [[YIP-67: Contribute $400,000 to Nomic Foundation]] passed on [[snapshot]] - [link](https://snapshot.org/#/ybaby.eth/proposal/0xd1988feec955cb93d42b63b7b4845d35da8f60859f55ec18b3d5609ecd4eb9e2)
-    - Yes - 657 YFI 99.95%
-    - No - 0.36 YFI 0.05%

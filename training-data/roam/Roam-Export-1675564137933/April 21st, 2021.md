@@ -1,1 +1,0 @@
-- [[YIP-61: Governance 2.0]] [[yChad]] [[yTeam]] - posted to [[governance forum]] for discussion - [link](https://gov.yearn.finance/t/yip-61-governance-2-0/10460)

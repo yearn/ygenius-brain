@@ -1,3 +1,0 @@
-- [[BR4]] update post 3 - [link](https://github.com/yearn/budget/issues/69#issuecomment-1172564108)
-- [[BR5]] update post 3 - [link](https://github.com/yearn/budget/issues/70#issuecomment-1172567132)
-- 
