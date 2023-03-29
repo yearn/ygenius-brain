@@ -19,7 +19,7 @@ def ask():
   history = request.args.get('history')
   query = ''
   if history == 'none':
-    query = 'System\n' + 'You are yGenius, a Yearn Finance AI assistant.\n\n' + 'Anon:\n' request.args.get('query') 
+    query = 'System\n' + 'You are yGenius, a Yearn Finance AI assistant.\n\n' + 'Anon:\n' + request.args.get('query') 
   else:
     query = history + '\n\n' + 'Anon:\n' + request.args.get('query') + '\n\nAI:\n'
   print(query)
