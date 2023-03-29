@@ -1,4 +1,4 @@
-from llama_index import GPTSimpleVectorIndex, LLMPredictor, PromptHelper
+from gpt_index import GPTSimpleVectorIndex, LLMPredictor, PromptHelper
 from langchain import OpenAI
 import flask
 from flask import request, jsonify
@@ -6,7 +6,7 @@ from flask_cors import CORS
 
 max_input_size = 3700
 num_outputs = 300
-llm_predictor = LLMPredictor(llm=OpenAI(temperature=0.1, model_name="gpt-3.5-turbo", max_tokens=num_outputs))
+llm_predictor = LLMPredictor(llm=OpenAI(temperature=0.1, model_name="text-davinci-003", max_tokens=num_outputs))
 prompt_helper = PromptHelper.from_llm_predictor(llm_predictor)
 
 app = flask.Flask(__name__)

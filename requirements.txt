@@ -1,4 +1,4 @@
-llama-index==0.3.6
+gpt-index==0.3.6
 langchain==0.0.76
 sentencepiece==0.1.97
 flask==2.2.2
