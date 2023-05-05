@@ -1,5 +1,7 @@
 # yGenius Brain
 
+[![](https://licensebuttons.net/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
+
 What is this: https://medium.com/@marcoworms/ygenius-chat-with-yearn-efa17d3f0ec8  
 Frontend Source: https://github.com/yearn/ygenius-webui
 
